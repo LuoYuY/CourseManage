@@ -7,5 +7,6 @@ import cn.org.test.pojo.User;
  */
 
 public interface UserService {
-    public User getUser();
+//    public User getUser();
+    public User loginPwd(String username, String password);
 }

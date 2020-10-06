@@ -15,9 +15,18 @@ public class UserServiceImpl implements UserService {
     @Autowired
     public UserMapper userMapper;
 
+//    @Override
+//    public User getUser() {
+//        User user = userMapper.getUser();
+//        return user;
+//    }
+
     @Override
-    public User getUser() {
-        User user = userMapper.getUser();
-        return user;
+    public User loginPwd(String username, String password) {
+        User user = userMapper.getUser(username);
+        if(password.equals(user.getPassword())){
+            return user;
+        }
+        else return null;
     }
 }

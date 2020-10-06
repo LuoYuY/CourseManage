@@ -12,6 +12,35 @@ public class User implements Serializable {
     private String userName;
     private int age;
     private String address;
+    private String password;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return age == user.age &&
+                Objects.equals(userId, user.userId) &&
+                Objects.equals(userName, user.userName) &&
+                Objects.equals(address, user.address) &&
+                Objects.equals(password, user.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userId, userName, age, address, password);
+    }
+
 
     public String getUserId() {
         return userId;
@@ -45,25 +74,4 @@ public class User implements Serializable {
         this.address = address;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (age != user.age) return false;
-        if (!Objects.equals(userId, user.userId)) return false;
-        if (!Objects.equals(userName, user.userName)) return false;
-        return Objects.equals(address, user.address);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = userId != null ? userId.hashCode() : 0;
-        result = 31 * result + (userName != null ? userName.hashCode() : 0);
-        result = 31 * result + age;
-        result = 31 * result + (address != null ? address.hashCode() : 0);
-        return result;
-    }
 }

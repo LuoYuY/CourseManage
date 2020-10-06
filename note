@@ -1,0 +1,21 @@
+1.防止外部密码注入SQL
+mybatis中变量使用#{}而不是${}, 因为#{}是使用预编译指令（preparedStatement）
+
+
+2.日志打印 使用Springboot自带的logpack
+https://www.cnblogs.com/fishpro/p/11167469.html#_label1_2
+https://www.cnblogs.com/nananana/p/8371805.html
+- 日志级别： debug info error warn 默认为info
+- 直接使用，不用单独引入
+- 在 application.yml 或 resources/新建logback-spring.xml 中配置日志级别、日志存储路径和输出的格式
+
+
+3.关于如何在 Spring Boot 中配置不同的环境实现 开发环境（dev）、测试环境（test）、生成环境（prod）分离
+https://www.cnblogs.com/fishpro/p/11154872.html
+
+默认为 application.properties 直接重命名为 application.yml
+新建 application-dev.yml（开发环境）,application-test.yml（测试环境）,
+application-uat.yml（预发布环境）, application-prod.yml（生产环境）
+
+
+4.

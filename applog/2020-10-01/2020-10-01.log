@@ -1,0 +1,249 @@
+2020-10-01 21:54:31 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37918c79: startup date [Wed Sep 30 22:49:14 CST 2020]; root of context hierarchy
+2020-10-01 21:54:31 -Unregistering JMX-exposed beans on shutdown
+2020-10-01 21:54:34 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37918c79: startup date [Thu Oct 01 21:54:34 CST 2020]; root of context hierarchy
+2020-10-01 21:54:35 -Tomcat initialized with port(s): 8080 (http)
+2020-10-01 21:54:35 -Root WebApplicationContext: initialization completed in 989 ms
+2020-10-01 21:54:35 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-01 21:54:35 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-01 21:54:35 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-01 21:54:35 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-01 21:54:35 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-01 21:54:36 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37918c79: startup date [Thu Oct 01 21:54:34 CST 2020]; root of context hierarchy
+2020-10-01 21:54:36 -Mapped "{[/user/loginPwd]}" onto public cn.org.test.pojo.User cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-01 21:54:36 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-01 21:54:36 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-01 21:54:36 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:54:36 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:54:36 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:54:36 -Registering beans for JMX exposure on startup
+2020-10-01 21:54:36 -Tomcat started on port(s): 8080 (http)
+2020-10-01 21:54:45 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-01 21:54:45 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-01 21:54:48 -==>  Preparing: SELECT * from USER where user_name = ? 
+2020-10-01 21:54:48 -==> Parameters: 测试用户(String)
+2020-10-01 21:54:48 -<==      Total: 1
+2020-10-01 21:55:22 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37918c79: startup date [Thu Oct 01 21:54:34 CST 2020]; root of context hierarchy
+2020-10-01 21:55:22 -Unregistering JMX-exposed beans on shutdown
+2020-10-01 21:55:25 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 21:55:25 CST 2020]; root of context hierarchy
+2020-10-01 21:55:26 -Tomcat initialized with port(s): 8080 (http)
+2020-10-01 21:55:26 -Root WebApplicationContext: initialization completed in 872 ms
+2020-10-01 21:55:26 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-01 21:55:26 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-01 21:55:26 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-01 21:55:26 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-01 21:55:26 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-01 21:55:26 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 21:55:25 CST 2020]; root of context hierarchy
+2020-10-01 21:55:26 -Mapped "{[/user/loginPwd]}" onto public cn.org.test.pojo.User cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-01 21:55:26 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-01 21:55:26 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-01 21:55:26 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:55:26 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:55:26 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:55:26 -Registering beans for JMX exposure on startup
+2020-10-01 21:55:26 -Tomcat started on port(s): 8080 (http)
+2020-10-01 21:55:30 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-01 21:55:30 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-01 21:55:30 -controller LoginPwd arrived
+2020-10-01 21:55:30 -controller LoginPwd arrived
+2020-10-01 21:55:34 -==>  Preparing: SELECT * from USER where user_name = ? 
+2020-10-01 21:55:34 -==> Parameters: 测试用户(String)
+2020-10-01 21:55:34 -<==      Total: 1
+2020-10-01 21:55:59 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 21:55:25 CST 2020]; root of context hierarchy
+2020-10-01 21:55:59 -Unregistering JMX-exposed beans on shutdown
+2020-10-01 21:56:02 -Starting SpringBootUserApplication on lyy-Inspiron-5488 with PID 530 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-01 21:56:02 -No active profile set, falling back to default profiles: default
+2020-10-01 21:56:02 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 21:56:02 CST 2020]; root of context hierarchy
+2020-10-01 21:56:03 -Tomcat initialized with port(s): 8080 (http)
+2020-10-01 21:56:03 -Root WebApplicationContext: initialization completed in 749 ms
+2020-10-01 21:56:03 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-01 21:56:03 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-01 21:56:03 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-01 21:56:03 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-01 21:56:03 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-01 21:56:03 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 21:56:02 CST 2020]; root of context hierarchy
+2020-10-01 21:56:03 -Mapped "{[/user/loginPwd]}" onto public cn.org.test.pojo.User cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-01 21:56:03 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-01 21:56:03 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-01 21:56:03 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:56:03 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:56:03 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 21:56:03 -Registering beans for JMX exposure on startup
+2020-10-01 21:56:03 -Tomcat started on port(s): 8080 (http)
+2020-10-01 21:56:03 -Started SpringBootUserApplication in 1.605 seconds (JVM running for 2.035)
+2020-10-01 21:56:12 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-01 21:56:12 -FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2020-10-01 21:56:12 -controller LoginPwd arrived
+2020-10-01 21:56:15 -==>  Preparing: SELECT * from USER where user_name = ? 
+2020-10-01 21:56:15 -==> Parameters: 测试用户(String)
+2020-10-01 21:56:15 -<==      Total: 1
+2020-10-01 22:11:15 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 21:56:02 CST 2020]; root of context hierarchy
+2020-10-01 22:11:15 -Unregistering JMX-exposed beans on shutdown
+2020-10-01 22:11:16 -Starting SpringBootUserApplication on lyy-Inspiron-5488 with PID 1218 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-01 22:11:16 -No active profile set, falling back to default profiles: default
+2020-10-01 22:11:17 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3901d134: startup date [Thu Oct 01 22:11:17 CST 2020]; root of context hierarchy
+2020-10-01 22:11:17 -Tomcat initialized with port(s): 8080 (http)
+2020-10-01 22:11:17 -Root WebApplicationContext: initialization completed in 976 ms
+2020-10-01 22:11:18 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-01 22:11:18 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-01 22:11:18 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-01 22:11:18 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-01 22:11:18 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-01 22:11:18 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3901d134: startup date [Thu Oct 01 22:11:17 CST 2020]; root of context hierarchy
+2020-10-01 22:11:18 -Mapped "{[/user/loginPwd]}" onto public cn.org.test.pojo.User cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-01 22:11:18 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-01 22:11:18 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-01 22:11:18 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 22:11:18 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 22:11:18 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 22:11:18 -Registering beans for JMX exposure on startup
+2020-10-01 22:11:18 -Tomcat started on port(s): 8080 (http)
+2020-10-01 22:11:18 -Started SpringBootUserApplication in 1.884 seconds (JVM running for 2.307)
+2020-10-01 22:11:23 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-01 22:11:23 -FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020-10-01 22:11:23 -controller LoginPwd arrived
+2020-10-01 22:11:31 -==>  Preparing: SELECT * from USER where user_name = 测试用户 
+2020-10-01 22:11:31 -==> Parameters: 
+2020-10-01 22:11:31 -Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020-10-01 22:11:31 -SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2020-10-01 22:11:31 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '测试用户' in 'where clause'
+### The error may exist in file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/mapper/mapper.xml]
+### The error may involve cn.org.test.mapper.UserMapper.getUser-Inline
+### The error occurred while setting parameters
+### SQL: SELECT * from USER  where user_name = 测试用户
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '测试用户' in 'where clause'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '测试用户' in 'where clause'] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '测试用户' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2501)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy67.execute(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy68.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy55.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy56.getUser(Unknown Source)
+	at cn.org.test.service.impl.UserServiceImpl.loginPwd(UserServiceImpl.java:26)
+	at cn.org.test.controller.UserController.loginPwd(UserController.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-01 23:04:34 -controller LoginPwd arrived
+2020-10-01 23:04:51 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3901d134: startup date [Thu Oct 01 22:11:17 CST 2020]; root of context hierarchy
+2020-10-01 23:04:51 -Unregistering JMX-exposed beans on shutdown
+2020-10-01 23:05:01 -Starting SpringBootUserApplication on lyy-Inspiron-5488 with PID 2761 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-01 23:05:01 -No active profile set, falling back to default profiles: default
+2020-10-01 23:05:01 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 23:05:01 CST 2020]; root of context hierarchy
+2020-10-01 23:05:01 -Tomcat initialized with port(s): 8080 (http)
+2020-10-01 23:05:02 -Root WebApplicationContext: initialization completed in 970 ms
+2020-10-01 23:05:02 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-01 23:05:02 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-01 23:05:02 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-01 23:05:02 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-01 23:05:02 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-01 23:05:02 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 23:05:01 CST 2020]; root of context hierarchy
+2020-10-01 23:05:02 -Mapped "{[/user/loginPwd]}" onto public cn.org.test.pojo.User cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-01 23:05:02 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-01 23:05:02 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-01 23:05:02 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 23:05:02 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 23:05:02 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-01 23:05:02 -Registering beans for JMX exposure on startup
+2020-10-01 23:05:02 -Tomcat started on port(s): 8080 (http)
+2020-10-01 23:05:02 -Started SpringBootUserApplication in 1.968 seconds (JVM running for 2.467)
+2020-10-01 23:05:04 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-01 23:05:04 -FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020-10-01 23:05:04 -controller LoginPwd arrived
+2020-10-01 23:05:07 -==>  Preparing: SELECT * from USER where user_name = ? 
+2020-10-01 23:05:07 -==> Parameters: 测试用户(String)
+2020-10-01 23:05:08 -<==      Total: 1
+2020-10-01 23:21:11 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Thu Oct 01 23:05:01 CST 2020]; root of context hierarchy
+2020-10-01 23:21:11 -Unregistering JMX-exposed beans on shutdown
