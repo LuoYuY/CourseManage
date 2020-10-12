@@ -1,0 +1,338 @@
+2020-10-12 00:09:25 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7219ec67: startup date [Sun Oct 11 22:24:12 CST 2020]; root of context hierarchy
+2020-10-12 00:09:25 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 14:49:19 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:49:19 CST 2020]; root of context hierarchy
+2020-10-12 14:49:20 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 14:49:20 -Root WebApplicationContext: initialization completed in 977 ms
+2020-10-12 14:49:20 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 14:49:20 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 14:49:20 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 14:49:20 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 14:49:20 -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-10-12 14:49:20 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 14:49:21 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:49:19 CST 2020]; root of context hierarchy
+2020-10-12 14:49:21 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 14:49:21 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String)
+2020-10-12 14:49:21 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 14:49:21 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 14:49:21 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:49:21 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:49:21 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:49:21 -
+
+Using default security password: 53baf67a-1cd8-44e3-a498-812cefde573a
+
+2020-10-12 14:49:21 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2020-10-12 14:49:21 -Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14b0e127, org.springframework.security.web.context.SecurityContextPersistenceFilter@76db540e, org.springframework.security.web.header.HeaderWriterFilter@4d62f4c6, org.springframework.security.web.authentication.logout.LogoutFilter@2b289ac9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c8d5312, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2af4129d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28737371, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7fd26ad8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10823d72, org.springframework.security.web.session.SessionManagementFilter@ebd06a9, org.springframework.security.web.access.ExceptionTranslationFilter@329a1f8d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a2909ae]
+2020-10-12 14:49:21 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56afdf9a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7eae3764, org.springframework.security.web.header.HeaderWriterFilter@d0865a3, org.springframework.security.web.authentication.logout.LogoutFilter@11a8042c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a4ccef7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10dc7d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f668f29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64fe9da7, org.springframework.security.web.session.SessionManagementFilter@636bbbbb, org.springframework.security.web.access.ExceptionTranslationFilter@6b4283c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a22bad6]
+2020-10-12 14:49:21 -Registering beans for JMX exposure on startup
+2020-10-12 14:49:21 -Tomcat started on port(s): 8080 (http)
+2020-10-12 14:49:57 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 14:49:57 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-12 14:51:58 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:49:19 CST 2020]; root of context hierarchy
+2020-10-12 14:51:58 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 14:52:02 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:52:02 CST 2020]; root of context hierarchy
+2020-10-12 14:52:03 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 14:52:03 -Root WebApplicationContext: initialization completed in 857 ms
+2020-10-12 14:52:03 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 14:52:03 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 14:52:03 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 14:52:03 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 14:52:03 -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-10-12 14:52:03 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 14:52:03 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:52:02 CST 2020]; root of context hierarchy
+2020-10-12 14:52:03 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 14:52:03 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String)
+2020-10-12 14:52:03 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 14:52:03 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 14:52:03 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:52:03 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:52:03 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:52:03 -
+
+Using default security password: f2ccc4c9-e2c7-4d95-9dfb-6c31ac62fb36
+
+2020-10-12 14:52:03 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2020-10-12 14:52:03 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e51d054, org.springframework.security.web.context.SecurityContextPersistenceFilter@102efc59, org.springframework.security.web.header.HeaderWriterFilter@57402ba1, org.springframework.security.web.authentication.logout.LogoutFilter@772861aa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7e2c64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e8e0dec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f679798, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f5f6e45, org.springframework.security.web.session.SessionManagementFilter@2ab0702e, org.springframework.security.web.access.ExceptionTranslationFilter@79d9214d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@aa4d8cc]
+2020-10-12 14:52:03 -Registering beans for JMX exposure on startup
+2020-10-12 14:52:03 -Tomcat started on port(s): 8080 (http)
+2020-10-12 14:52:10 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 14:52:10 -FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020-10-12 14:55:25 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:52:02 CST 2020]; root of context hierarchy
+2020-10-12 14:55:25 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 14:55:31 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:55:31 CST 2020]; root of context hierarchy
+2020-10-12 14:55:32 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 14:55:32 -Root WebApplicationContext: initialization completed in 869 ms
+2020-10-12 14:55:32 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 14:55:32 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 14:55:32 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 14:55:32 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 14:55:32 -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-10-12 14:55:32 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 14:55:32 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:55:31 CST 2020]; root of context hierarchy
+2020-10-12 14:55:32 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 14:55:32 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String)
+2020-10-12 14:55:32 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 14:55:32 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 14:55:32 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:55:32 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:55:32 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:55:32 -
+
+Using default security password: 3596436c-77d1-427f-98c7-1775b79f7b55
+
+2020-10-12 14:55:32 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2020-10-12 14:55:32 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6438a7fe, org.springframework.security.web.context.SecurityContextPersistenceFilter@10f19647, org.springframework.security.web.header.HeaderWriterFilter@67a3bd51, org.springframework.security.web.authentication.logout.LogoutFilter@8a2a6a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@10bea4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3936df72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ee69ad8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e51d054, org.springframework.security.web.session.SessionManagementFilter@14229fa7, org.springframework.security.web.access.ExceptionTranslationFilter@5e048149, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66213a0d]
+2020-10-12 14:55:32 -Registering beans for JMX exposure on startup
+2020-10-12 14:55:32 -Tomcat started on port(s): 8080 (http)
+2020-10-12 14:55:38 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 14:55:38 -FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020-10-12 14:57:43 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2928854b: startup date [Mon Oct 12 14:55:31 CST 2020]; root of context hierarchy
+2020-10-12 14:57:43 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 14:58:05 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c1d9d4b: startup date [Mon Oct 12 14:58:05 CST 2020]; root of context hierarchy
+2020-10-12 14:58:06 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 14:58:06 -Root WebApplicationContext: initialization completed in 866 ms
+2020-10-12 14:58:06 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 14:58:06 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 14:58:06 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 14:58:06 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 14:58:06 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 14:58:06 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c1d9d4b: startup date [Mon Oct 12 14:58:05 CST 2020]; root of context hierarchy
+2020-10-12 14:58:06 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 14:58:06 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String)
+2020-10-12 14:58:06 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 14:58:06 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 14:58:07 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:58:07 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:58:07 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:58:07 -Registering beans for JMX exposure on startup
+2020-10-12 14:58:07 -Tomcat started on port(s): 8080 (http)
+2020-10-12 14:58:13 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 14:58:13 -FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2020-10-12 14:59:19 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c1d9d4b: startup date [Mon Oct 12 14:58:05 CST 2020]; root of context hierarchy
+2020-10-12 14:59:19 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 14:59:22 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8e50104: startup date [Mon Oct 12 14:59:22 CST 2020]; root of context hierarchy
+2020-10-12 14:59:23 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 14:59:23 -Root WebApplicationContext: initialization completed in 975 ms
+2020-10-12 14:59:23 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 14:59:23 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 14:59:23 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 14:59:23 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 14:59:23 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 14:59:24 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8e50104: startup date [Mon Oct 12 14:59:22 CST 2020]; root of context hierarchy
+2020-10-12 14:59:24 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 14:59:24 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String)
+2020-10-12 14:59:24 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 14:59:24 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 14:59:24 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:59:24 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:59:24 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 14:59:24 -Registering beans for JMX exposure on startup
+2020-10-12 14:59:24 -Tomcat started on port(s): 8080 (http)
+2020-10-12 14:59:28 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 14:59:28 -FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2020-10-12 15:02:19 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8e50104: startup date [Mon Oct 12 14:59:22 CST 2020]; root of context hierarchy
+2020-10-12 15:02:19 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 15:02:24 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c1d9d4b: startup date [Mon Oct 12 15:02:24 CST 2020]; root of context hierarchy
+2020-10-12 15:02:25 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 15:02:25 -Root WebApplicationContext: initialization completed in 813 ms
+2020-10-12 15:02:25 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 15:02:25 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 15:02:25 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 15:02:25 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 15:02:25 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 15:02:26 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c1d9d4b: startup date [Mon Oct 12 15:02:24 CST 2020]; root of context hierarchy
+2020-10-12 15:02:26 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 15:02:26 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String)
+2020-10-12 15:02:26 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 15:02:26 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 15:02:26 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 15:02:26 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 15:02:26 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 15:02:26 -Registering beans for JMX exposure on startup
+2020-10-12 15:02:26 -Tomcat started on port(s): 8080 (http)
+2020-10-12 15:02:33 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 15:02:33 -FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020-10-12 18:05:16 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c1d9d4b: startup date [Mon Oct 12 15:02:24 CST 2020]; root of context hierarchy
+2020-10-12 18:05:16 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 18:05:23 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:05:23 CST 2020]; root of context hierarchy
+2020-10-12 18:05:23 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 18:05:24 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 18:05:24 -Root WebApplicationContext: initialization completed in 1090 ms
+2020-10-12 18:05:24 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 18:05:24 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 18:05:24 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 18:05:24 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 18:05:24 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 18:05:24 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:05:23 CST 2020]; root of context hierarchy
+2020-10-12 18:05:25 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 18:05:25 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-12 18:05:25 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 18:05:25 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 18:05:25 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:05:25 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:05:25 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:05:25 -Registering beans for JMX exposure on startup
+2020-10-12 18:05:25 -Tomcat started on port(s): 8080 (http)
+2020-10-12 18:05:31 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 18:05:31 -FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020-10-12 18:15:11 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:05:23 CST 2020]; root of context hierarchy
+2020-10-12 18:15:11 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 18:15:13 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@413f69cc: startup date [Mon Oct 12 18:15:13 CST 2020]; root of context hierarchy
+2020-10-12 18:15:14 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 18:15:14 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 18:15:14 -Root WebApplicationContext: initialization completed in 1134 ms
+2020-10-12 18:15:14 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 18:15:14 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 18:15:14 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 18:15:14 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 18:15:14 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 18:15:15 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@413f69cc: startup date [Mon Oct 12 18:15:13 CST 2020]; root of context hierarchy
+2020-10-12 18:15:15 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 18:15:15 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-12 18:15:15 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 18:15:15 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 18:15:15 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:15:15 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:15:15 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:15:15 -Registering beans for JMX exposure on startup
+2020-10-12 18:15:15 -Tomcat started on port(s): 8080 (http)
+2020-10-12 18:15:18 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 18:15:18 -FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020-10-12 18:21:45 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@413f69cc: startup date [Mon Oct 12 18:15:13 CST 2020]; root of context hierarchy
+2020-10-12 18:21:45 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 18:21:49 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@413f69cc: startup date [Mon Oct 12 18:21:49 CST 2020]; root of context hierarchy
+2020-10-12 18:21:50 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 18:21:50 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 18:21:50 -Root WebApplicationContext: initialization completed in 1186 ms
+2020-10-12 18:21:50 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 18:21:50 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 18:21:50 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 18:21:50 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 18:21:50 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 18:21:51 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@413f69cc: startup date [Mon Oct 12 18:21:49 CST 2020]; root of context hierarchy
+2020-10-12 18:21:51 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 18:21:51 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-12 18:21:51 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 18:21:51 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 18:21:51 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:21:51 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:21:51 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:21:51 -Registering beans for JMX exposure on startup
+2020-10-12 18:21:51 -Tomcat started on port(s): 8080 (http)
+2020-10-12 18:21:56 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 18:21:56 -FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020-10-12 18:23:51 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@413f69cc: startup date [Mon Oct 12 18:21:49 CST 2020]; root of context hierarchy
+2020-10-12 18:23:51 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 18:23:54 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:23:54 CST 2020]; root of context hierarchy
+2020-10-12 18:23:55 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 18:23:55 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 18:23:55 -Root WebApplicationContext: initialization completed in 986 ms
+2020-10-12 18:23:55 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 18:23:55 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 18:23:55 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 18:23:55 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 18:23:55 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 18:23:56 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:23:54 CST 2020]; root of context hierarchy
+2020-10-12 18:23:56 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 18:23:56 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-12 18:23:56 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 18:23:56 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 18:23:56 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:23:56 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:23:56 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:23:56 -Registering beans for JMX exposure on startup
+2020-10-12 18:23:56 -Tomcat started on port(s): 8080 (http)
+2020-10-12 18:24:03 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 18:24:03 -FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2020-10-12 18:25:28 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:23:54 CST 2020]; root of context hierarchy
+2020-10-12 18:25:28 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 18:25:32 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:25:32 CST 2020]; root of context hierarchy
+2020-10-12 18:25:33 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 18:25:33 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 18:25:33 -Root WebApplicationContext: initialization completed in 1035 ms
+2020-10-12 18:25:33 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 18:25:33 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 18:25:33 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 18:25:33 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 18:25:33 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 18:25:34 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:25:32 CST 2020]; root of context hierarchy
+2020-10-12 18:25:34 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 18:25:34 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-12 18:25:34 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 18:25:34 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 18:25:34 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:25:34 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:25:34 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:25:34 -Registering beans for JMX exposure on startup
+2020-10-12 18:25:34 -Tomcat started on port(s): 8080 (http)
+2020-10-12 18:25:43 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 18:25:43 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-12 18:29:11 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:25:32 CST 2020]; root of context hierarchy
+2020-10-12 18:29:11 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 18:29:14 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:29:14 CST 2020]; root of context hierarchy
+2020-10-12 18:29:15 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 18:29:15 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 18:29:15 -Root WebApplicationContext: initialization completed in 937 ms
+2020-10-12 18:29:15 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 18:29:15 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 18:29:15 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 18:29:15 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 18:29:15 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 18:29:16 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:29:14 CST 2020]; root of context hierarchy
+2020-10-12 18:29:16 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 18:29:16 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-12 18:29:16 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 18:29:16 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 18:29:16 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:29:16 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:29:16 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:29:16 -Registering beans for JMX exposure on startup
+2020-10-12 18:29:16 -Tomcat started on port(s): 8080 (http)
+2020-10-12 18:29:24 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 18:29:24 -FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020-10-12 18:39:31 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:29:14 CST 2020]; root of context hierarchy
+2020-10-12 18:39:31 -Unregistering JMX-exposed beans on shutdown
+2020-10-12 18:39:39 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@413f69cc: startup date [Mon Oct 12 18:39:39 CST 2020]; root of context hierarchy
+2020-10-12 18:39:39 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 18:39:40 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 18:39:40 -Root WebApplicationContext: initialization completed in 1036 ms
+2020-10-12 18:39:40 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 18:39:40 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 18:39:40 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 18:39:40 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 18:39:40 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 18:39:40 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@413f69cc: startup date [Mon Oct 12 18:39:39 CST 2020]; root of context hierarchy
+2020-10-12 18:39:40 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 18:39:40 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-12 18:39:40 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 18:39:40 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 18:39:41 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:39:41 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:39:41 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:39:41 -Registering beans for JMX exposure on startup
+2020-10-12 18:39:41 -Tomcat started on port(s): 8080 (http)
+2020-10-12 18:39:51 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 18:39:51 -FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020-10-12 18:41:53 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:41:53 CST 2020]; root of context hierarchy
+2020-10-12 18:41:54 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 18:41:54 -Tomcat initialized with port(s): 8080 (http)
+2020-10-12 18:41:54 -Root WebApplicationContext: initialization completed in 1175 ms
+2020-10-12 18:41:54 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-12 18:41:54 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-12 18:41:54 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-12 18:41:54 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-12 18:41:54 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-12 18:41:55 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:41:53 CST 2020]; root of context hierarchy
+2020-10-12 18:41:55 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-12 18:41:55 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-12 18:41:55 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-12 18:41:55 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-12 18:41:55 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:41:55 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:41:55 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-12 18:41:55 -Registering beans for JMX exposure on startup
+2020-10-12 18:41:55 -Tomcat started on port(s): 8080 (http)
+2020-10-12 18:41:59 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-12 18:41:59 -FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020-10-12 18:43:12 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f010382: startup date [Mon Oct 12 18:41:53 CST 2020]; root of context hierarchy
+2020-10-12 18:43:12 -Unregistering JMX-exposed beans on shutdown
