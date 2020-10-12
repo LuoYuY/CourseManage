@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="339c93d2-10e7-4b74-8777-f6e1455bb2e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/applog/2020-10-11/2020-10-11.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applog/2020-10-12/2020-10-12.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/common/Const.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/common/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/common/ServerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/filter/VerifyCodeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/pojo/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/utils/RedisUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note" beforeDir="false" afterPath="$PROJECT_DIR$/note" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/test/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/test/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/test/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/test/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/test/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/test/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +103,7 @@
       <workItem from="1601971816371" duration="1229000" />
       <workItem from="1602394515355" duration="1786000" />
       <workItem from="1602418093985" duration="3579000" />
-      <workItem from="1602480641866" duration="10658000" />
+      <workItem from="1602480641866" duration="10901000" />
     </task>
     <task id="LOCAL-00001" summary="modify login">
       <created>1601978985029</created>
@@ -129,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601978985029</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add send email and redis config">
+      <created>1602499477964</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602499477964</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +128,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="modify login" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify login" />
+    <MESSAGE value="add send email and redis config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add send email and redis config" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="214" width="800" height="677" key="#Project_Structure" timestamp="1599632847252">
@@ -153,10 +144,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1602484892682" />
-    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2" timestamp="1602499432196">
+    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2" timestamp="1602499477790">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1602499432196" />
+    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1602499477790" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1602482040033">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
