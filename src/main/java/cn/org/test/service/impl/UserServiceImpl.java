@@ -1,10 +1,16 @@
 package cn.org.test.service.impl;
 
+import cn.org.test.common.RoleType;
 import cn.org.test.mapper.UserMapper;
+import cn.org.test.mapper.UserRoleMapper;
 import cn.org.test.pojo.Email;
 import cn.org.test.pojo.User;
+import cn.org.test.req.RegisterReq;
 import cn.org.test.service.UserService;
 import cn.org.test.utils.RedisUtil;
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.jredis.JredisUtils;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -21,6 +27,8 @@ import javax.mail.MessagingException;
 public class UserServiceImpl implements UserService {
     @Autowired
     public UserMapper userMapper;
+    @Autowired
+    public UserRoleMapper userRoleMapper;
 
     @Autowired
     private StringRedisTemplate redisTemplate;
@@ -29,7 +37,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RedisUtil redisUtil;
 
-
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 //    @Override
 //    public User getUser() {
@@ -55,8 +63,40 @@ public class UserServiceImpl implements UserService {
         email.sendEmail("来自MyCourse的验证码", "验证码为  "+code);
 
         //将验证码存入redis缓存中 形式为 ip_code :  具体code , 生存时间为60秒
-        redisUtil.set(ip+"_code",code,60);
+        redisUtil.set(ip+"_code",code,300);
         //System.out.println((String)redisUtil.get(ip+"_code"));
+    }
+
+    @Override
+    public User registerStudent(RegisterReq registerStudentReq,String ip) {
+        String user_id   =registerStudentReq.getUser_id();
+        String user_name =registerStudentReq.getUser_name();
+        String password  =registerStudentReq.getPassword();
+        String address   =registerStudentReq.getAddress();
+        String verifyCode=registerStudentReq.getVerifyCode();
+
+        //校验逻辑
+
+        logger.info("--------------------start registerStudent----------------------");
+        if(verifyCode(verifyCode,ip)){
+
+            //持久化到数据库
+            User user = new User();
+            user.setUserId(user_id);
+            user.setUserName(user_name);
+            user.setAddress(address);
+            user.setPassword(password);
+
+            Integer id = userMapper.addUser(user);
+            logger.info("-----inserted id is "+id+"------------------------------");
+
+            Integer role = RoleType.STUDENT.getValue();
+            Integer text = userRoleMapper.add(id,role);
+            logger.info("-----inserted text is "+text+"------------------------------");
+            logger.info("--------------------user registered----------------------");
+            return user;
+        }
+        else return null;
     }
 
     //生成验证码
@@ -70,5 +110,13 @@ public class UserServiceImpl implements UserService {
             code = code + letters[(int)Math.floor(Math.random()*letters.length)];
         }
         return code;
+    }
+
+    Boolean verifyCode(String verifyCode,String ip) {
+        String code = (String)redisUtil.get(ip+"_code");
+        if(code!=null && verifyCode.equals(code)) {
+            return true;
+        }
+        else return false;
     }
 }

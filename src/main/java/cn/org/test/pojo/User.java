@@ -8,11 +8,20 @@ import java.util.Objects;
  */
 
 public class User implements Serializable {
+    private Integer id;
     private String userId;
     private String userName;
     private int age;
     private String address;
     private String password;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getPassword() {
         return password;
@@ -22,14 +31,13 @@ public class User implements Serializable {
         this.password = password;
     }
 
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
         return age == user.age &&
+                Objects.equals(id, user.id) &&
                 Objects.equals(userId, user.userId) &&
                 Objects.equals(userName, user.userName) &&
                 Objects.equals(address, user.address) &&
@@ -38,9 +46,8 @@ public class User implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId, userName, age, address, password);
+        return Objects.hash(id, userId, userName, age, address, password);
     }
-
 
     public String getUserId() {
         return userId;

@@ -35,7 +35,7 @@
 
 
     <!--    为包和类指定输出方式 使用appender-ref-->
-    <logger name="cn.org.test" level="WARN" additivity="false">
+    <logger name="cn.org.test" level="INFO" additivity="false">
         <appender-ref ref="console"/>
         <appender-ref ref="logFile"/>
     </logger>
