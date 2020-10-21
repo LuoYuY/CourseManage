@@ -8,12 +8,16 @@
         <result column="password" property="password" jdbcType="VARCHAR"/>
         <result column="age" property="age" jdbcType="INTEGER"/>
         <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="role_id" property="roleId" jdbcType="INTEGER"/>
     </resultMap>
-    <select id="getUser" parameterType="java.util.Map" resultMap="user">
-        SELECT * from USER  where user_name = #{username}
+    <select id="getUserByEmail" parameterType="java.util.Map" resultMap="user">
+        SELECT * from USER  where address = #{address}
+    </select>
+    <select id="getUserById" parameterType="java.util.Map" resultMap="user">
+        SELECT * from USER  where id = #{id}
     </select>
     <!--    insert 后返回操作的主键-->
-    <insert id="addUser" parameterType="cn.org.test.pojo.User" useGeneratedKeys="true" keyProperty="id">
-        INSERT into USER(user_id,user_name,password,address,age) values(#{user.userId}, #{user.userName}, #{user.password},#{user.address},#{user.age})
+    <insert id="addUser" parameterType="cn.org.test.pojo.User" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT into USER(user_id,user_name,password,address,age,role_id) values(#{user.userId}, #{user.userName}, #{user.password},#{user.address},#{user.age},#{user.roleId})
     </insert>
 </mapper>

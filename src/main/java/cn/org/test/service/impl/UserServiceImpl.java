@@ -46,8 +46,8 @@ public class UserServiceImpl implements UserService {
 //    }
 
     @Override
-    public User loginPwd(String username, String password) {
-        User user = userMapper.getUser(username);
+    public User loginPwd(String email, String password) {
+        User user = userMapper.getUserByEmail(email);
         if( user!=null && password.equals(user.getPassword()) ){
             return user;
         }
@@ -86,17 +86,27 @@ public class UserServiceImpl implements UserService {
             user.setUserName(user_name);
             user.setAddress(address);
             user.setPassword(password);
-
-            Integer id = userMapper.addUser(user);
-            logger.info("-----inserted id is "+id+"------------------------------");
-
-            Integer role = RoleType.STUDENT.getValue();
-            Integer text = userRoleMapper.add(id,role);
-            logger.info("-----inserted text is "+text+"------------------------------");
+            Integer role_id = RoleType.STUDENT.getValue();
+            user.setRoleId(role_id);
+            userMapper.addUser(user);
             logger.info("--------------------user registered----------------------");
             return user;
         }
         else return null;
+    }
+
+    @Override
+    public User findUserById(String id) {
+        User user = userMapper.getUserById(id);
+        return user;
+    }
+
+    @Override
+    public User findUserByEmail(String email) {
+        System.out.println("email:"+email);
+        User user = userMapper.getUserByEmail(email);
+        System.out.println("user:"+user);
+        return user;
     }
 
     //生成验证码

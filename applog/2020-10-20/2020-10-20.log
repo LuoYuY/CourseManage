@@ -1,0 +1,31 @@
+2020-10-20 00:20:31 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 3150 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-20 00:20:31 -No active profile set, falling back to default profiles: default
+2020-10-20 00:20:31 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b6faea6: startup date [Tue Oct 20 00:20:31 CST 2020]; root of context hierarchy
+2020-10-20 00:20:32 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-20 00:20:32 -Tomcat initialized with port(s): 8080 (http)
+2020-10-20 00:20:32 -Root WebApplicationContext: initialization completed in 1228 ms
+2020-10-20 00:20:32 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-20 00:20:32 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-20 00:20:32 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-20 00:20:32 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-20 00:20:32 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-20 00:20:33 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b6faea6: startup date [Tue Oct 20 00:20:31 CST 2020]; root of context hierarchy
+2020-10-20 00:20:33 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String)
+2020-10-20 00:20:33 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-20 00:20:33 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-20 00:20:33 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-20 00:20:33 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-20 00:20:33 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-20 00:20:33 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-20 00:20:33 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-20 00:20:33 -Registering beans for JMX exposure on startup
+2020-10-20 00:20:33 -Tomcat started on port(s): 8080 (http)
+2020-10-20 00:20:33 -Started SpringBootUserApplication in 2.598 seconds (JVM running for 3.14)
+2020-10-20 00:24:20 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-20 00:24:20 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-20 00:24:24 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-20 00:24:24 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-20 00:24:24 -==> Parameters: 15868808504@163.com(String)
+2020-10-20 00:24:24 -==> Parameters: 15868808504@163.com(String)
+2020-10-20 00:24:24 -<==      Total: 1
+2020-10-20 00:24:24 -<==      Total: 1
