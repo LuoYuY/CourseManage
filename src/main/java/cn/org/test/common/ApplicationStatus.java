@@ -1,23 +1,25 @@
 package cn.org.test.common;
 
+/**
+ * Created by lyy on 2020/10/27 下午3:35
+ */
+
 import lombok.Data;
 
-/**
- * Created by lyy on 2020/10/14 上午10:32
- */
-public enum RoleType implements BaseEnum {
+
+public enum ApplicationStatus implements BaseEnum {
 
 
-    STUDENT(0, "STUDENT"),
-    TEACHER(1, "TEACHER"),
-    ADMIN(2, "ADMIN");
+    WAITING(0, "WATING"),
+    VERIFIED(1, "VERIFIED"),
+    REJECTED(2, "REJECTED");
 
 
     private Integer value;
     private String name;
 
 
-    RoleType(Integer value, String name) {
+    ApplicationStatus(Integer value, String name) {
         this.value = value;
         this.name = name;
     }

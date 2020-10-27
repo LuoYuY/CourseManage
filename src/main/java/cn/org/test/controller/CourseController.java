@@ -1,6 +1,8 @@
 package cn.org.test.controller;
 import cn.org.test.common.ServerResponse;
 import cn.org.test.pojo.Semester;
+import cn.org.test.req.CreateCourseReq;
+import cn.org.test.service.ApplicationService;
 import cn.org.test.service.CourseService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +21,8 @@ public class CourseController {
 
     @Autowired
     public CourseService courseService;
+    @Autowired
+    public ApplicationService applicationService;
 
 
     @ResponseBody
@@ -26,6 +30,13 @@ public class CourseController {
     public ServerResponse getSemesterList(HttpServletResponse response){
         ArrayList<Semester> list = courseService.getSemesterList();
         return ServerResponse.createBySuccess(list);
+    }
+
+    @ResponseBody
+    @PostMapping(value = "/createApply")
+    public ServerResponse createApply(CreateCourseReq createCourseReq, HttpServletResponse response){
+        applicationService.createCourseApply(createCourseReq);
+        return ServerResponse.createBySuccess();
     }
 }
 
