@@ -1,10 +1,12 @@
 package cn.org.test.controller;
 
 import cn.org.test.common.ServerResponse;
+import cn.org.test.common.UserLoginToken;
 import cn.org.test.pojo.User;
 import cn.org.test.req.RegisterReq;
 import cn.org.test.service.TokenService;
 import cn.org.test.service.UserService;
+import cn.org.test.utils.TokenUtil;
 import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -66,6 +68,7 @@ public class UserController {
             Cookie cookie = new Cookie("token", token);
             cookie.setPath("/");
             response.addCookie(cookie);
+            System.out.println("okkk-----------------");
             return ServerResponse.createBySuccess(jsonObject);
         }
 
@@ -98,23 +101,14 @@ public class UserController {
 
 
 
-//
-//
-//    /***
-//     * 这个请求需要验证token才能访问
-//     *
-//     * @author: qiaoyn
-//     * @date 2019/06/14
-//     * @return String 返回类型
-//     */
-//    @UserLoginToken
-//    @ApiOperation(value = "获取信息", notes = "获取信息")
-//    @RequestMapping(value = "/getMessage" ,method = RequestMethod.GET)
-//    public String getMessage() {
-//
-//        // 取出token中带的用户id 进行操作
-//        System.out.println(TokenUtil.getTokenUserId());
-//
-//        return "您已通过验证";
-//    }
+
+
+
+    @UserLoginToken
+    @RequestMapping(value = "/getMessage" ,method = RequestMethod.GET)
+    public ServerResponse getMessage() {
+        // 取出token中带的用户id 进行操作
+        System.out.println(TokenUtil.getTokenUserId());
+        return ServerResponse.createBySuccess();
+    }
 }
