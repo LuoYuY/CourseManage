@@ -1,5 +1,6 @@
 package cn.org.test.controller;
 
+import cn.org.test.common.PassToken;
 import cn.org.test.common.ServerResponse;
 import cn.org.test.common.UserLoginToken;
 import cn.org.test.pojo.User;
@@ -98,10 +99,6 @@ public class UserController {
             return ServerResponse.createBySuccess(user);
         else return ServerResponse.createByErrorCodeMessage(2,"注册失败");
     }
-
-
-
-
 
 
     @UserLoginToken

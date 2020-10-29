@@ -8,6 +8,9 @@ import cn.org.test.service.ApplicationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by lyy on 2020/10/27 下午3:46
  */
@@ -27,6 +30,10 @@ public class ApplicationServiceImpl implements ApplicationService {
         apply.setName(name);
         apply.setReason(reason);
         apply.setStatus(ApplicationStatus.WAITING.getValue());
+//        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+//        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+//        System.out.println(formatter.format(date));
+        apply.setCreateDate(new Date());
         createApplicationMapper.addCreateApplication(apply);
     }
 }

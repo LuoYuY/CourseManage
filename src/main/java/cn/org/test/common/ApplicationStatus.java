@@ -10,9 +10,9 @@ import lombok.Data;
 public enum ApplicationStatus implements BaseEnum {
 
 
-    WAITING(0, "WATING"),
-    VERIFIED(1, "VERIFIED"),
-    REJECTED(2, "REJECTED");
+    WAITING(0, "处理中"),
+    VERIFIED(1, "申请通过"),
+    REJECTED(2, "申请失败");
 
 
     private Integer value;

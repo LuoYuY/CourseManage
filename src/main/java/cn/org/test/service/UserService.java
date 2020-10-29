@@ -18,7 +18,7 @@ public interface UserService {
 
    User registerStudent(RegisterReq registerReq,String ip);
 
-   User findUserById(String userId);
+   User findUserById(Integer userId);
 
    User findUserByEmail(String email);
 }

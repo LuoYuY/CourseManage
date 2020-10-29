@@ -1,0 +1,1069 @@
+2020-10-29 13:57:00 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 13:57:00 -==> Parameters: 
+2020-10-29 13:57:00 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 13:57:00 -==> Parameters: 
+2020-10-29 13:57:00 -<==      Total: 4
+2020-10-29 13:57:00 -<==      Total: 4
+2020-10-29 13:58:51 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 13:58:51 -==> Parameters: 
+2020-10-29 13:58:51 -<==      Total: 4
+2020-10-29 13:58:51 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 13:58:51 -==> Parameters: 
+2020-10-29 13:58:51 -<==      Total: 4
+2020-10-29 13:59:15 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 13:59:15 -==> Parameters: 
+2020-10-29 13:59:16 -<==      Total: 4
+2020-10-29 13:59:51 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 13:59:51 -==> Parameters: 
+2020-10-29 13:59:51 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 13:59:51 -==> Parameters: 
+2020-10-29 13:59:51 -<==      Total: 4
+2020-10-29 13:59:51 -<==      Total: 4
+2020-10-29 14:25:34 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:25:34 -==>  Preparing: SELECT user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:25:34 -==> Parameters: 
+2020-10-29 14:25:34 -==> Parameters: 
+2020-10-29 14:25:34 -<==      Total: 4
+2020-10-29 14:25:34 -<==      Total: 4
+2020-10-29 14:25:44 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Wed Oct 28 17:09:40 CST 2020]; root of context hierarchy
+2020-10-29 14:25:44 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 14:25:54 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 16137 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 14:25:54 -No active profile set, falling back to default profiles: default
+2020-10-29 14:25:54 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 14:25:54 CST 2020]; root of context hierarchy
+2020-10-29 14:25:55 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 14:25:55 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 14:25:55 -Root WebApplicationContext: initialization completed in 1207 ms
+2020-10-29 14:25:55 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 14:25:55 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 14:25:55 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 14:25:55 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 14:25:55 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 14:25:56 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 14:25:54 CST 2020]; root of context hierarchy
+2020-10-29 14:25:56 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 14:25:56 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 14:25:56 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 14:25:56 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 14:25:56 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 14:25:56 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 14:25:56 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 14:25:56 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 14:25:56 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 14:25:56 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 14:25:56 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 14:25:56 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 14:25:56 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 14:25:56 -Registering beans for JMX exposure on startup
+2020-10-29 14:25:56 -Tomcat started on port(s): 8080 (http)
+2020-10-29 14:25:56 -Started SpringBootUserApplication in 2.518 seconds (JVM running for 3.46)
+2020-10-29 14:25:59 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 14:25:59 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-29 14:26:03 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:26:03 -==> Parameters: 
+2020-10-29 14:26:03 -<==      Total: 4
+2020-10-29 14:34:15 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:34:15 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:34:15 -==> Parameters: 
+2020-10-29 14:34:15 -==> Parameters: 
+2020-10-29 14:34:15 -<==      Total: 4
+2020-10-29 14:34:15 -<==      Total: 4
+2020-10-29 14:35:10 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:35:10 -==> Parameters: 
+2020-10-29 14:35:10 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:35:10 -==> Parameters: 
+2020-10-29 14:35:10 -<==      Total: 4
+2020-10-29 14:35:10 -<==      Total: 4
+2020-10-29 14:42:23 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:42:23 -==> Parameters: 
+2020-10-29 14:42:23 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:42:23 -==> Parameters: 
+2020-10-29 14:42:23 -<==      Total: 4
+2020-10-29 14:42:23 -<==      Total: 4
+2020-10-29 14:42:43 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:42:43 -==> Parameters: 
+2020-10-29 14:42:43 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:42:43 -==> Parameters: 
+2020-10-29 14:42:43 -<==      Total: 4
+2020-10-29 14:42:43 -<==      Total: 4
+2020-10-29 14:42:52 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:42:52 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:42:52 -==> Parameters: 
+2020-10-29 14:42:52 -==> Parameters: 
+2020-10-29 14:42:52 -<==      Total: 4
+2020-10-29 14:42:52 -<==      Total: 4
+2020-10-29 14:52:44 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:52:44 -==> Parameters: 
+2020-10-29 14:52:44 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 14:52:44 -==> Parameters: 
+2020-10-29 14:52:44 -<==      Total: 4
+2020-10-29 14:52:44 -<==      Total: 4
+2020-10-29 15:51:32 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 14:25:54 CST 2020]; root of context hierarchy
+2020-10-29 15:51:32 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 15:55:44 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 3386 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 15:55:44 -No active profile set, falling back to default profiles: default
+2020-10-29 15:55:44 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 15:55:44 CST 2020]; root of context hierarchy
+2020-10-29 15:55:45 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 15:55:46 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 15:55:46 -Root WebApplicationContext: initialization completed in 1107 ms
+2020-10-29 15:55:46 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 15:55:46 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 15:55:46 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 15:55:46 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 15:55:46 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 15:55:46 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 15:55:44 CST 2020]; root of context hierarchy
+2020-10-29 15:55:46 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 15:55:46 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 15:55:46 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 15:55:46 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 15:55:46 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 15:55:46 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 15:55:46 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 15:55:46 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 15:55:46 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 15:55:46 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 15:55:46 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 15:55:46 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 15:55:46 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 15:55:46 -Registering beans for JMX exposure on startup
+2020-10-29 15:55:46 -Tomcat started on port(s): 8080 (http)
+2020-10-29 15:55:46 -Started SpringBootUserApplication in 2.483 seconds (JVM running for 2.979)
+2020-10-29 15:56:03 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 15:56:03 -FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2020-10-29 15:56:07 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 15:56:07 -==> Parameters: 
+2020-10-29 15:56:07 -<==      Total: 4
+2020-10-29 15:57:27 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 15:57:27 -==> Parameters: 
+2020-10-29 15:57:27 -<==      Total: 4
+2020-10-29 15:58:03 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 15:58:03 -==> Parameters: 
+2020-10-29 15:58:03 -<==      Total: 4
+2020-10-29 15:58:07 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 15:58:07 -==> Parameters: 
+2020-10-29 15:58:07 -<==      Total: 4
+2020-10-29 16:10:54 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:10:54 -==> Parameters: 
+2020-10-29 16:10:54 -<==      Total: 4
+2020-10-29 16:23:52 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 15:55:44 CST 2020]; root of context hierarchy
+2020-10-29 16:23:52 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 16:23:56 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 4530 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 16:23:56 -No active profile set, falling back to default profiles: default
+2020-10-29 16:23:56 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:23:56 CST 2020]; root of context hierarchy
+2020-10-29 16:23:56 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 16:23:56 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 16:23:57 -Root WebApplicationContext: initialization completed in 946 ms
+2020-10-29 16:23:57 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 16:23:57 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 16:23:57 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 16:23:57 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 16:23:57 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 16:23:57 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:23:56 CST 2020]; root of context hierarchy
+2020-10-29 16:23:57 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 16:23:57 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:23:57 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:23:57 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 16:23:57 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:23:57 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 16:23:57 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 16:23:57 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 16:23:57 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 16:23:57 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:23:57 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 16:23:57 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:23:57 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:23:57 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:23:57 -Registering beans for JMX exposure on startup
+2020-10-29 16:23:57 -Tomcat started on port(s): 8080 (http)
+2020-10-29 16:23:57 -Started SpringBootUserApplication in 2.019 seconds (JVM running for 2.417)
+2020-10-29 16:24:10 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 16:24:10 -FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020-10-29 16:24:14 -==>  Preparing: update createApplication SET status=?, finishDate=? where id=? 
+2020-10-29 16:24:14 -==> Parameters: 1(Integer), 2020-10-29 16:24:10.318(Timestamp), 2(Integer)
+2020-10-29 16:24:14 -<==    Updates: 1
+2020-10-29 16:24:21 -==>  Preparing: update createApplication SET status=?, finishDate=? where id=? 
+2020-10-29 16:24:21 -==> Parameters: 1(Integer), 2020-10-29 16:24:21.342(Timestamp), 9(Integer)
+2020-10-29 16:24:21 -<==    Updates: 0
+2020-10-29 16:24:58 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:23:56 CST 2020]; root of context hierarchy
+2020-10-29 16:24:58 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 16:25:01 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 4658 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 16:25:01 -No active profile set, falling back to default profiles: default
+2020-10-29 16:25:01 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:25:01 CST 2020]; root of context hierarchy
+2020-10-29 16:25:01 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 16:25:02 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 16:25:02 -Root WebApplicationContext: initialization completed in 1127 ms
+2020-10-29 16:25:02 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 16:25:02 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 16:25:02 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 16:25:02 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 16:25:02 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 16:25:03 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:25:01 CST 2020]; root of context hierarchy
+2020-10-29 16:25:03 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 16:25:03 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:25:03 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 16:25:03 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:25:03 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:25:03 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 16:25:03 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 16:25:03 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 16:25:03 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 16:25:03 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:25:03 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 16:25:03 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:25:03 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:25:03 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:25:03 -Registering beans for JMX exposure on startup
+2020-10-29 16:25:03 -Tomcat started on port(s): 8080 (http)
+2020-10-29 16:25:03 -Started SpringBootUserApplication in 2.344 seconds (JVM running for 2.713)
+2020-10-29 16:25:06 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 16:25:06 -FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020-10-29 16:27:17 -==>  Preparing: update createApplication SET status=?, finishDate=? where id=? 
+2020-10-29 16:27:17 -==> Parameters: 2(Integer), 2020-10-29 16:27:14.091(Timestamp), 1(Integer)
+2020-10-29 16:27:18 -<==    Updates: 1
+2020-10-29 16:28:36 -==>  Preparing: update createApplication SET status=?, finishDate=? where id=? 
+2020-10-29 16:28:36 -==> Parameters: 2(Integer), 2020-10-29 16:28:36.411(Timestamp), 1(Integer)
+2020-10-29 16:28:36 -<==    Updates: 1
+2020-10-29 16:30:51 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:30:51 -==> Parameters: 
+2020-10-29 16:30:51 -<==      Total: 3
+2020-10-29 16:31:22 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:31:22 -==> Parameters: 
+2020-10-29 16:31:22 -<==      Total: 3
+2020-10-29 16:31:33 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:31:33 -==> Parameters: 
+2020-10-29 16:31:33 -<==      Total: 3
+2020-10-29 16:31:36 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:31:36 -==> Parameters: 
+2020-10-29 16:31:36 -<==      Total: 3
+2020-10-29 16:31:41 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:31:41 -==> Parameters: 
+2020-10-29 16:31:41 -<==      Total: 3
+2020-10-29 16:32:05 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:32:05 -==> Parameters: 
+2020-10-29 16:32:05 -<==      Total: 3
+2020-10-29 16:32:45 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:32:45 -==> Parameters: 
+2020-10-29 16:32:45 -<==      Total: 3
+2020-10-29 16:33:02 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:33:02 -==> Parameters: 
+2020-10-29 16:33:02 -<==      Total: 3
+2020-10-29 16:33:49 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:33:49 -==> Parameters: 
+2020-10-29 16:33:49 -<==      Total: 3
+2020-10-29 16:33:53 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:33:53 -==> Parameters: 
+2020-10-29 16:33:53 -<==      Total: 3
+2020-10-29 16:34:13 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:34:13 -==> Parameters: 
+2020-10-29 16:34:13 -<==      Total: 3
+2020-10-29 16:34:51 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:34:51 -==> Parameters: 
+2020-10-29 16:34:51 -<==      Total: 3
+2020-10-29 16:35:33 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:35:33 -==> Parameters: 
+2020-10-29 16:35:33 -<==      Total: 3
+2020-10-29 16:36:38 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:36:38 -==> Parameters: 
+2020-10-29 16:36:38 -<==      Total: 3
+2020-10-29 16:36:40 -==>  Preparing: update createApplication SET status=?, finishDate=? where id=? 
+2020-10-29 16:36:40 -==> Parameters: 1(Integer), 2020-10-29 16:36:40.005(Timestamp), 7(Integer)
+2020-10-29 16:36:40 -<==    Updates: 1
+2020-10-29 16:36:40 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:36:40 -==> Parameters: 
+2020-10-29 16:36:40 -<==      Total: 3
+2020-10-29 16:37:14 -==>  Preparing: update createApplication SET status=?, finishDate=? where id=? 
+2020-10-29 16:37:14 -==> Parameters: 2(Integer), 2020-10-29 16:37:14.634(Timestamp), 3(Integer)
+2020-10-29 16:37:14 -<==    Updates: 1
+2020-10-29 16:37:14 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:37:14 -==> Parameters: 
+2020-10-29 16:37:14 -<==      Total: 3
+2020-10-29 16:37:34 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 16:37:34 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 16:37:34 -<==      Total: 1
+2020-10-29 16:37:34 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 16:37:34 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 16:37:34 -<==      Total: 1
+2020-10-29 16:37:39 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 16:37:39 -==> Parameters: 2(Integer)
+2020-10-29 16:37:39 -<==      Total: 3
+2020-10-29 16:51:13 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:51:13 -==> Parameters: 
+2020-10-29 16:51:13 -<==      Total: 3
+2020-10-29 16:52:22 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:52:22 -==> Parameters: 
+2020-10-29 16:52:22 -<==      Total: 3
+2020-10-29 16:53:23 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:25:01 CST 2020]; root of context hierarchy
+2020-10-29 16:53:23 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 16:53:26 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 5762 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 16:53:26 -No active profile set, falling back to default profiles: default
+2020-10-29 16:53:26 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:53:26 CST 2020]; root of context hierarchy
+2020-10-29 16:53:26 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 16:53:27 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 16:53:27 -Root WebApplicationContext: initialization completed in 1299 ms
+2020-10-29 16:53:27 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 16:53:27 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 16:53:27 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 16:53:27 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 16:53:27 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 16:53:28 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:53:26 CST 2020]; root of context hierarchy
+2020-10-29 16:53:28 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 16:53:28 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:53:28 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 16:53:28 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:53:28 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:53:28 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 16:53:28 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 16:53:28 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 16:53:28 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 16:53:28 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 16:53:28 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 16:53:28 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:53:28 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:53:28 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 16:53:28 -Registering beans for JMX exposure on startup
+2020-10-29 16:53:28 -Tomcat started on port(s): 8080 (http)
+2020-10-29 16:53:28 -Started SpringBootUserApplication in 2.425 seconds (JVM running for 2.896)
+2020-10-29 16:53:34 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 16:53:34 -FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2020-10-29 16:53:38 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status,finishDate from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:53:38 -==> Parameters: 
+2020-10-29 16:53:38 -<==      Total: 3
+2020-10-29 16:53:47 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status,finishDate from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 16:53:47 -==> Parameters: 
+2020-10-29 16:53:47 -<==      Total: 3
+2020-10-29 17:38:53 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 16:53:26 CST 2020]; root of context hierarchy
+2020-10-29 17:38:53 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 17:43:29 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 6530 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 17:43:29 -No active profile set, falling back to default profiles: default
+2020-10-29 17:43:29 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 17:43:29 CST 2020]; root of context hierarchy
+2020-10-29 17:43:29 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 17:43:30 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 17:43:30 -Root WebApplicationContext: initialization completed in 889 ms
+2020-10-29 17:43:30 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 17:43:30 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 17:43:30 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 17:43:30 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 17:43:30 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 17:43:30 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 17:43:29 CST 2020]; root of context hierarchy
+2020-10-29 17:43:30 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 17:43:30 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 17:43:30 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 17:43:30 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 17:43:30 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 17:43:30 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 17:43:30 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 17:43:30 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 17:43:30 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 17:43:30 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 17:43:30 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 17:43:30 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 17:43:30 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 17:43:30 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 17:43:30 -Registering beans for JMX exposure on startup
+2020-10-29 17:43:30 -Tomcat started on port(s): 8080 (http)
+2020-10-29 17:43:30 -Started SpringBootUserApplication in 1.915 seconds (JVM running for 2.315)
+2020-10-29 17:43:45 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 17:43:45 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-29 17:43:49 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 17:43:49 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 17:43:49 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 17:43:49 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 17:43:49 -<==      Total: 1
+2020-10-29 17:43:49 -<==      Total: 1
+2020-10-29 17:43:49 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 17:43:49 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 17:43:49 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 17:43:49 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 17:43:49 -<==      Total: 1
+2020-10-29 17:43:49 -<==      Total: 1
+2020-10-29 17:45:30 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 17:45:30 -==> Parameters: 11(Integer)
+2020-10-29 17:45:30 -<==      Total: 1
+2020-10-29 17:45:30 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 17:46:12 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 17:46:12 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 17:46:12 -<==      Total: 1
+2020-10-29 17:46:12 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 17:46:12 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 17:46:12 -<==      Total: 1
+2020-10-29 17:47:12 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 17:47:12 -==> Parameters: 2(Integer)
+2020-10-29 17:47:12 -<==      Total: 1
+2020-10-29 19:25:12 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:25:12 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:25:12 -<==      Total: 1
+2020-10-29 19:25:36 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:25:36 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:25:36 -<==      Total: 1
+2020-10-29 19:25:46 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:25:46 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:25:46 -<==      Total: 1
+2020-10-29 19:25:46 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:25:46 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:25:46 -<==      Total: 1
+2020-10-29 19:26:53 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:26:53 -==> Parameters: 2(Integer)
+2020-10-29 19:26:53 -<==      Total: 1
+2020-10-29 19:27:06 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:27:06 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:27:06 -<==      Total: 1
+2020-10-29 19:27:09 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:27:09 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:27:09 -<==      Total: 1
+2020-10-29 19:27:46 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:27:46 -==> Parameters: 2(Integer)
+2020-10-29 19:27:46 -<==      Total: 1
+2020-10-29 19:27:55 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 无token，请重新登录] with root cause
+java.lang.RuntimeException: 无token，请重新登录
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 19:28:07 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 17:43:29 CST 2020]; root of context hierarchy
+2020-10-29 19:28:07 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 19:28:12 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 8039 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 19:28:12 -No active profile set, falling back to default profiles: default
+2020-10-29 19:28:12 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 19:28:12 CST 2020]; root of context hierarchy
+2020-10-29 19:28:12 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 19:28:13 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 19:28:13 -Root WebApplicationContext: initialization completed in 960 ms
+2020-10-29 19:28:13 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 19:28:13 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 19:28:13 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 19:28:13 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 19:28:13 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 19:28:13 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 19:28:12 CST 2020]; root of context hierarchy
+2020-10-29 19:28:13 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:13 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:13 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:13 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:13 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:13 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 19:28:13 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 19:28:13 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 19:28:13 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 19:28:13 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:13 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 19:28:13 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:28:13 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:28:14 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:28:14 -Registering beans for JMX exposure on startup
+2020-10-29 19:28:14 -Tomcat started on port(s): 8080 (http)
+2020-10-29 19:28:14 -Started SpringBootUserApplication in 2.104 seconds (JVM running for 2.518)
+2020-10-29 19:28:22 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 19:28:22 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-29 19:28:22 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.auth0.jwt.TokenUtils.splitToken(TokenUtils.java:15)
+	at com.auth0.jwt.JWTDecoder.<init>(JWTDecoder.java:27)
+	at com.auth0.jwt.JWT.decode(JWT.java:21)
+	at cn.org.test.utils.TokenUtil.getTokenUserId(TokenUtil.java:16)
+	at cn.org.test.controller.UserController.getMessage(UserController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 19:28:38 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.auth0.jwt.TokenUtils.splitToken(TokenUtils.java:15)
+	at com.auth0.jwt.JWTDecoder.<init>(JWTDecoder.java:27)
+	at com.auth0.jwt.JWT.decode(JWT.java:21)
+	at cn.org.test.utils.TokenUtil.getTokenUserId(TokenUtil.java:16)
+	at cn.org.test.controller.UserController.getMessage(UserController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 19:28:41 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 19:28:12 CST 2020]; root of context hierarchy
+2020-10-29 19:28:41 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 19:28:43 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 8160 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 19:28:43 -No active profile set, falling back to default profiles: default
+2020-10-29 19:28:43 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 19:28:43 CST 2020]; root of context hierarchy
+2020-10-29 19:28:44 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 19:28:44 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 19:28:44 -Root WebApplicationContext: initialization completed in 1068 ms
+2020-10-29 19:28:45 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 19:28:45 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 19:28:45 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 19:28:45 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 19:28:45 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 19:28:45 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 19:28:43 CST 2020]; root of context hierarchy
+2020-10-29 19:28:45 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:45 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:45 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:45 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:45 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:45 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 19:28:45 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 19:28:45 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 19:28:45 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 19:28:45 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:28:45 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 19:28:45 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:28:45 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:28:45 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:28:45 -Registering beans for JMX exposure on startup
+2020-10-29 19:28:45 -Tomcat started on port(s): 8080 (http)
+2020-10-29 19:28:45 -Started SpringBootUserApplication in 2.101 seconds (JVM running for 2.474)
+2020-10-29 19:28:48 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 19:28:48 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-29 19:28:48 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.auth0.jwt.TokenUtils.splitToken(TokenUtils.java:15)
+	at com.auth0.jwt.JWTDecoder.<init>(JWTDecoder.java:27)
+	at com.auth0.jwt.JWT.decode(JWT.java:21)
+	at cn.org.test.utils.TokenUtil.getTokenUserId(TokenUtil.java:16)
+	at cn.org.test.controller.UserController.getMessage(UserController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 19:35:30 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 19:35:30 -==> Parameters: null
+2020-10-29 19:35:31 -<==      Total: 0
+2020-10-29 19:35:48 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 19:28:43 CST 2020]; root of context hierarchy
+2020-10-29 19:35:48 -Unregistering JMX-exposed beans on shutdown
+2020-10-29 19:35:51 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 8359 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-10-29 19:35:51 -No active profile set, falling back to default profiles: default
+2020-10-29 19:35:51 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 19:35:51 CST 2020]; root of context hierarchy
+2020-10-29 19:35:51 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-29 19:35:52 -Tomcat initialized with port(s): 8080 (http)
+2020-10-29 19:35:52 -Root WebApplicationContext: initialization completed in 1114 ms
+2020-10-29 19:35:52 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-29 19:35:52 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-29 19:35:52 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-29 19:35:52 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-29 19:35:52 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-29 19:35:53 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Oct 29 19:35:51 CST 2020]; root of context hierarchy
+2020-10-29 19:35:53 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-10-29 19:35:53 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:35:53 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-10-29 19:35:53 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:35:53 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:35:53 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-10-29 19:35:53 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-10-29 19:35:53 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-10-29 19:35:53 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-10-29 19:35:53 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-29 19:35:53 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-29 19:35:53 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:35:53 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:35:53 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-29 19:35:53 -Registering beans for JMX exposure on startup
+2020-10-29 19:35:53 -Tomcat started on port(s): 8080 (http)
+2020-10-29 19:35:53 -Started SpringBootUserApplication in 2.221 seconds (JVM running for 2.565)
+2020-10-29 19:35:55 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-29 19:35:55 -FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020-10-29 19:35:55 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 无token，请重新登录] with root cause
+java.lang.RuntimeException: 无token，请重新登录
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 19:38:05 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:38:05 -==> Parameters: 2(Integer)
+2020-10-29 19:38:05 -<==      Total: 1
+2020-10-29 19:38:06 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 19:38:06 -==> Parameters: null
+2020-10-29 19:38:06 -<==      Total: 0
+2020-10-29 19:38:19 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:38:19 -==> Parameters: 2(Integer)
+2020-10-29 19:38:19 -<==      Total: 1
+2020-10-29 19:38:19 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 19:38:19 -==> Parameters: 2(Integer)
+2020-10-29 19:38:19 -<==      Total: 3
+2020-10-29 19:38:23 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 无token，请重新登录] with root cause
+java.lang.RuntimeException: 无token，请重新登录
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 19:38:30 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:38:30 -==> Parameters: 2(Integer)
+2020-10-29 19:38:30 -<==      Total: 1
+2020-10-29 19:38:30 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 19:38:30 -==> Parameters: 2(Integer)
+2020-10-29 19:38:30 -<==      Total: 3
+2020-10-29 19:48:04 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status,finishDate from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 19:48:04 -==> Parameters: 
+2020-10-29 19:48:04 -<==      Total: 3
+2020-10-29 19:48:33 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:48:33 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:48:33 -<==      Total: 1
+2020-10-29 19:48:33 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:48:33 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:48:33 -<==      Total: 1
+2020-10-29 19:48:42 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 无token，请重新登录] with root cause
+java.lang.RuntimeException: 无token，请重新登录
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 19:48:49 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 无token，请重新登录] with root cause
+java.lang.RuntimeException: 无token，请重新登录
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 19:49:40 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:49:40 -==> Parameters: 2(Integer)
+2020-10-29 19:49:40 -<==      Total: 1
+2020-10-29 19:49:40 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 19:49:40 -==> Parameters: 2(Integer)
+2020-10-29 19:49:40 -<==      Total: 3
+2020-10-29 19:49:53 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:49:53 -==> Parameters: 2(Integer)
+2020-10-29 19:49:53 -<==      Total: 1
+2020-10-29 19:49:53 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 19:49:53 -==> Parameters: 2(Integer)
+2020-10-29 19:49:53 -<==      Total: 3
+2020-10-29 19:52:27 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:52:27 -==> Parameters: 15868808504@163.com(String)
+2020-10-29 19:52:27 -<==      Total: 1
+2020-10-29 19:52:27 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:52:27 -==> Parameters: 15868808504@163.com(String)
+2020-10-29 19:52:27 -<==      Total: 1
+2020-10-29 19:52:43 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:52:43 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:52:43 -<==      Total: 1
+2020-10-29 19:52:43 -==>  Preparing: SELECT * from USER where address = ? 
+2020-10-29 19:52:43 -==> Parameters: 1653611386@qq.com(String)
+2020-10-29 19:52:43 -<==      Total: 1
+2020-10-29 19:52:46 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:52:46 -==> Parameters: 2(Integer)
+2020-10-29 19:52:46 -<==      Total: 1
+2020-10-29 19:52:46 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 19:52:46 -==> Parameters: 2(Integer)
+2020-10-29 19:52:46 -<==      Total: 3
+2020-10-29 19:52:57 -==>  Preparing: INSERT into createApplication(teacherId,name,reason,status,createDate) values(?, ?, ?,?,?) 
+2020-10-29 19:52:57 -==> Parameters: 2(Integer), 测试课程4(String), reeeeee(String), 0(Integer), 2020-10-29 19:52:57.477(Timestamp)
+2020-10-29 19:52:57 -<==    Updates: 1
+2020-10-29 19:52:57 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:52:57 -==> Parameters: 2(Integer)
+2020-10-29 19:52:57 -<==      Total: 1
+2020-10-29 19:52:57 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-10-29 19:52:57 -==> Parameters: 2(Integer)
+2020-10-29 19:52:57 -<==      Total: 4
+2020-10-29 19:53:16 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status,finishDate from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 19:53:16 -==> Parameters: 
+2020-10-29 19:53:16 -<==      Total: 4
+2020-10-29 19:53:21 -==>  Preparing: update createApplication SET status=?, finishDate=? where id=? 
+2020-10-29 19:53:21 -==> Parameters: 1(Integer), 2020-10-29 19:53:21.052(Timestamp), 11(Integer)
+2020-10-29 19:53:21 -<==    Updates: 1
+2020-10-29 19:53:21 -==>  Preparing: SELECT * from createApplication WHERE id = ? 
+2020-10-29 19:53:21 -==> Parameters: 11(Integer)
+2020-10-29 19:53:21 -<==      Total: 1
+2020-10-29 19:53:21 -==>  Preparing: SELECT * from USER where id = ? 
+2020-10-29 19:53:21 -==> Parameters: 2(Integer)
+2020-10-29 19:53:21 -<==      Total: 1
+2020-10-29 19:53:21 -==>  Preparing: INSERT into course(name,teacherId,teacherName) values(?, ?, ?) 
+2020-10-29 19:53:21 -==> Parameters: 测试课程4(String), 2(Integer), 教师(String)
+2020-10-29 19:53:21 -<==    Updates: 1
+2020-10-29 19:53:21 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status,finishDate from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-10-29 19:53:21 -==> Parameters: 
+2020-10-29 19:53:21 -<==      Total: 4
