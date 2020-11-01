@@ -1,5 +1,6 @@
 package cn.org.test.service;
 
+import cn.org.test.req.CreateClassReq;
 import cn.org.test.req.CreateCourseReq;
 
 /**
@@ -8,4 +9,6 @@ import cn.org.test.req.CreateCourseReq;
 
 public interface ApplicationService {
     void createCourseApply(CreateCourseReq createCourseReq);
+
+    void createClassApply(CreateClassReq createClassReq);
 }

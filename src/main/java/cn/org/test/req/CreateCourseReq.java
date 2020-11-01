@@ -10,4 +10,6 @@ public class CreateCourseReq {
     private Integer teacherId;
     private String name;
     private String reason;
+
+
 }

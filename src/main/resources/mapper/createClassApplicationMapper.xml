@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.org.test.mapper.CreateClassApplicationMapper">
+    <resultMap id="createClassApplication" type="CreateClassApplication">
+        <result column="id" property="id" jdbcType="INTEGER"/>
+        <result column="teacherId" property="teacherId" jdbcType="INTEGER"/>
+        <result column="courseId" property="courseId" jdbcType="INTEGER"/>
+        <result column="courseName" property="courseName" jdbcType="VARCHAR"/>
+        <result column="startDate" property="startDate" jdbcType="DATE"/>
+        <result column="endDate" property="endDate" jdbcType="DATE"/>
+        <result column="semesterId" property="semesterId" jdbcType="INTEGER"/>
+        <result column="semesterName" property="semesterName" jdbcType="VARCHAR"/>
+        <result column="gradeId" property="gradeId" jdbcType="INTEGER"/>
+        <result column="gradeName" property="gradeName" jdbcType="VARCHAR"/>
+        <result column="maxNum" property="maxNum" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="createDate" property="createDate" jdbcType="DATE"/>
+        <result column="finishDate" property="finishDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <resultMap id="listResultForAdmin" type="cn.org.test.pojo.CreateClassAppliAdmin">
+        <result column="id" property="id" jdbcType="INTEGER"/>
+        <result column="user_name" property="teacher" jdbcType="VARCHAR"/>
+        <result column="name" property="courseName" jdbcType="VARCHAR"/>
+        <result column="startDate" property="startDate" jdbcType="DATE"/>
+        <result column="endDate" property="endDate" jdbcType="DATE"/>
+        <result column="semesterName" property="semesterName" jdbcType="VARCHAR"/>
+        <result column="gradeName" property="gradeName" jdbcType="VARCHAR"/>
+        <result column="maxNum" property="maxNum" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="createDate" property="createDate" jdbcType="DATE"/>
+        <result column="finishDate" property="finishDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <!--    insert 后返回操作的主键-->
+    <insert id="addCreateClassApplication" parameterType="cn.org.test.pojo.CreateClassApplication" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT into createClassApplication(teacherId,courseId,courseName,startDate,endDate,semesterId,semesterName,gradeId,gradeName,maxNum,status,createDate)
+        values(
+            #{apply.teacherId},
+            #{apply.courseId},
+            #{apply.courseName},
+            #{apply.startDate},
+            #{apply.endDate},
+            #{apply.semesterId},
+            #{apply.semesterName},
+            #{apply.gradeId},
+            #{apply.gradeName},
+            #{apply.maxNum},
+            #{apply.status},
+            #{apply.createDate}
+        )
+    </insert>
+
+    <select id="getListById" parameterType="java.util.Map" resultMap="createClassApplication">
+        SELECT * from createClassApplication WHERE teacherId = #{teacherId}
+    </select>
+
+    <select id="getAllList" parameterType="java.util.Map" resultMap="listResultForAdmin">
+        SELECT t1.id id,user_name,name,startDate,endDate,semesterName,gradeNam,maxNum,createDate,status,finishDate
+        from SC2.createClassApplication t1
+        left join SC2.USER t2 on t2.id = t1.teacherId
+        order by createDate desc;
+    </select>
+
+    <update id="updateStatus" parameterType="java.util.Map" >
+        update createClassApplication
+        <set>
+            <if test="status != null">status=#{status},</if>
+            <if test="finishDate != null">finishDate=#{finishDate}</if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <select id="getAlcById" parameterType="java.util.Map" resultMap="createClassApplication">
+        SELECT * from createClassApplication WHERE id = #{id}
+    </select>
+</mapper>

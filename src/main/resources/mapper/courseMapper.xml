@@ -13,4 +13,10 @@
         INSERT into course(name,teacherId,teacherName) values(#{name}, #{teacherId}, #{teacherName})
     </insert>
 
+    <select id="getCoursesById" parameterType="java.util.Map" resultMap="course">
+        SELECT * from course WHERE teacherId = #{teacherId}
+    </select>
+    <select id="getCourseById" parameterType="java.util.Map" resultMap="course">
+        SELECT * from course WHERE id = #{id}
+    </select>
 </mapper>

@@ -1,5 +1,6 @@
 package cn.org.test.controller;
 import cn.org.test.common.ServerResponse;
+import cn.org.test.pojo.Grade;
 import cn.org.test.pojo.Semester;
 import cn.org.test.req.CreateCourseReq;
 import cn.org.test.service.ApplicationService;
@@ -29,6 +30,13 @@ public class CourseController {
     @GetMapping(value = "/semesterList")
     public ServerResponse getSemesterList(HttpServletResponse response){
         ArrayList<Semester> list = courseService.getSemesterList();
+        return ServerResponse.createBySuccess(list);
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/gradeList")
+    public ServerResponse getGradeList(HttpServletResponse response){
+        ArrayList<Grade> list = courseService.getGradeList();
         return ServerResponse.createBySuccess(list);
     }
 

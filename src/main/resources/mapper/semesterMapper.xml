@@ -9,4 +9,8 @@
     <select id="getAllSemester" parameterType="java.util.Map" resultMap="semester">
         SELECT * from semester
     </select>
+    <select id="getSemesterById" parameterType="java.util.Map" resultMap="semester">
+        SELECT * from semester where id = #{id}
+    </select>
+
 </mapper>

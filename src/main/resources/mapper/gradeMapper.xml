@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.org.test.mapper.GradeMapper">
+    <resultMap id="grade" type="Grade">
+        <result column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="getAllGrade" parameterType="java.util.Map" resultMap="grade">
+        SELECT * from grade
+    </select>
+    <select id="getGradeById" parameterType="java.util.Map" resultMap="grade">
+        SELECT * from grade WHERE id = #{id}
+    </select>
+</mapper>
