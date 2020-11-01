@@ -1,6 +1,7 @@
 package cn.org.test.service;
 
 import cn.org.test.pojo.CreateApplicationAdmin;
+import cn.org.test.pojo.CreateClassAppliAdmin;
 
 import java.util.List;
 
@@ -12,4 +13,6 @@ public interface AdminService {
     List<CreateApplicationAdmin> getCreList();
 
     boolean dealCreApply(Integer id, Integer choice);
+
+    List<CreateClassAppliAdmin> getCreClassList();
 }

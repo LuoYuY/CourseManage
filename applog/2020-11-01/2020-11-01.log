@@ -479,3 +479,6 @@ java.lang.RuntimeException: 401
 2020-11-01 14:58:33 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status,finishDate from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
 2020-11-01 14:58:33 -==> Parameters: 
 2020-11-01 14:58:33 -<==      Total: 4
+2020-11-01 15:15:43 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status,finishDate from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-11-01 15:15:43 -==> Parameters: 
+2020-11-01 15:15:43 -<==      Total: 4

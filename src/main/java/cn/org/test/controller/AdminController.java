@@ -3,6 +3,7 @@ package cn.org.test.controller;
 import cn.org.test.common.ServerResponse;
 import cn.org.test.pojo.CreateApplication;
 import cn.org.test.pojo.CreateApplicationAdmin;
+import cn.org.test.pojo.CreateClassAppliAdmin;
 import cn.org.test.service.AdminService;
 import cn.org.test.service.TeacherService;
 import com.alibaba.fastjson.JSONArray;
@@ -53,6 +54,38 @@ public class AdminController {
             }
             else object.put("finishDate", "");
 
+            arr.add(object);
+        }
+        return ServerResponse.createBySuccess(arr);
+    }
+
+
+    @ResponseBody
+    @GetMapping(value = "/allApplyCreClassList")
+    public ServerResponse getCreClassList(HttpServletResponse response) {
+        List<CreateClassAppliAdmin> list = adminService.getCreClassList();
+        JSONArray arr = new JSONArray();
+        Iterator<CreateClassAppliAdmin> iter = list.iterator();
+        int i = 0;
+        while (iter.hasNext()) {
+            CreateClassAppliAdmin item = (CreateClassAppliAdmin) iter.next();
+            JSONObject object = new JSONObject();
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+            object.put("id",item.getId());
+            object.put("teacher",item.getTeacher());
+            object.put("courseName",item.getCourseName());
+            object.put("startDate", formatter.format(item.getStartDate()));
+            object.put("endDate", formatter.format(item.getEndDate()));
+            object.put("createDate", formatter.format(item.getCreateDate()));
+            object.put("semesterName", item.getSemesterName());
+            object.put("gradeName", item.getGradeName());
+            object.put("maxNum", item.getMaxNum());
+            object.put("status", item.getStatus());
+            if(item.getFinishDate()!=null)
+            {
+                object.put("finishDate", formatter.format(item.getFinishDate()));
+            }
+            else object.put("finishDate", "");
             arr.add(object);
         }
         return ServerResponse.createBySuccess(arr);
