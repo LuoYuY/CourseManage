@@ -3,11 +3,9 @@ package cn.org.test.service.impl;
 import cn.org.test.common.ApplicationStatus;
 import cn.org.test.mapper.CourseMapper;
 import cn.org.test.mapper.CreateApplicationMapper;
+import cn.org.test.mapper.CreateClassApplicationMapper;
 import cn.org.test.mapper.UserMapper;
-import cn.org.test.pojo.Course;
-import cn.org.test.pojo.CreateApplication;
-import cn.org.test.pojo.CreateApplicationAdmin;
-import cn.org.test.pojo.User;
+import cn.org.test.pojo.*;
 import cn.org.test.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +20,9 @@ import java.util.List;
 public class AdminServiceImpl implements AdminService {
     @Autowired
     public CreateApplicationMapper createApplicationMapper;
+
+    @Autowired
+    public CreateClassApplicationMapper createClassApplicationMapper;
 
     @Autowired
     public CourseMapper courseMapper;
@@ -57,5 +58,12 @@ public class AdminServiceImpl implements AdminService {
         catch (Exception exception) {
             return false;
         }
+    }
+
+    @Override
+    public List<CreateClassAppliAdmin> getCreClassList() {
+        List<CreateClassAppliAdmin> list = createClassApplicationMapper.getAllList();
+//        System.out.println("service:"+list);
+        return list;
     }
 }
