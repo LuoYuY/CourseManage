@@ -20,6 +20,8 @@ public class Class {
     private Integer semesterId;
     private Integer gradeId;
     private Integer maxNum;
+    private Integer status;
+    private Integer num;
 
     @Override
     public boolean equals(Object o) {
@@ -35,12 +37,14 @@ public class Class {
                 Objects.equals(endDate, aClass.endDate) &&
                 Objects.equals(semesterId, aClass.semesterId) &&
                 Objects.equals(gradeId, aClass.gradeId) &&
-                Objects.equals(maxNum, aClass.maxNum);
+                Objects.equals(maxNum, aClass.maxNum) &&
+                Objects.equals(status, aClass.status) &&
+                Objects.equals(num, aClass.num);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, courseId, courseName, teacherName, startDate, endDate, semesterId, gradeId, maxNum);
+        return Objects.hash(id, name, courseId, courseName, teacherName, startDate, endDate, semesterId, gradeId, maxNum, status, num);
     }
 }
 

@@ -12,12 +12,14 @@
         <result column="semesterId" property="semesterId" jdbcType="INTEGER"/>
         <result column="gradeId" property="gradeId" jdbcType="INTEGER"/>
         <result column="maxNum" property="maxNum" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="num" property="num" jdbcType="INTEGER"/>
     </resultMap>
 
 
     <!--    insert 后返回操作的主键-->
     <insert id="addClass" parameterType="cn.org.test.pojo.Class" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
-        INSERT into class(courseId,courseName,name,teacherName,startDate,endDate,semesterId,gradeId,maxNum)
+        INSERT into class(courseId,courseName,name,teacherName,startDate,endDate,semesterId,gradeId,maxNum,status,num)
         values(
              #{newClass.courseId}
             ,#{newClass.courseName}
@@ -27,7 +29,10 @@
             ,#{newClass.endDate}
             ,#{newClass.semesterId}
             ,#{newClass.gradeId}
-            ,#{newClass.maxNum})
+            ,#{newClass.maxNum}
+            ,#{newClass.status}
+            ,#{newClass.num}
+            )
     </insert>
 
     <select id="getClassByCourseId" parameterType="java.util.Map" resultMap="class">
@@ -36,6 +41,11 @@
 
     <select id="getClassById" parameterType="java.util.Map" resultMap="class">
         SELECT * from class WHERE id = #{id}
+    </select>
+
+    <!--    未开始或进行中的课程-->
+    <select id="getClassListToSelect" parameterType="java.util.Map" resultMap="class">
+        SELECT * from class WHERE status in (0,1)
     </select>
 
 </mapper>

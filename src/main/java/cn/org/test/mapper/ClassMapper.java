@@ -12,4 +12,6 @@ public interface ClassMapper {
     Integer addClass(@Param("newClass")Class newClass);
     List<Class> getClassByCourseId(@Param("courseId")Integer courseId);
     Class getClassById(@Param("id")Integer id);
+
+    List<Class> getClassListToSelect();
 }

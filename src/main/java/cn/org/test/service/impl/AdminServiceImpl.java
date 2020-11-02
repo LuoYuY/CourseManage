@@ -86,6 +86,8 @@ public class AdminServiceImpl implements AdminService {
                 newClass.setSemesterId(alc.getSemesterId());
                 newClass.setGradeId(alc.getGradeId());
                 newClass.setMaxNum(alc.getMaxNum());
+                newClass.setStatus(0);
+                newClass.setNum(0);
                 classMapper.addClass(newClass);
                 return true;
             } else if (choice == 2) {
