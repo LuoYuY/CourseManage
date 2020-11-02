@@ -11,8 +11,10 @@ import java.util.Objects;
 @Data
 public class Class {
     private Integer id;
+    private String name;
     private Integer courseId;
     private String courseName;
+    private String teacherName;
     private Date startDate;
     private Date endDate;
     private Integer semesterId;
@@ -25,8 +27,10 @@ public class Class {
         if (o == null || getClass() != o.getClass()) return false;
         Class aClass = (Class) o;
         return Objects.equals(id, aClass.id) &&
+                Objects.equals(name, aClass.name) &&
                 Objects.equals(courseId, aClass.courseId) &&
                 Objects.equals(courseName, aClass.courseName) &&
+                Objects.equals(teacherName, aClass.teacherName) &&
                 Objects.equals(startDate, aClass.startDate) &&
                 Objects.equals(endDate, aClass.endDate) &&
                 Objects.equals(semesterId, aClass.semesterId) &&
@@ -36,7 +40,7 @@ public class Class {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, courseId, courseName, startDate, endDate, semesterId, gradeId, maxNum);
+        return Objects.hash(id, name, courseId, courseName, teacherName, startDate, endDate, semesterId, gradeId, maxNum);
     }
 }
 

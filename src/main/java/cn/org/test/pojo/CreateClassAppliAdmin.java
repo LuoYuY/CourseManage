@@ -12,6 +12,7 @@ import java.util.Objects;
 public class CreateClassAppliAdmin {
     private Integer id;
     private String teacher;
+    private String name;
     private String courseName;
     private Date startDate;
     private Date endDate;
@@ -29,6 +30,7 @@ public class CreateClassAppliAdmin {
         CreateClassAppliAdmin that = (CreateClassAppliAdmin) o;
         return Objects.equals(id, that.id) &&
                 Objects.equals(teacher, that.teacher) &&
+                Objects.equals(name, that.name) &&
                 Objects.equals(courseName, that.courseName) &&
                 Objects.equals(startDate, that.startDate) &&
                 Objects.equals(endDate, that.endDate) &&
@@ -42,6 +44,6 @@ public class CreateClassAppliAdmin {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, teacher, courseName, startDate, endDate, semesterName, gradeName, maxNum, status, createDate, finishDate);
+        return Objects.hash(id, teacher, name, courseName, startDate, endDate, semesterName, gradeName, maxNum, status, createDate, finishDate);
     }
 }

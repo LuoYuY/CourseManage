@@ -56,6 +56,7 @@ public class ApplicationServiceImpl implements ApplicationService {
     @Override
     public void createClassApply(CreateClassReq createClassReq) {
         Integer teacherId = createClassReq.getTeacherId();
+        String name = createClassReq.getName();
         Integer courseId = createClassReq.getCourseId();
         String courseName = courseMapper.getCourseById(courseId).getName();
         Date endDate = createClassReq.getEndDate();
@@ -68,6 +69,7 @@ public class ApplicationServiceImpl implements ApplicationService {
         Date startDate = createClassReq.getStartDate();
 
         CreateClassApplication apply = new CreateClassApplication();
+        apply.setName(name);
         apply.setTeacherId(teacherId);
         apply.setCourseId(courseId);
         apply.setCourseName(courseName);

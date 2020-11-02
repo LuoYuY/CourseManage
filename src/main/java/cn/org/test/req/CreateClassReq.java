@@ -12,6 +12,7 @@ import java.util.Date;
 public class CreateClassReq {
     private Integer teacherId;
     private Integer courseId;
+    private String name;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date startDate;

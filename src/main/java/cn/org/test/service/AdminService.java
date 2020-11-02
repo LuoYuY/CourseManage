@@ -15,4 +15,6 @@ public interface AdminService {
     boolean dealCreApply(Integer id, Integer choice);
 
     List<CreateClassAppliAdmin> getCreClassList();
+
+    boolean dealCreClassApply(Integer id, Integer choice);
 }

@@ -11,6 +11,7 @@ import java.util.Objects;
 @Data
 public class CreateClassApplication {
     private Integer id;
+    private String name;
     private Integer teacherId;
     private Integer courseId;
     private String courseName;
@@ -31,6 +32,7 @@ public class CreateClassApplication {
         if (o == null || getClass() != o.getClass()) return false;
         CreateClassApplication that = (CreateClassApplication) o;
         return Objects.equals(id, that.id) &&
+                Objects.equals(name, that.name) &&
                 Objects.equals(teacherId, that.teacherId) &&
                 Objects.equals(courseId, that.courseId) &&
                 Objects.equals(courseName, that.courseName) &&
@@ -48,6 +50,6 @@ public class CreateClassApplication {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, teacherId, courseId, courseName, startDate, endDate, semesterId, semesterName, gradeId, gradeName, maxNum, status, createDate, finishDate);
+        return Objects.hash(id, name, teacherId, courseId, courseName, startDate, endDate, semesterId, semesterName, gradeId, gradeName, maxNum, status, createDate, finishDate);
     }
 }

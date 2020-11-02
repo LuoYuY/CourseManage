@@ -1,7 +1,11 @@
 package cn.org.test.service.impl;
 
+import cn.org.test.mapper.ClassMapper;
+import cn.org.test.mapper.CourseMapper;
 import cn.org.test.mapper.GradeMapper;
 import cn.org.test.mapper.SemesterMapper;
+import cn.org.test.pojo.Class;
+import cn.org.test.pojo.Course;
 import cn.org.test.pojo.Grade;
 import cn.org.test.pojo.Semester;
 import cn.org.test.service.CourseService;
@@ -11,6 +15,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by lyy on 2020/10/27 下午2:03
@@ -22,6 +27,12 @@ public class CourseServiceImpl implements CourseService {
 
     @Autowired
     public GradeMapper gradeMapper;
+
+    @Autowired
+    public CourseMapper courseMapper;
+
+    @Autowired
+    public ClassMapper classMapper;
 
     @Autowired
     private StringRedisTemplate redisTemplate;
@@ -42,6 +53,18 @@ public class CourseServiceImpl implements CourseService {
     public ArrayList<Grade> getGradeList() {
         //将list存在redis中
         ArrayList<Grade> list = gradeMapper.getAllGrade();
+        return list;
+    }
+
+    @Override
+    public Course getCourseDetail(Integer courseId) {
+        Course c = courseMapper.getCourseById(courseId);
+        return c;
+    }
+
+    @Override
+    public List<Class> getClassListTch(Integer courseId) {
+        List<Class> list = classMapper.getClassByCourseId(courseId);
         return list;
     }
 }

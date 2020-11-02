@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.org.test.mapper.ClassMapper">
+    <resultMap id="class" type="cn.org.test.pojo.Class">
+        <result column="id" property="id" jdbcType="INTEGER"/>
+        <result column="courseId" property="courseId" jdbcType="INTEGER"/>
+        <result column="courseName" property="courseName" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="teacherName" property="teacherName" jdbcType="VARCHAR"/>
+        <result column="startDate" property="startDate" jdbcType="DATE"/>
+        <result column="endDate" property="endDate" jdbcType="DATE"/>
+        <result column="semesterId" property="semesterId" jdbcType="INTEGER"/>
+        <result column="gradeId" property="gradeId" jdbcType="INTEGER"/>
+        <result column="maxNum" property="maxNum" jdbcType="INTEGER"/>
+    </resultMap>
+
+
+    <!--    insert 后返回操作的主键-->
+    <insert id="addClass" parameterType="cn.org.test.pojo.Class" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT into class(courseId,courseName,name,teacherName,startDate,endDate,semesterId,gradeId,maxNum)
+        values(
+             #{newClass.courseId}
+            ,#{newClass.courseName}
+            ,#{newClass.name}
+            ,#{newClass.teacherName}
+            ,#{newClass.startDate}
+            ,#{newClass.endDate}
+            ,#{newClass.semesterId}
+            ,#{newClass.gradeId}
+            ,#{newClass.maxNum})
+    </insert>
+
+    <select id="getClassByCourseId" parameterType="java.util.Map" resultMap="class">
+        SELECT * from class WHERE courseId = #{courseId}
+    </select>
+
+    <select id="getClassById" parameterType="java.util.Map" resultMap="class">
+        SELECT * from class WHERE id = #{id}
+    </select>
+
+</mapper>

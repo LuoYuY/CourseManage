@@ -1,22 +1,26 @@
 package cn.org.test.controller;
 
-import cn.org.test.common.ApplicationStatus;
 import cn.org.test.common.ServerResponse;
 import cn.org.test.common.UserLoginToken;
+import cn.org.test.pojo.Class;
 import cn.org.test.pojo.Course;
 import cn.org.test.pojo.CreateApplication;
 import cn.org.test.pojo.CreateClassApplication;
 import cn.org.test.req.CreateClassReq;
 import cn.org.test.service.ApplicationService;
+import cn.org.test.service.CourseService;
+import cn.org.test.service.FileService;
 import cn.org.test.service.TeacherService;
-import cn.org.test.utils.EnumUtil;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
@@ -33,9 +37,14 @@ public class TeacherController {
 
     @Autowired
     public TeacherService teacherService;
+    @Autowired
+    public FileService fileService;
 
     @Autowired
     public ApplicationService applicationService;
+
+    @Autowired
+    public CourseService courseService;
 
     //login with the username and password
     @UserLoginToken
@@ -101,6 +110,7 @@ public class TeacherController {
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
             CreateClassApplication item = (CreateClassApplication)iter.next();
             JSONObject object=new JSONObject();
+            object.put("name",item.getName());
             object.put("courseName",item.getCourseName());
             object.put("startDate",formatter.format(item.getStartDate()));
             object.put("endDate",formatter.format(item.getEndDate()));
@@ -113,4 +123,44 @@ public class TeacherController {
         }
         return ServerResponse.createBySuccess(arr);
     }
+
+//    @UserLoginToken
+    @ResponseBody
+    @GetMapping(value = "/getCourseDetail")
+    public ServerResponse getCourseDetail(Integer courseId, HttpServletResponse response) {
+        Course course = courseService.getCourseDetail(courseId);
+        List<Class> classList = courseService.getClassListTch(courseId);
+//        List< PPT > classList = courseService.getPPTList(courseId);
+        JSONObject result =new JSONObject();
+        JSONArray arr=new JSONArray();
+        Iterator<Class> iter = classList.iterator();
+        int i=0;
+        while (iter.hasNext()) {
+            Class item = iter.next();
+            JSONObject object=new JSONObject();
+            object.put("id",item.getId());
+            object.put("name",item.getName());
+            arr.add(object);
+        }
+        result.put("classes",arr);
+        result.put("course",course);
+        return ServerResponse.createBySuccess(result);
+    }
+
+
+//    @UserLoginToken
+    @ResponseBody
+    @PostMapping(value = "/uploadFile")
+    public ServerResponse uploadFile(@RequestParam("courseId")Integer courseId, @RequestParam("uploadFile")MultipartFile[] uploadFile, HttpServletRequest request, HttpServletResponse response) {
+//        System.out.println("courseId:"+courseId);
+//        for (MultipartFile multipartFile : uploadFile) {
+//            System.out.println(multipartFile);
+//        }
+        if(fileService.saveFiles(courseId,uploadFile))
+            return ServerResponse.createBySuccess();
+        else return ServerResponse.createByErrorCodeMessage(2,"上传失败");
+    }
+
+
+
 }

@@ -3,6 +3,7 @@
 <mapper namespace="cn.org.test.mapper.CreateClassApplicationMapper">
     <resultMap id="createClassApplication" type="CreateClassApplication">
         <result column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
         <result column="teacherId" property="teacherId" jdbcType="INTEGER"/>
         <result column="courseId" property="courseId" jdbcType="INTEGER"/>
         <result column="courseName" property="courseName" jdbcType="VARCHAR"/>
@@ -20,6 +21,7 @@
 
     <resultMap id="listResultForAdmin" type="cn.org.test.pojo.CreateClassAppliAdmin">
         <result column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
         <result column="user_name" property="teacher" jdbcType="VARCHAR"/>
         <result column="courseName" property="courseName" jdbcType="VARCHAR"/>
         <result column="startDate" property="startDate" jdbcType="DATE"/>
@@ -34,10 +36,11 @@
 
     <!--    insert 后返回操作的主键-->
     <insert id="addCreateClassApplication" parameterType="cn.org.test.pojo.CreateClassApplication" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
-        INSERT into createClassApplication(teacherId,courseId,courseName,startDate,endDate,semesterId,semesterName,gradeId,gradeName,maxNum,status,createDate)
+        INSERT into createClassApplication(teacherId,courseId,name,courseName,startDate,endDate,semesterId,semesterName,gradeId,gradeName,maxNum,status,createDate)
         values(
             #{apply.teacherId},
             #{apply.courseId},
+            #{apply.name},
             #{apply.courseName},
             #{apply.startDate},
             #{apply.endDate},
@@ -56,7 +59,7 @@
     </select>
 
     <select id="getAllList" parameterType="java.util.Map" resultMap="listResultForAdmin">
-        SELECT t1.id id,user_name,courseName,startDate,endDate,semesterName,gradeName,maxNum,createDate,status,finishDate
+        SELECT t1.id id,t1.name name,user_name,courseName,startDate,endDate,semesterName,gradeName,maxNum,createDate,status,finishDate
         from SC2.createClassApplication t1
         left join SC2.USER t2 on t2.id = t1.teacherId
         order by createDate desc;

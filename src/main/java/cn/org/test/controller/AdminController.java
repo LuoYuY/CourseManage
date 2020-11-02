@@ -46,7 +46,6 @@ public class AdminController {
             object.put("reason", item.getReason());
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
             object.put("createDate", formatter.format(item.getCreateDate()));
-//            System.out.println("control:"+formatter.format(item.getCreateDate()));
             object.put("status", item.getStatus());
             if(item.getFinishDate()!=null)
             {
@@ -68,11 +67,12 @@ public class AdminController {
         Iterator<CreateClassAppliAdmin> iter = list.iterator();
         int i = 0;
         while (iter.hasNext()) {
-            CreateClassAppliAdmin item = (CreateClassAppliAdmin) iter.next();
+            CreateClassAppliAdmin item = iter.next();
             JSONObject object = new JSONObject();
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
             object.put("id",item.getId());
             object.put("teacher",item.getTeacher());
+            object.put("name",item.getName());
             object.put("courseName",item.getCourseName());
             object.put("startDate", formatter.format(item.getStartDate()));
             object.put("endDate", formatter.format(item.getEndDate()));
@@ -95,6 +95,15 @@ public class AdminController {
     @PostMapping(value = "/dealCreApply")
     public ServerResponse dealCreApply(Integer id,Integer choice,HttpServletResponse response) {
         if(adminService.dealCreApply(id,choice)) {
+            return ServerResponse.createBySuccess();
+        }else return ServerResponse.createByErrorCodeMessage(1,"操作失败");
+    }
+
+    @ResponseBody
+    @PostMapping(value = "/dealCreClassApply")
+    public ServerResponse dealCreClassApply(Integer id,Integer choice,HttpServletResponse response) {
+        System.out.println("real id"+id);
+        if(adminService.dealCreClassApply(id,choice)) {
             return ServerResponse.createBySuccess();
         }else return ServerResponse.createByErrorCodeMessage(1,"操作失败");
     }
