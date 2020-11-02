@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.org.test.mapper.CourseWareMapper">
+    <resultMap id="courseWare" type="cn.org.test.pojo.CourseWare">
+        <result column="id" property="id" jdbcType="INTEGER"/>
+        <result column="courseId" property="courseId" jdbcType="INTEGER"/>
+        <result column="num" property="num" jdbcType="INTEGER"/>
+        <result column="filepath" property="filepath" jdbcType="VARCHAR"/>
+        <result column="filename" property="filename" jdbcType="VARCHAR"/>
+        <result column="uploadDate" property="uploadDate" jdbcType="DATE"/>
+    </resultMap>
+
+
+    <!--    insert 后返回操作的主键-->
+    <insert id="addCourseWare" parameterType="cn.org.test.pojo.CourseWare" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT into courseWare(courseId,filepath,filename,uploadDate)
+        values(
+             #{file.courseId}
+            ,#{file.filepath}
+            ,#{file.filename}
+            ,#{file.uploadDate}
+        )
+    </insert>
+    <select id="getFilesByCourseId" parameterType="java.util.Map" resultMap="courseWare">
+        SELECT * from courseWare WHERE courseId = #{courseId}
+    </select>
+</mapper>

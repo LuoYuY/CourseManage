@@ -2,10 +2,8 @@ package cn.org.test.controller;
 
 import cn.org.test.common.ServerResponse;
 import cn.org.test.common.UserLoginToken;
+import cn.org.test.pojo.*;
 import cn.org.test.pojo.Class;
-import cn.org.test.pojo.Course;
-import cn.org.test.pojo.CreateApplication;
-import cn.org.test.pojo.CreateClassApplication;
 import cn.org.test.req.CreateClassReq;
 import cn.org.test.service.ApplicationService;
 import cn.org.test.service.CourseService;
@@ -130,7 +128,7 @@ public class TeacherController {
     public ServerResponse getCourseDetail(Integer courseId, HttpServletResponse response) {
         Course course = courseService.getCourseDetail(courseId);
         List<Class> classList = courseService.getClassListTch(courseId);
-//        List< PPT > classList = courseService.getPPTList(courseId);
+        List<CourseWare> couseWareList = fileService.getCourseWareList(courseId);
         JSONObject result =new JSONObject();
         JSONArray arr=new JSONArray();
         Iterator<Class> iter = classList.iterator();
@@ -142,8 +140,23 @@ public class TeacherController {
             object.put("name",item.getName());
             arr.add(object);
         }
+
+        JSONArray array = new JSONArray();
+        Iterator<CourseWare> itr = couseWareList.iterator();
+        int j=0;
+        while (itr.hasNext()) {
+            CourseWare item = itr.next();
+            JSONObject object=new JSONObject();
+            object.put("id",item.getId());
+            object.put("filename",item.getFilename());
+            object.put("filepath",item.getFilepath());
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+            object.put("uploadDate",formatter.format(item.getUploadDate()));
+            array.add(object);
+        }
         result.put("classes",arr);
         result.put("course",course);
+        result.put("courseWare",array);
         return ServerResponse.createBySuccess(result);
     }
 
@@ -160,7 +173,6 @@ public class TeacherController {
             return ServerResponse.createBySuccess();
         else return ServerResponse.createByErrorCodeMessage(2,"上传失败");
     }
-
 
 
 }

@@ -1,6 +1,8 @@
 package cn.org.test.service.impl;
 
 import cn.org.test.mapper.CourseMapper;
+import cn.org.test.mapper.CourseWareMapper;
+import cn.org.test.pojo.CourseWare;
 import cn.org.test.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,6 +10,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
+import java.util.List;
 
 /**
  * Created by lyy on 2020/11/2 上午9:19
@@ -16,6 +20,8 @@ import java.io.IOException;
 public class FileServiceImpl implements FileService {
     @Autowired
     public CourseMapper courseMapper;
+    @Autowired
+    public CourseWareMapper courseWareMapper;
 
     @Override
     public boolean saveFiles(Integer courseId, MultipartFile[] files) {
@@ -23,9 +29,11 @@ public class FileServiceImpl implements FileService {
 //        for (MultipartFile multipartFile : uploadFile) {
 //            System.out.println(multipartFile);
 //        }
+
         // 先设定一个放置上传文件的文件夹(该文件夹可以不存在，下面会判断创建)
         String deposeFilesDir = "/home/lyy/IdeaProjects/com.lyy/blog/courseWare/"+courseId+"/";
         for (MultipartFile file : files) {
+            CourseWare courseWare = new CourseWare();
             // 判断文件是否有内容
             if (file.isEmpty()) {
                 System.out.println("该文件无任何内容!!!");
@@ -73,9 +81,20 @@ public class FileServiceImpl implements FileService {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            courseWare.setCourseId(courseId);
+            courseWare.setFilename(fileName);
+            courseWare.setFilepath("http://localhost:8080/download/courseWare/"+courseId+"/"+ fileName);
+            courseWare.setUploadDate(new Date());
+            courseWareMapper.addCourseWare(courseWare);
             System.out.println("文件的全路径名字(含路径、后缀)>>>>>>>" + deposeFilesDir + fileName);
         }
         return true;
+    }
+
+    @Override
+    public List<CourseWare> getCourseWareList(Integer courseId) {
+        List<CourseWare> list = courseWareMapper.getFilesByCourseId(courseId);
+        return list;
     }
 
 }
