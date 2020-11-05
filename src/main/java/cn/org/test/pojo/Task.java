@@ -16,4 +16,5 @@ public class Task {
     private String endTime;
     private Integer sum;
     private Integer finishedSum;
+    private Integer status; //作业进行状态
 }

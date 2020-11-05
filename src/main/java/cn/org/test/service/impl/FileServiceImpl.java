@@ -3,6 +3,7 @@ package cn.org.test.service.impl;
 import cn.org.test.mapper.*;
 import cn.org.test.pojo.CourseWare;
 import cn.org.test.pojo.Task;
+import cn.org.test.pojo.TaskStu;
 import cn.org.test.pojo.TaskWare;
 import cn.org.test.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -31,6 +33,10 @@ public class FileServiceImpl implements FileService {
 
     @Autowired
     public ClassMapper classMapper;
+
+    @Autowired
+    public TaskStuMapper taskStuMapper;
+
 
     @Override
     public boolean saveFiles(Integer courseId, MultipartFile[] files) {
@@ -136,6 +142,43 @@ public class FileServiceImpl implements FileService {
         }
         return true;
     }
+
+    @Override
+    public boolean uploadTask(Integer taskId, Integer userId, MultipartFile uploadFile) {
+        //作业完成情况表中更新情况
+        TaskStu temp = taskStuMapper.getTaskStuByTaskAndUser(taskId,userId);
+        if(temp!= null) {
+            String sPath = "/home/lyy/IdeaProjects/com.lyy/blog/studentTask/"+userId+"/"+ temp.getFilename();
+            File file = new File(sPath);
+            if (file.isFile() && file.exists()) {
+                file.delete();
+                taskStuMapper.deleteById(temp.getId());
+            }
+        }
+        else{
+            taskMapper.updateFinishedNum(taskId);
+        }
+
+        System.out.println("-----------userId----------:"+userId);
+        TaskStu t = new TaskStu();
+        t.setStudentId(userId);
+        t.setTaskId(taskId);
+        t.setStatus(2);
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        t.setUploadTime(formatter.format(new Date()));
+
+        String deposeFilesDir = "/home/lyy/IdeaProjects/com.lyy/blog/studentTask/"+userId+"/";
+        String filename = saveSingleFile(deposeFilesDir,uploadFile);
+        if(filename!=null) {
+            t.setFilename(filename);
+            t.setFilepath("http://localhost:8080/download/studentTask/" + userId + "/" + filename);
+            taskStuMapper.addTaskStu(t);
+            return true;
+        }
+        else return false;
+
+    }
+
 
     public String saveSingleFile(String deposeFilesDir,MultipartFile file) {
         // 判断文件是否有内容

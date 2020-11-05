@@ -1,20 +1,17 @@
 package cn.org.test.service.impl;
 
-import cn.org.test.mapper.ClassMapper;
-import cn.org.test.mapper.CourseMapper;
-import cn.org.test.mapper.GradeMapper;
-import cn.org.test.mapper.SemesterMapper;
+import cn.org.test.mapper.*;
+import cn.org.test.pojo.*;
 import cn.org.test.pojo.Class;
-import cn.org.test.pojo.Course;
-import cn.org.test.pojo.Grade;
-import cn.org.test.pojo.Semester;
 import cn.org.test.service.CourseService;
 import cn.org.test.utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -33,6 +30,8 @@ public class CourseServiceImpl implements CourseService {
 
     @Autowired
     public ClassMapper classMapper;
+    @Autowired
+    public TaskMapper taskMapper;
 
     @Autowired
     private StringRedisTemplate redisTemplate;
@@ -66,5 +65,33 @@ public class CourseServiceImpl implements CourseService {
     public List<Class> getClassListTch(Integer courseId) {
         List<Class> list = classMapper.getClassByCourseId(courseId);
         return list;
+    }
+
+    @Override
+    public List<Task> getTasksList(Integer classId) {
+        List<Task> list = taskMapper.getTasksByClassId(classId);
+        return list;
+    }
+
+    @Override
+    public Task getTaskDetail(Integer taskId) {
+        Task t = taskMapper.getTaskById(taskId);
+
+        if(t.getStatus()==1) {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String dateString = t.getEndTime();
+            Date endTime = null;
+            try {
+                endTime = sdf.parse(dateString);
+            }catch (Exception e){
+                System.out.println("parse error");
+            }
+            Date currentDate = new Date();
+            if( !currentDate.before(endTime)) {
+                taskMapper.updateTaskState(taskId);
+                t.setStatus(2);
+            }
+        }
+        return t;
     }
 }

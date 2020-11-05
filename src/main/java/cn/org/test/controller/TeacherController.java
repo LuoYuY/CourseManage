@@ -12,6 +12,7 @@ import cn.org.test.service.TeacherService;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.ibatis.annotations.Param;
+import org.aspectj.apache.bcel.generic.TABLESWITCH;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -194,20 +195,16 @@ public class TeacherController {
             @RequestParam("date")String date,
             @RequestParam("time")String time,
             HttpServletRequest request, HttpServletResponse response) {
-
-        System.out.println("----------in controller------------");
         Task t = new Task();
-        System.out.println("----------in controller2------------");
         t.setClassId(classId);
-        System.out.println("----------in controller3------------");
         t.setTitle(title);
         t.setContent(content);
         t.setEndTime(date+" "+time);
+        t.setStatus(1); //进行中，可提交
         System.out.println("date+time:"+t.getEndTime());
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         t.setStartTime(formatter.format(new Date()));
         System.out.println("startTime:"+t.getStartTime());
-
 
         if(fileService.addTask(t,uploadFile))
             return ServerResponse.createBySuccess();
@@ -215,4 +212,41 @@ public class TeacherController {
     }
 
 
+    //login with the username and password
+    @UserLoginToken
+    @ResponseBody
+    @GetMapping(value = "/getTaskList")
+    public ServerResponse getTaskList(Integer classId, HttpServletResponse response) {
+        List<Task> list = courseService.getTasksList(classId);
+        JSONArray arr=new JSONArray();
+        Iterator<Task> iter = list.iterator();
+        int i=0;
+        while (iter.hasNext()) {
+            Task item = iter.next();
+            JSONObject object=new JSONObject();
+            object.put("id",item.getId());
+            object.put("name",item.getTitle());
+            arr.add(object);
+        }
+        return ServerResponse.createBySuccess(arr);
+    }
+
+    //login with the username and password
+//    @UserLoginToken
+    @ResponseBody
+    @GetMapping(value = "/getTaskDetail")
+    public ServerResponse getTaskDetail(Integer taskId, HttpServletResponse response) {
+        Task t = courseService.getTaskDetail(taskId);
+//        JSONArray arr=new JSONArray();
+//        Iterator<Task> iter = list.iterator();
+//        int i=0;
+//        while (iter.hasNext()) {
+//            Task item = iter.next();
+//            JSONObject object=new JSONObject();
+//            object.put("id",item.getId());
+//            object.put("name",item.getTitle());
+//            arr.add(object);
+//        }
+        return ServerResponse.createBySuccess(t);
+    }
 }

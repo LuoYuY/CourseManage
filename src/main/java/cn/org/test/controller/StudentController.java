@@ -8,6 +8,7 @@ import cn.org.test.common.ServerResponse;
 import cn.org.test.pojo.Class;
 import cn.org.test.pojo.ClassForSelect;
 import cn.org.test.pojo.SelectClass;
+import cn.org.test.pojo.Task;
 import cn.org.test.service.*;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -15,6 +16,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
 import java.util.List;
 
 /**
@@ -28,6 +31,11 @@ public class StudentController {
 
     @Autowired
     public StudentService studentService;
+    @Autowired
+    public CourseService courseService;
+
+    @Autowired
+    public FileService fileService;
 
     //login with the username and password
 //    @UserLoginToken
@@ -69,5 +77,26 @@ public class StudentController {
         List<Class> list = studentService.getClassesList(studentId);
         JSONArray array= JSONArray.parseArray(JSON.toJSONString(list));
         return ServerResponse.createBySuccess(array);
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/getTaskList")
+    public ServerResponse getTaskList(Integer classId) {
+        List<Task> list = courseService.getTasksList(classId);
+        JSONArray array= JSONArray.parseArray(JSON.toJSONString(list));
+        return ServerResponse.createBySuccess(array);
+    }
+
+
+    @ResponseBody
+    @PostMapping(value = "/uploadTask")
+    public ServerResponse uploadTask(
+            @RequestParam("taskId")Integer taskId,
+            @RequestParam("uploadFile") MultipartFile uploadFile,
+            @RequestParam("userId")Integer userId)
+    {
+        boolean result = fileService.uploadTask(taskId,userId,uploadFile);
+        if(result) return ServerResponse.createBySuccess();
+        else return ServerResponse.createByError();
     }
 }

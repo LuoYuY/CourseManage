@@ -16,4 +16,6 @@ public interface FileService {
     List<CourseWare> getCourseWareList(Integer courseId);
 
     boolean addTask(Task t, MultipartFile[] uploadFile);
+
+    boolean uploadTask(Integer taskId, Integer userId, MultipartFile uploadFile);
 }

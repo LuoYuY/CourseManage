@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.org.test.mapper.TaskStuMapper">
+    <resultMap id="taskStu" type="cn.org.test.pojo.TaskStu">
+        <result column="id"   property="id" jdbcType="INTEGER"/>
+        <result column="studentId" property="studentId" jdbcType="INTEGER"/>
+        <result column="taskId" property="taskId" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="filename" property="filename" jdbcType="VARCHAR"/>
+        <result column="filepath" property="filepath" jdbcType="VARCHAR"/>
+        <result column="uploadTime" property="uploadTime" jdbcType="VARCHAR"/>
+        <result column="score" property="score" jdbcType="INTEGER"/>
+    </resultMap>
+<!--    <select id="getTasksByClassId" parameterType="java.util.Map" resultMap="task">-->
+<!--        SELECT * from task WHERE classId = #{classId}-->
+<!--    </select>-->
+
+    <!--    insert 后返回操作的主键-->
+    <insert id="addTaskStu" parameterType="cn.org.test.pojo.TaskStu" useGeneratedKeys="true" keyProperty="task.id">
+        INSERT into taskStu
+              (studentId,taskId,status,filename,filepath,uploadTime)
+        values(
+        #{task.studentId},
+        #{task.taskId},
+        #{task.status},
+        #{task.filename},
+        #{task.filepath},
+        #{task.uploadTime}
+        )
+    </insert>
+
+    <select id="getTaskStuByTaskAndUser" parameterType="java.util.Map" resultMap="taskStu">
+        SELECT * from taskStu WHERE taskId = #{taskId} and studentId=#{userId}
+    </select>
+
+<!--    <update id="updateTaskState" parameterType="java.util.Map" >-->
+<!--        UPDATE task SET status = 2 WHERE id=#{taskId}-->
+<!--    </update>-->
+     <delete id="deleteById" parameterType="java.util.Map">
+        delete from taskStu where id=#{id}
+     </delete>
+</mapper>

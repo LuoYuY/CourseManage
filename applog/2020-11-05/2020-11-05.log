@@ -2765,3 +2765,1708 @@ com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '
 2020-11-05 19:40:31 -==> Parameters: 6(Integer), 作业3(String), 作业3(String), 2020-11-05 19:40:31(String), 2020-11-10 00:04:04(String), 1(Integer), 0(Integer)
 2020-11-05 19:40:31 -<==    Updates: 1
 2020-11-05 19:56:23 -No mapping found for HTTP request with URI [/tch/getTaskList] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:06:25 -No mapping found for HTTP request with URI [/tch/getTaskList] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:06:32 -No mapping found for HTTP request with URI [/tch/getTaskList] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:07:09 -No mapping found for HTTP request with URI [/tch/getTaskList] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:07:15 -No mapping found for HTTP request with URI [/tch/getTaskList] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:07:36 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 19:32:22 CST 2020]; root of context hierarchy
+2020-11-05 20:07:36 -Unregistering JMX-exposed beans on shutdown
+2020-11-05 20:07:40 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 26594 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-05 20:07:40 -No active profile set, falling back to default profiles: default
+2020-11-05 20:07:40 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 20:07:40 CST 2020]; root of context hierarchy
+2020-11-05 20:07:40 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-05 20:07:41 -Tomcat initialized with port(s): 8080 (http)
+2020-11-05 20:07:41 -Root WebApplicationContext: initialization completed in 1043 ms
+2020-11-05 20:07:41 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-05 20:07:41 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-05 20:07:41 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-05 20:07:41 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-05 20:07:41 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-05 20:07:41 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 20:07:40 CST 2020]; root of context hierarchy
+2020-11-05 20:07:41 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-05 20:07:41 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-05 20:07:41 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-05 20:07:41 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2020-11-05 20:07:41 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2020-11-05 20:07:41 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-05 20:07:41 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-05 20:07:41 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-05 20:07:41 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-05 20:07:41 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 20:07:41 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-05 20:07:41 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 20:07:41 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 20:07:41 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 20:07:42 -Registering beans for JMX exposure on startup
+2020-11-05 20:07:42 -Tomcat started on port(s): 8080 (http)
+2020-11-05 20:07:42 -Started SpringBootUserApplication in 2.143 seconds (JVM running for 2.575)
+2020-11-05 20:09:06 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-05 20:09:06 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-11-05 20:09:09 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:09:09 -==> Parameters: 2(Integer)
+2020-11-05 20:09:09 -<==      Total: 1
+2020-11-05 20:09:10 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:09:10 -==> Parameters: 6(Integer)
+2020-11-05 20:09:10 -<==      Total: 3
+2020-11-05 20:12:42 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:12:42 -==> Parameters: 2(Integer)
+2020-11-05 20:12:42 -<==      Total: 1
+2020-11-05 20:12:42 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:12:42 -==> Parameters: 6(Integer)
+2020-11-05 20:12:42 -<==      Total: 3
+2020-11-05 20:16:13 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:16:13 -==> Parameters: 2(Integer)
+2020-11-05 20:16:13 -<==      Total: 1
+2020-11-05 20:16:13 -==>  Preparing: SELECT * from course WHERE teacherId = ? 
+2020-11-05 20:16:13 -==> Parameters: 2(Integer)
+2020-11-05 20:16:13 -<==      Total: 3
+2020-11-05 20:16:14 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:16:14 -==> Parameters: 2(Integer)
+2020-11-05 20:16:14 -<==      Total: 1
+2020-11-05 20:16:14 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:16:14 -==> Parameters: 6(Integer)
+2020-11-05 20:16:14 -<==      Total: 3
+2020-11-05 20:17:26 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:17:26 -==> Parameters: 2(Integer)
+2020-11-05 20:17:26 -<==      Total: 1
+2020-11-05 20:17:26 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:17:26 -==> Parameters: 6(Integer)
+2020-11-05 20:17:27 -<==      Total: 3
+2020-11-05 20:17:45 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:17:45 -==> Parameters: 2(Integer)
+2020-11-05 20:17:45 -<==      Total: 1
+2020-11-05 20:17:45 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:17:45 -==> Parameters: 6(Integer)
+2020-11-05 20:17:45 -<==      Total: 3
+2020-11-05 20:19:37 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:19:37 -==> Parameters: 2(Integer)
+2020-11-05 20:19:37 -<==      Total: 1
+2020-11-05 20:19:37 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 20:20:20 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:20:20 -==> Parameters: 2(Integer)
+2020-11-05 20:20:20 -<==      Total: 1
+2020-11-05 20:20:20 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 20:20:24 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:20:24 -==> Parameters: 2(Integer)
+2020-11-05 20:20:24 -<==      Total: 1
+2020-11-05 20:20:24 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 20:20:38 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:20:38 -==> Parameters: 2(Integer)
+2020-11-05 20:20:38 -<==      Total: 1
+2020-11-05 20:20:38 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 20:20:44 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:20:44 -==> Parameters: 2(Integer)
+2020-11-05 20:20:44 -<==      Total: 1
+2020-11-05 20:20:44 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 20:20:46 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:20:46 -==> Parameters: 2(Integer)
+2020-11-05 20:20:46 -<==      Total: 1
+2020-11-05 20:20:46 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 20:20:51 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:20:51 -==> Parameters: 2(Integer)
+2020-11-05 20:20:51 -<==      Total: 1
+2020-11-05 20:20:51 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 20:20:56 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:20:56 -==> Parameters: 2(Integer)
+2020-11-05 20:20:56 -<==      Total: 1
+2020-11-05 20:20:56 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 20:21:11 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 20:21:11 -==> Parameters: 1653611386@qq.com(String)
+2020-11-05 20:21:11 -<==      Total: 1
+2020-11-05 20:21:11 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 20:21:11 -==> Parameters: 1653611386@qq.com(String)
+2020-11-05 20:21:11 -<==      Total: 1
+2020-11-05 20:21:15 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:21:15 -==> Parameters: 2(Integer)
+2020-11-05 20:21:15 -<==      Total: 1
+2020-11-05 20:21:15 -==>  Preparing: SELECT * from course WHERE teacherId = ? 
+2020-11-05 20:21:15 -==> Parameters: 2(Integer)
+2020-11-05 20:21:15 -<==      Total: 3
+2020-11-05 20:21:18 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:21:18 -==> Parameters: 2(Integer)
+2020-11-05 20:21:18 -<==      Total: 1
+2020-11-05 20:21:18 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 20:21:18 -==> Parameters: 3(Integer)
+2020-11-05 20:21:18 -<==      Total: 1
+2020-11-05 20:21:18 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 20:21:18 -==> Parameters: 3(Integer)
+2020-11-05 20:21:18 -<==      Total: 2
+2020-11-05 20:21:18 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 20:21:18 -==> Parameters: 3(Integer)
+2020-11-05 20:21:18 -<==      Total: 5
+2020-11-05 20:21:23 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:21:23 -==> Parameters: 2(Integer)
+2020-11-05 20:21:23 -<==      Total: 1
+2020-11-05 20:21:23 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:21:23 -==> Parameters: 1(Integer)
+2020-11-05 20:21:23 -<==      Total: 0
+2020-11-05 20:21:28 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:21:28 -==> Parameters: 2(Integer)
+2020-11-05 20:21:28 -<==      Total: 1
+2020-11-05 20:21:28 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:21:28 -==> Parameters: 5(Integer)
+2020-11-05 20:21:28 -<==      Total: 0
+2020-11-05 20:21:34 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:21:34 -==> Parameters: 2(Integer)
+2020-11-05 20:21:34 -<==      Total: 1
+2020-11-05 20:21:34 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:21:34 -==> Parameters: 1(Integer)
+2020-11-05 20:21:34 -<==      Total: 0
+2020-11-05 20:21:39 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:21:39 -==> Parameters: 2(Integer)
+2020-11-05 20:21:39 -<==      Total: 1
+2020-11-05 20:21:39 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 20:21:39 -==> Parameters: 2(Integer)
+2020-11-05 20:21:39 -<==      Total: 1
+2020-11-05 20:21:39 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 20:21:39 -==> Parameters: 2(Integer)
+2020-11-05 20:21:39 -<==      Total: 2
+2020-11-05 20:21:39 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 20:21:39 -==> Parameters: 2(Integer)
+2020-11-05 20:21:39 -<==      Total: 0
+2020-11-05 20:21:41 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:21:41 -==> Parameters: 2(Integer)
+2020-11-05 20:21:41 -<==      Total: 1
+2020-11-05 20:21:41 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:21:41 -==> Parameters: 2(Integer)
+2020-11-05 20:21:41 -<==      Total: 0
+2020-11-05 20:21:45 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:21:45 -==> Parameters: 2(Integer)
+2020-11-05 20:21:45 -<==      Total: 1
+2020-11-05 20:21:45 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 20:21:45 -==> Parameters: 6(Integer)
+2020-11-05 20:21:45 -<==      Total: 3
+2020-11-05 20:36:08 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 20:36:08 -==> Parameters: 2(Integer)
+2020-11-05 20:36:08 -<==      Total: 1
+2020-11-05 20:36:08 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 20:49:07 -No mapping found for HTTP request with URI [/tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:55:53 -No mapping found for HTTP request with URI [/tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:56:53 -No mapping found for HTTP request with URI [/tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:59:00 -No mapping found for HTTP request with URI [/tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:59:17 -No mapping found for HTTP request with URI [/tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 20:59:57 -No mapping found for HTTP request with URI [/tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 21:01:48 -No mapping found for HTTP request with URI [/tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 21:05:36 -No mapping found for HTTP request with URI [/tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-05 21:08:11 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 20:07:40 CST 2020]; root of context hierarchy
+2020-11-05 21:08:11 -Unregistering JMX-exposed beans on shutdown
+2020-11-05 21:08:15 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 27979 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-05 21:08:15 -No active profile set, falling back to default profiles: default
+2020-11-05 21:08:15 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 21:08:15 CST 2020]; root of context hierarchy
+2020-11-05 21:08:16 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-05 21:08:17 -Tomcat initialized with port(s): 8080 (http)
+2020-11-05 21:08:17 -Root WebApplicationContext: initialization completed in 1342 ms
+2020-11-05 21:08:17 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-05 21:08:17 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-05 21:08:17 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-05 21:08:17 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-05 21:08:17 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-05 21:08:18 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 21:08:15 CST 2020]; root of context hierarchy
+2020-11-05 21:08:18 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-05 21:08:18 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-05 21:08:18 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2020-11-05 21:08:18 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2020-11-05 21:08:18 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-05 21:08:18 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-05 21:08:18 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-05 21:08:18 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-05 21:08:18 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-05 21:08:18 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 21:08:18 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-05 21:08:18 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 21:08:18 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 21:08:18 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 21:08:18 -Registering beans for JMX exposure on startup
+2020-11-05 21:08:18 -Tomcat started on port(s): 8080 (http)
+2020-11-05 21:08:18 -Started SpringBootUserApplication in 2.991 seconds (JVM running for 3.523)
+2020-11-05 21:08:44 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-05 21:08:44 -FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020-11-05 21:08:48 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:08:48 -==> Parameters: 5(Integer)
+2020-11-05 21:08:48 -<==      Total: 1
+2020-11-05 21:11:43 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:11:43 -==> Parameters: 4(Integer)
+2020-11-05 21:11:43 -<==      Total: 1
+2020-11-05 21:24:52 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:24:52 -==> Parameters: 2(Integer)
+2020-11-05 21:24:52 -<==      Total: 1
+2020-11-05 21:24:52 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 21:24:57 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:24:57 -==> Parameters: 2(Integer)
+2020-11-05 21:24:57 -<==      Total: 1
+2020-11-05 21:24:57 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 21:25:08 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:25:08 -==> Parameters: 2(Integer)
+2020-11-05 21:25:08 -<==      Total: 1
+2020-11-05 21:25:08 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 21:25:09 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:25:09 -==> Parameters: 2(Integer)
+2020-11-05 21:25:09 -<==      Total: 1
+2020-11-05 21:25:09 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 21:25:09 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:25:09 -==> Parameters: 2(Integer)
+2020-11-05 21:25:09 -<==      Total: 1
+2020-11-05 21:25:09 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 21:25:10 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:25:10 -==> Parameters: 2(Integer)
+2020-11-05 21:25:10 -<==      Total: 1
+2020-11-05 21:25:10 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 401] with root cause
+java.lang.RuntimeException: 401
+	at cn.org.test.Interceptor.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:69)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 21:25:26 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 21:25:26 -==> Parameters: 1653611386@qq.com(String)
+2020-11-05 21:25:26 -<==      Total: 1
+2020-11-05 21:25:26 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 21:25:26 -==> Parameters: 1653611386@qq.com(String)
+2020-11-05 21:25:26 -<==      Total: 1
+2020-11-05 21:25:30 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:25:30 -==> Parameters: 2(Integer)
+2020-11-05 21:25:30 -<==      Total: 1
+2020-11-05 21:25:30 -==>  Preparing: SELECT * from course WHERE teacherId = ? 
+2020-11-05 21:25:30 -==> Parameters: 2(Integer)
+2020-11-05 21:25:30 -<==      Total: 3
+2020-11-05 21:25:32 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:25:32 -==> Parameters: 2(Integer)
+2020-11-05 21:25:32 -<==      Total: 1
+2020-11-05 21:25:32 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:25:32 -==> Parameters: 2(Integer)
+2020-11-05 21:25:32 -<==      Total: 1
+2020-11-05 21:25:32 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:25:32 -==> Parameters: 2(Integer)
+2020-11-05 21:25:32 -<==      Total: 2
+2020-11-05 21:25:32 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:25:32 -==> Parameters: 2(Integer)
+2020-11-05 21:25:32 -<==      Total: 0
+2020-11-05 21:25:34 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:25:34 -==> Parameters: 2(Integer)
+2020-11-05 21:25:34 -<==      Total: 1
+2020-11-05 21:25:34 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:25:34 -==> Parameters: 6(Integer)
+2020-11-05 21:25:34 -<==      Total: 3
+2020-11-05 21:25:36 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:25:36 -==> Parameters: 4(Integer)
+2020-11-05 21:25:37 -<==      Total: 1
+2020-11-05 21:26:57 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:26:57 -==> Parameters: 5(Integer)
+2020-11-05 21:26:57 -<==      Total: 1
+2020-11-05 21:28:22 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:28:22 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:28:22 -==> Parameters: 6(Integer)
+2020-11-05 21:28:22 -==> Parameters: 2(Integer)
+2020-11-05 21:28:22 -<==      Total: 1
+2020-11-05 21:28:22 -<==      Total: 1
+2020-11-05 21:28:22 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 21:28:27 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:28:27 -==> Parameters: 2(Integer)
+2020-11-05 21:28:27 -<==      Total: 1
+2020-11-05 21:28:27 -==>  Preparing: SELECT * from course WHERE teacherId = ? 
+2020-11-05 21:28:27 -==> Parameters: 2(Integer)
+2020-11-05 21:28:27 -<==      Total: 3
+2020-11-05 21:28:28 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:28:28 -==> Parameters: 2(Integer)
+2020-11-05 21:28:28 -<==      Total: 1
+2020-11-05 21:28:28 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:28:28 -==> Parameters: 2(Integer)
+2020-11-05 21:28:28 -<==      Total: 1
+2020-11-05 21:28:28 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:28:28 -==> Parameters: 2(Integer)
+2020-11-05 21:28:29 -<==      Total: 2
+2020-11-05 21:28:29 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:28:29 -==> Parameters: 2(Integer)
+2020-11-05 21:28:29 -<==      Total: 0
+2020-11-05 21:28:31 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:28:31 -==> Parameters: 2(Integer)
+2020-11-05 21:28:31 -<==      Total: 1
+2020-11-05 21:28:31 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:28:31 -==> Parameters: 6(Integer)
+2020-11-05 21:28:31 -<==      Total: 3
+2020-11-05 21:28:36 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:28:36 -==> Parameters: 4(Integer)
+2020-11-05 21:28:36 -<==      Total: 1
+2020-11-05 21:31:01 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:31:01 -==> Parameters: 4(Integer)
+2020-11-05 21:31:01 -<==      Total: 1
+2020-11-05 21:31:36 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:31:36 -==> Parameters: 4(Integer)
+2020-11-05 21:31:36 -<==      Total: 1
+2020-11-05 21:32:06 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:32:06 -==> Parameters: 5(Integer)
+2020-11-05 21:32:06 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:32:06 -==> Parameters: 2(Integer)
+2020-11-05 21:32:06 -<==      Total: 1
+2020-11-05 21:32:06 -<==      Total: 1
+2020-11-05 21:32:06 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 21:32:11 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:32:11 -==> Parameters: 2(Integer)
+2020-11-05 21:32:11 -<==      Total: 1
+2020-11-05 21:32:11 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:32:11 -==> Parameters: 2(Integer)
+2020-11-05 21:32:11 -<==      Total: 1
+2020-11-05 21:32:11 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:32:11 -==> Parameters: 2(Integer)
+2020-11-05 21:32:11 -<==      Total: 2
+2020-11-05 21:32:11 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:32:11 -==> Parameters: 2(Integer)
+2020-11-05 21:32:11 -<==      Total: 0
+2020-11-05 21:32:13 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:32:13 -==> Parameters: 2(Integer)
+2020-11-05 21:32:13 -<==      Total: 1
+2020-11-05 21:32:13 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:32:13 -==> Parameters: 6(Integer)
+2020-11-05 21:32:13 -<==      Total: 3
+2020-11-05 21:32:16 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:32:16 -==> Parameters: 4(Integer)
+2020-11-05 21:32:16 -<==      Total: 1
+2020-11-05 21:33:42 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:33:42 -==> Parameters: 5(Integer)
+2020-11-05 21:33:42 -<==      Total: 1
+2020-11-05 21:33:54 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:33:54 -==> Parameters: 2(Integer)
+2020-11-05 21:33:54 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:33:54 -==> Parameters: 2(Integer)
+2020-11-05 21:33:54 -<==      Total: 0
+2020-11-05 21:33:54 -<==      Total: 1
+2020-11-05 21:33:54 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 21:34:13 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:34:13 -==> Parameters: 2(Integer)
+2020-11-05 21:34:13 -<==      Total: 0
+2020-11-05 21:34:16 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:34:16 -==> Parameters: 2(Integer)
+2020-11-05 21:34:16 -<==      Total: 1
+2020-11-05 21:34:16 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:34:16 -==> Parameters: 6(Integer)
+2020-11-05 21:34:16 -<==      Total: 3
+2020-11-05 21:34:18 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:34:18 -==> Parameters: 2(Integer)
+2020-11-05 21:34:18 -<==      Total: 1
+2020-11-05 21:34:18 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:34:18 -==> Parameters: 2(Integer)
+2020-11-05 21:34:18 -<==      Total: 1
+2020-11-05 21:34:18 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:34:18 -==> Parameters: 2(Integer)
+2020-11-05 21:34:18 -<==      Total: 2
+2020-11-05 21:34:18 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:34:18 -==> Parameters: 2(Integer)
+2020-11-05 21:34:18 -<==      Total: 0
+2020-11-05 21:34:19 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:34:19 -==> Parameters: 2(Integer)
+2020-11-05 21:34:19 -<==      Total: 1
+2020-11-05 21:34:19 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:34:19 -==> Parameters: 3(Integer)
+2020-11-05 21:34:19 -<==      Total: 1
+2020-11-05 21:34:19 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:34:19 -==> Parameters: 3(Integer)
+2020-11-05 21:34:19 -<==      Total: 2
+2020-11-05 21:34:19 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:34:19 -==> Parameters: 3(Integer)
+2020-11-05 21:34:19 -<==      Total: 5
+2020-11-05 21:34:22 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:34:22 -==> Parameters: 2(Integer)
+2020-11-05 21:34:22 -<==      Total: 1
+2020-11-05 21:34:22 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:34:22 -==> Parameters: 4(Integer)
+2020-11-05 21:34:22 -<==      Total: 1
+2020-11-05 21:34:22 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:34:22 -==> Parameters: 4(Integer)
+2020-11-05 21:34:22 -<==      Total: 0
+2020-11-05 21:34:22 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:34:22 -==> Parameters: 4(Integer)
+2020-11-05 21:34:22 -<==      Total: 0
+2020-11-05 21:34:23 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:34:23 -==> Parameters: 2(Integer)
+2020-11-05 21:34:23 -<==      Total: 1
+2020-11-05 21:34:23 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:34:23 -==> Parameters: 3(Integer)
+2020-11-05 21:34:24 -<==      Total: 1
+2020-11-05 21:34:24 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:34:24 -==> Parameters: 3(Integer)
+2020-11-05 21:34:24 -<==      Total: 2
+2020-11-05 21:34:24 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:34:24 -==> Parameters: 3(Integer)
+2020-11-05 21:34:24 -<==      Total: 5
+2020-11-05 21:34:24 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:34:24 -==> Parameters: 2(Integer)
+2020-11-05 21:34:24 -<==      Total: 1
+2020-11-05 21:34:24 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:34:24 -==> Parameters: 2(Integer)
+2020-11-05 21:34:24 -<==      Total: 1
+2020-11-05 21:34:24 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:34:24 -==> Parameters: 2(Integer)
+2020-11-05 21:34:24 -<==      Total: 2
+2020-11-05 21:34:24 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:34:24 -==> Parameters: 2(Integer)
+2020-11-05 21:34:24 -<==      Total: 0
+2020-11-05 21:34:25 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:34:25 -==> Parameters: 2(Integer)
+2020-11-05 21:34:25 -<==      Total: 1
+2020-11-05 21:34:25 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:34:25 -==> Parameters: 3(Integer)
+2020-11-05 21:34:25 -<==      Total: 1
+2020-11-05 21:34:25 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:34:25 -==> Parameters: 3(Integer)
+2020-11-05 21:34:25 -<==      Total: 2
+2020-11-05 21:34:25 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:34:25 -==> Parameters: 3(Integer)
+2020-11-05 21:34:25 -<==      Total: 5
+2020-11-05 21:34:27 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:34:27 -==> Parameters: 2(Integer)
+2020-11-05 21:34:27 -<==      Total: 1
+2020-11-05 21:34:27 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:34:27 -==> Parameters: 4(Integer)
+2020-11-05 21:34:27 -<==      Total: 1
+2020-11-05 21:34:27 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:34:27 -==> Parameters: 4(Integer)
+2020-11-05 21:34:27 -<==      Total: 0
+2020-11-05 21:34:27 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:34:27 -==> Parameters: 4(Integer)
+2020-11-05 21:34:27 -<==      Total: 0
+2020-11-05 21:34:32 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:34:32 -==> Parameters: 4(Integer)
+2020-11-05 21:34:32 -<==      Total: 1
+2020-11-05 21:35:07 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 21:35:07 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:35:07 -==> Parameters: 2(Integer)
+2020-11-05 21:35:07 -<==      Total: 1
+2020-11-05 21:35:07 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 21:35:32 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:35:32 -==> Parameters: 2(Integer)
+2020-11-05 21:35:32 -<==      Total: 1
+2020-11-05 21:35:32 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:35:32 -==> Parameters: 2(Integer)
+2020-11-05 21:35:32 -<==      Total: 1
+2020-11-05 21:35:32 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:35:32 -==> Parameters: 2(Integer)
+2020-11-05 21:35:32 -<==      Total: 2
+2020-11-05 21:35:32 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:35:32 -==> Parameters: 2(Integer)
+2020-11-05 21:35:32 -<==      Total: 0
+2020-11-05 21:35:36 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:35:36 -==> Parameters: 2(Integer)
+2020-11-05 21:35:36 -<==      Total: 1
+2020-11-05 21:35:36 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:35:36 -==> Parameters: 6(Integer)
+2020-11-05 21:35:36 -<==      Total: 3
+2020-11-05 21:35:57 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:35:57 -==> Parameters: 4(Integer)
+2020-11-05 21:35:58 -<==      Total: 1
+2020-11-05 21:38:33 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:38:33 -==> Parameters: 2(Integer)
+2020-11-05 21:38:33 -<==      Total: 1
+2020-11-05 21:38:33 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:38:33 -==> Parameters: 2(Integer)
+2020-11-05 21:38:33 -<==      Total: 0
+2020-11-05 21:38:39 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:38:39 -==> Parameters: 2(Integer)
+2020-11-05 21:38:39 -<==      Total: 1
+2020-11-05 21:38:39 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:38:39 -==> Parameters: 6(Integer)
+2020-11-05 21:38:39 -<==      Total: 3
+2020-11-05 21:38:42 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:38:42 -==> Parameters: 4(Integer)
+2020-11-05 21:38:42 -<==      Total: 1
+2020-11-05 21:41:06 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:41:06 -==> Parameters: 6(Integer)
+2020-11-05 21:41:06 -<==      Total: 1
+2020-11-05 21:43:00 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:43:00 -==> Parameters: 2(Integer)
+2020-11-05 21:43:00 -<==      Total: 1
+2020-11-05 21:43:00 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:43:00 -==> Parameters: 6(Integer)
+2020-11-05 21:43:00 -<==      Total: 3
+2020-11-05 21:43:11 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:43:11 -==> Parameters: 4(Integer)
+2020-11-05 21:43:11 -<==      Total: 1
+2020-11-05 21:44:38 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:44:38 -==> Parameters: 5(Integer)
+2020-11-05 21:44:38 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:44:38 -==> Parameters: 2(Integer)
+2020-11-05 21:44:38 -<==      Total: 1
+2020-11-05 21:44:38 -<==      Total: 1
+2020-11-05 21:44:38 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 21:44:44 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:44:44 -==> Parameters: 2(Integer)
+2020-11-05 21:44:44 -<==      Total: 1
+2020-11-05 21:44:44 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:44:44 -==> Parameters: 6(Integer)
+2020-11-05 21:44:45 -<==      Total: 3
+2020-11-05 21:44:50 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:44:50 -==> Parameters: 4(Integer)
+2020-11-05 21:44:50 -<==      Total: 1
+2020-11-05 21:52:47 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:52:47 -==> Parameters: 2(Integer)
+2020-11-05 21:52:47 -<==      Total: 1
+2020-11-05 21:52:47 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:52:47 -==> Parameters: 6(Integer)
+2020-11-05 21:52:47 -<==      Total: 3
+2020-11-05 21:52:51 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:52:51 -==> Parameters: 4(Integer)
+2020-11-05 21:52:51 -<==      Total: 1
+2020-11-05 21:52:56 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:52:56 -==> Parameters: 5(Integer)
+2020-11-05 21:52:56 -<==      Total: 1
+2020-11-05 21:53:58 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:53:58 -==> Parameters: 6(Integer)
+2020-11-05 21:53:58 -<==      Total: 1
+2020-11-05 21:54:03 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:54:03 -==> Parameters: 4(Integer)
+2020-11-05 21:54:03 -<==      Total: 1
+2020-11-05 21:54:21 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:54:21 -==> Parameters: 4(Integer)
+2020-11-05 21:54:21 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:54:21 -==> Parameters: 2(Integer)
+2020-11-05 21:54:21 -<==      Total: 1
+2020-11-05 21:54:21 -<==      Total: 1
+2020-11-05 21:54:21 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 21:59:14 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:14 -==> Parameters: 4(Integer)
+2020-11-05 21:59:14 -<==      Total: 1
+2020-11-05 21:59:29 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:59:29 -==> Parameters: 2(Integer)
+2020-11-05 21:59:29 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:29 -==> Parameters: 4(Integer)
+2020-11-05 21:59:29 -<==      Total: 1
+2020-11-05 21:59:29 -<==      Total: 1
+2020-11-05 21:59:29 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2020-11-05 21:59:34 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:59:34 -==> Parameters: 2(Integer)
+2020-11-05 21:59:34 -<==      Total: 1
+2020-11-05 21:59:34 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 21:59:34 -==> Parameters: 2(Integer)
+2020-11-05 21:59:34 -<==      Total: 1
+2020-11-05 21:59:34 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 21:59:34 -==> Parameters: 2(Integer)
+2020-11-05 21:59:34 -<==      Total: 2
+2020-11-05 21:59:34 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 21:59:34 -==> Parameters: 2(Integer)
+2020-11-05 21:59:34 -<==      Total: 0
+2020-11-05 21:59:36 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:59:36 -==> Parameters: 2(Integer)
+2020-11-05 21:59:36 -<==      Total: 1
+2020-11-05 21:59:36 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:59:36 -==> Parameters: 6(Integer)
+2020-11-05 21:59:36 -<==      Total: 3
+2020-11-05 21:59:37 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:37 -==> Parameters: 4(Integer)
+2020-11-05 21:59:37 -<==      Total: 1
+2020-11-05 21:59:39 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:39 -==> Parameters: 5(Integer)
+2020-11-05 21:59:39 -<==      Total: 1
+2020-11-05 21:59:40 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:40 -==> Parameters: 6(Integer)
+2020-11-05 21:59:40 -<==      Total: 1
+2020-11-05 21:59:52 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 21:59:52 -==> Parameters: 2(Integer)
+2020-11-05 21:59:52 -<==      Total: 1
+2020-11-05 21:59:52 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 21:59:52 -==> Parameters: 6(Integer)
+2020-11-05 21:59:52 -<==      Total: 3
+2020-11-05 21:59:53 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:53 -==> Parameters: 4(Integer)
+2020-11-05 21:59:53 -<==      Total: 1
+2020-11-05 21:59:54 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:54 -==> Parameters: 5(Integer)
+2020-11-05 21:59:54 -<==      Total: 1
+2020-11-05 21:59:56 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:56 -==> Parameters: 6(Integer)
+2020-11-05 21:59:56 -<==      Total: 1
+2020-11-05 21:59:59 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 21:59:59 -==> Parameters: 5(Integer)
+2020-11-05 21:59:59 -<==      Total: 1
+2020-11-05 22:00:01 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:00:01 -==> Parameters: 4(Integer)
+2020-11-05 22:00:01 -<==      Total: 1
+2020-11-05 22:00:02 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:00:02 -==> Parameters: 5(Integer)
+2020-11-05 22:00:02 -<==      Total: 1
+2020-11-05 22:03:56 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:03:56 -==> Parameters: 15868808504@163.com(String)
+2020-11-05 22:03:56 -<==      Total: 1
+2020-11-05 22:04:02 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:04:02 -==> Parameters: 15868808504@163.com(String)
+2020-11-05 22:04:02 -<==      Total: 1
+2020-11-05 22:04:07 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:04:07 -==> Parameters: 15868808504@163.com(String)
+2020-11-05 22:04:07 -<==      Total: 1
+2020-11-05 22:04:24 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:04:24 -==> Parameters: 15868808504@163.com(String)
+2020-11-05 22:04:24 -<==      Total: 1
+2020-11-05 22:04:53 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:04:53 -==> Parameters: 15868808504@163.com(String)
+2020-11-05 22:04:53 -<==      Total: 1
+2020-11-05 22:04:53 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:04:53 -==> Parameters: 15868808504@163.com(String)
+2020-11-05 22:04:53 -<==      Total: 1
+2020-11-05 22:04:59 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-05 22:04:59 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:04:59 -==> Parameters: 
+2020-11-05 22:04:59 -==> Parameters: 11(Integer)
+2020-11-05 22:04:59 -<==      Total: 3
+2020-11-05 22:04:59 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-05 22:04:59 -==> Parameters: 3(Integer)
+2020-11-05 22:04:59 -<==      Total: 2
+2020-11-05 22:04:59 -<==      Total: 1
+2020-11-05 22:04:59 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-05 22:04:59 -==> Parameters: 5(Integer)
+2020-11-05 22:04:59 -<==      Total: 1
+2020-11-05 22:04:59 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-05 22:04:59 -==> Parameters: 2(Integer)
+2020-11-05 22:04:59 -<==      Total: 1
+2020-11-05 22:04:59 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-05 22:04:59 -==> Parameters: 3(Integer)
+2020-11-05 22:04:59 -<==      Total: 1
+2020-11-05 22:04:59 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-05 22:04:59 -==> Parameters: 2(Integer)
+2020-11-05 22:04:59 -<==      Total: 1
+2020-11-05 22:04:59 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-05 22:04:59 -==> Parameters: 2(Integer)
+2020-11-05 22:04:59 -<==      Total: 1
+2020-11-05 22:05:07 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:05:07 -==> Parameters: 11(Integer)
+2020-11-05 22:05:07 -<==      Total: 2
+2020-11-05 22:05:07 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:05:07 -==> Parameters: 6(Integer)
+2020-11-05 22:05:07 -<==      Total: 1
+2020-11-05 22:05:07 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:05:07 -==> Parameters: 1(Integer)
+2020-11-05 22:05:07 -<==      Total: 1
+2020-11-05 22:05:11 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:05:11 -==> Parameters: 11(Integer)
+2020-11-05 22:05:12 -<==      Total: 1
+2020-11-05 22:05:12 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:05:12 -==> Parameters: 2(Integer)
+2020-11-05 22:05:12 -<==      Total: 1
+2020-11-05 22:05:12 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:05:12 -==> Parameters: 2(Integer)
+2020-11-05 22:05:12 -<==      Total: 2
+2020-11-05 22:05:12 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:05:12 -==> Parameters: 2(Integer)
+2020-11-05 22:05:12 -<==      Total: 0
+2020-11-05 22:05:15 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:05:15 -==> Parameters: 11(Integer)
+2020-11-05 22:05:15 -<==      Total: 1
+2020-11-05 22:05:15 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:05:15 -==> Parameters: 3(Integer)
+2020-11-05 22:05:15 -<==      Total: 1
+2020-11-05 22:05:15 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:05:15 -==> Parameters: 3(Integer)
+2020-11-05 22:05:15 -<==      Total: 2
+2020-11-05 22:05:15 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:05:15 -==> Parameters: 3(Integer)
+2020-11-05 22:05:15 -<==      Total: 5
+2020-11-05 22:11:43 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:11:43 -==> Parameters: 11(Integer)
+2020-11-05 22:11:43 -<==      Total: 2
+2020-11-05 22:11:43 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:11:43 -==> Parameters: 6(Integer)
+2020-11-05 22:11:43 -<==      Total: 1
+2020-11-05 22:11:43 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:11:43 -==> Parameters: 1(Integer)
+2020-11-05 22:11:43 -<==      Total: 1
+2020-11-05 22:12:02 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 21:08:15 CST 2020]; root of context hierarchy
+2020-11-05 22:12:02 -Unregistering JMX-exposed beans on shutdown
+2020-11-05 22:12:05 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 30949 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-05 22:12:05 -No active profile set, falling back to default profiles: default
+2020-11-05 22:12:05 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 22:12:05 CST 2020]; root of context hierarchy
+2020-11-05 22:12:06 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-05 22:12:07 -Tomcat initialized with port(s): 8080 (http)
+2020-11-05 22:12:07 -Root WebApplicationContext: initialization completed in 1787 ms
+2020-11-05 22:12:07 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-05 22:12:07 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-05 22:12:07 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-05 22:12:07 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-05 22:12:07 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-05 22:12:08 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Thu Nov 05 22:12:05 CST 2020]; root of context hierarchy
+2020-11-05 22:12:08 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-05 22:12:08 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-05 22:12:08 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-05 22:12:08 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2020-11-05 22:12:08 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2020-11-05 22:12:08 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2020-11-05 22:12:08 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-05 22:12:08 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-05 22:12:08 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-05 22:12:08 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-05 22:12:08 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05 22:12:08 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-05 22:12:08 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 22:12:08 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 22:12:08 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05 22:12:08 -Registering beans for JMX exposure on startup
+2020-11-05 22:12:08 -Tomcat started on port(s): 8080 (http)
+2020-11-05 22:12:08 -Started SpringBootUserApplication in 3.05 seconds (JVM running for 3.517)
+2020-11-05 22:12:10 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-05 22:12:10 -FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2020-11-05 22:12:13 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:12:14 -==> Parameters: 6(Integer)
+2020-11-05 22:12:14 -<==      Total: 3
+2020-11-05 22:12:47 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:12:47 -==> Parameters: 11(Integer)
+2020-11-05 22:12:47 -<==      Total: 2
+2020-11-05 22:12:47 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:12:47 -==> Parameters: 6(Integer)
+2020-11-05 22:12:47 -<==      Total: 1
+2020-11-05 22:12:47 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:12:47 -==> Parameters: 1(Integer)
+2020-11-05 22:12:47 -<==      Total: 1
+2020-11-05 22:12:58 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:12:58 -==> Parameters: 11(Integer)
+2020-11-05 22:12:58 -<==      Total: 2
+2020-11-05 22:12:58 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:12:58 -==> Parameters: 6(Integer)
+2020-11-05 22:12:59 -<==      Total: 1
+2020-11-05 22:12:59 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:12:59 -==> Parameters: 1(Integer)
+2020-11-05 22:12:59 -<==      Total: 1
+2020-11-05 22:15:51 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:15:51 -==> Parameters: 11(Integer)
+2020-11-05 22:15:51 -<==      Total: 2
+2020-11-05 22:15:51 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:15:51 -==> Parameters: 6(Integer)
+2020-11-05 22:15:51 -<==      Total: 1
+2020-11-05 22:15:51 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:15:51 -==> Parameters: 1(Integer)
+2020-11-05 22:15:51 -<==      Total: 1
+2020-11-05 22:15:56 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:15:56 -==> Parameters: 1(Integer)
+2020-11-05 22:15:56 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:15:56 -==> Parameters: 11(Integer)
+2020-11-05 22:15:56 -<==      Total: 0
+2020-11-05 22:15:56 -<==      Total: 1
+2020-11-05 22:15:56 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:15:56 -==> Parameters: 3(Integer)
+2020-11-05 22:15:56 -<==      Total: 1
+2020-11-05 22:15:56 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:15:56 -==> Parameters: 3(Integer)
+2020-11-05 22:15:56 -<==      Total: 2
+2020-11-05 22:15:56 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:15:56 -==> Parameters: 3(Integer)
+2020-11-05 22:15:56 -<==      Total: 5
+2020-11-05 22:16:01 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:16:01 -==> Parameters: 6(Integer)
+2020-11-05 22:16:01 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:16:01 -==> Parameters: 11(Integer)
+2020-11-05 22:16:01 -<==      Total: 3
+2020-11-05 22:16:01 -<==      Total: 1
+2020-11-05 22:16:01 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:16:01 -==> Parameters: 2(Integer)
+2020-11-05 22:16:01 -<==      Total: 1
+2020-11-05 22:16:01 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:16:01 -==> Parameters: 2(Integer)
+2020-11-05 22:16:01 -<==      Total: 2
+2020-11-05 22:16:01 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:16:01 -==> Parameters: 2(Integer)
+2020-11-05 22:16:01 -<==      Total: 0
+2020-11-05 22:16:10 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:16:10 -==> Parameters: 11(Integer)
+2020-11-05 22:16:10 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:16:10 -==> Parameters: 1(Integer)
+2020-11-05 22:16:10 -<==      Total: 1
+2020-11-05 22:16:10 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:16:10 -==> Parameters: 3(Integer)
+2020-11-05 22:16:10 -<==      Total: 0
+2020-11-05 22:16:11 -<==      Total: 1
+2020-11-05 22:16:11 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:16:11 -==> Parameters: 3(Integer)
+2020-11-05 22:16:11 -<==      Total: 2
+2020-11-05 22:16:11 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:16:11 -==> Parameters: 3(Integer)
+2020-11-05 22:16:11 -<==      Total: 5
+2020-11-05 22:16:14 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:16:14 -==> Parameters: 6(Integer)
+2020-11-05 22:16:14 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:16:14 -==> Parameters: 11(Integer)
+2020-11-05 22:16:14 -<==      Total: 3
+2020-11-05 22:16:14 -<==      Total: 1
+2020-11-05 22:16:14 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:16:14 -==> Parameters: 2(Integer)
+2020-11-05 22:16:14 -<==      Total: 1
+2020-11-05 22:16:14 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:16:14 -==> Parameters: 2(Integer)
+2020-11-05 22:16:14 -<==      Total: 2
+2020-11-05 22:16:14 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:16:14 -==> Parameters: 2(Integer)
+2020-11-05 22:16:14 -<==      Total: 0
+2020-11-05 22:16:25 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:16:25 -==> Parameters: 1653611386@qq.com(String)
+2020-11-05 22:16:25 -<==      Total: 1
+2020-11-05 22:16:25 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:16:25 -==> Parameters: 1653611386@qq.com(String)
+2020-11-05 22:16:25 -<==      Total: 1
+2020-11-05 22:16:28 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:16:28 -==> Parameters: 2(Integer)
+2020-11-05 22:16:28 -<==      Total: 1
+2020-11-05 22:16:28 -==>  Preparing: SELECT * from course WHERE teacherId = ? 
+2020-11-05 22:16:28 -==> Parameters: 2(Integer)
+2020-11-05 22:16:28 -<==      Total: 3
+2020-11-05 22:16:30 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:16:30 -==> Parameters: 2(Integer)
+2020-11-05 22:16:30 -<==      Total: 1
+2020-11-05 22:16:30 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:16:30 -==> Parameters: 2(Integer)
+2020-11-05 22:16:30 -<==      Total: 1
+2020-11-05 22:16:30 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:16:30 -==> Parameters: 2(Integer)
+2020-11-05 22:16:30 -<==      Total: 2
+2020-11-05 22:16:30 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:16:30 -==> Parameters: 2(Integer)
+2020-11-05 22:16:30 -<==      Total: 0
+2020-11-05 22:16:32 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:16:32 -==> Parameters: 2(Integer)
+2020-11-05 22:16:32 -<==      Total: 1
+2020-11-05 22:16:32 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:16:32 -==> Parameters: 6(Integer)
+2020-11-05 22:16:32 -<==      Total: 3
+2020-11-05 22:16:47 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:16:47 -==> Parameters: 2(Integer)
+2020-11-05 22:16:47 -<==      Total: 1
+2020-11-05 22:16:47 -==>  Preparing: INSERT into courseWare(courseId,filepath,filename,uploadDate) values( ? ,? ,? ,? ) 
+2020-11-05 22:16:47 -==> Parameters: 2(Integer), http://localhost:8080/download/courseWare/2/人件读后感.odt(String), 人件读后感.odt(String), 2020-11-05 22:16:47.665(Timestamp)
+2020-11-05 22:16:47 -<==    Updates: 1
+2020-11-05 22:16:47 -==>  Preparing: INSERT into courseWare(courseId,filepath,filename,uploadDate) values( ? ,? ,? ,? ) 
+2020-11-05 22:16:47 -==> Parameters: 2(Integer), http://localhost:8080/download/courseWare/2/人月神话读后感.odt(String), 人月神话读后感.odt(String), 2020-11-05 22:16:47.784(Timestamp)
+2020-11-05 22:16:47 -<==    Updates: 1
+2020-11-05 22:16:47 -==>  Preparing: INSERT into courseWare(courseId,filepath,filename,uploadDate) values( ? ,? ,? ,? ) 
+2020-11-05 22:16:47 -==> Parameters: 2(Integer), http://localhost:8080/download/courseWare/2/感想.odt(String), 感想.odt(String), 2020-11-05 22:16:47.88(Timestamp)
+2020-11-05 22:16:47 -<==    Updates: 1
+2020-11-05 22:16:48 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:16:48 -==> Parameters: 2(Integer)
+2020-11-05 22:16:48 -<==      Total: 1
+2020-11-05 22:16:48 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:16:48 -==> Parameters: 2(Integer)
+2020-11-05 22:16:48 -<==      Total: 1
+2020-11-05 22:16:48 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:16:48 -==> Parameters: 2(Integer)
+2020-11-05 22:16:48 -<==      Total: 2
+2020-11-05 22:16:48 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:16:48 -==> Parameters: 2(Integer)
+2020-11-05 22:16:48 -<==      Total: 3
+2020-11-05 22:16:57 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:16:57 -==> Parameters: 15868808504@163.com(String)
+2020-11-05 22:16:57 -<==      Total: 1
+2020-11-05 22:16:57 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-05 22:16:57 -==> Parameters: 15868808504@163.com(String)
+2020-11-05 22:16:57 -<==      Total: 1
+2020-11-05 22:16:58 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:16:58 -==> Parameters: 11(Integer)
+2020-11-05 22:16:59 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-05 22:16:59 -==> Parameters: 
+2020-11-05 22:16:59 -<==      Total: 2
+2020-11-05 22:16:59 -<==      Total: 3
+2020-11-05 22:16:59 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-05 22:16:59 -==> Parameters: 3(Integer)
+2020-11-05 22:16:59 -<==      Total: 1
+2020-11-05 22:16:59 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-05 22:16:59 -==> Parameters: 5(Integer)
+2020-11-05 22:16:59 -<==      Total: 1
+2020-11-05 22:16:59 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-05 22:16:59 -==> Parameters: 2(Integer)
+2020-11-05 22:16:59 -<==      Total: 1
+2020-11-05 22:16:59 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-05 22:16:59 -==> Parameters: 3(Integer)
+2020-11-05 22:16:59 -<==      Total: 1
+2020-11-05 22:16:59 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-05 22:16:59 -==> Parameters: 2(Integer)
+2020-11-05 22:16:59 -<==      Total: 1
+2020-11-05 22:16:59 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-05 22:16:59 -==> Parameters: 2(Integer)
+2020-11-05 22:16:59 -<==      Total: 1
+2020-11-05 22:17:00 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:17:00 -==> Parameters: 11(Integer)
+2020-11-05 22:17:00 -<==      Total: 2
+2020-11-05 22:17:00 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:17:00 -==> Parameters: 6(Integer)
+2020-11-05 22:17:00 -<==      Total: 1
+2020-11-05 22:17:00 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:17:00 -==> Parameters: 1(Integer)
+2020-11-05 22:17:00 -<==      Total: 1
+2020-11-05 22:17:03 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:17:03 -==> Parameters: 11(Integer)
+2020-11-05 22:17:03 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:17:03 -==> Parameters: 6(Integer)
+2020-11-05 22:17:03 -<==      Total: 1
+2020-11-05 22:17:03 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:17:03 -==> Parameters: 2(Integer)
+2020-11-05 22:17:03 -<==      Total: 3
+2020-11-05 22:17:03 -<==      Total: 1
+2020-11-05 22:17:03 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:17:03 -==> Parameters: 2(Integer)
+2020-11-05 22:17:03 -<==      Total: 2
+2020-11-05 22:17:03 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:17:03 -==> Parameters: 2(Integer)
+2020-11-05 22:17:04 -<==      Total: 3
+2020-11-05 22:19:58 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:19:58 -==> Parameters: 6(Integer)
+2020-11-05 22:19:58 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:19:58 -==> Parameters: 11(Integer)
+2020-11-05 22:19:58 -<==      Total: 3
+2020-11-05 22:19:58 -<==      Total: 1
+2020-11-05 22:19:58 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:19:58 -==> Parameters: 2(Integer)
+2020-11-05 22:19:58 -<==      Total: 1
+2020-11-05 22:19:58 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:19:58 -==> Parameters: 2(Integer)
+2020-11-05 22:19:58 -<==      Total: 2
+2020-11-05 22:19:58 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:19:58 -==> Parameters: 2(Integer)
+2020-11-05 22:19:59 -<==      Total: 3
+2020-11-05 22:20:01 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:20:01 -==> Parameters: 1(Integer)
+2020-11-05 22:20:01 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:20:01 -==> Parameters: 11(Integer)
+2020-11-05 22:20:01 -<==      Total: 1
+2020-11-05 22:20:01 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:20:01 -==> Parameters: 3(Integer)
+2020-11-05 22:20:01 -<==      Total: 0
+2020-11-05 22:20:01 -<==      Total: 1
+2020-11-05 22:20:01 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:20:01 -==> Parameters: 3(Integer)
+2020-11-05 22:20:01 -<==      Total: 2
+2020-11-05 22:20:01 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:20:01 -==> Parameters: 3(Integer)
+2020-11-05 22:20:01 -<==      Total: 5
+2020-11-05 22:20:04 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:20:04 -==> Parameters: 6(Integer)
+2020-11-05 22:20:04 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 22:20:04 -==> Parameters: 11(Integer)
+2020-11-05 22:20:04 -<==      Total: 3
+2020-11-05 22:20:04 -<==      Total: 1
+2020-11-05 22:20:04 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 22:20:04 -==> Parameters: 2(Integer)
+2020-11-05 22:20:04 -<==      Total: 1
+2020-11-05 22:20:04 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 22:20:04 -==> Parameters: 2(Integer)
+2020-11-05 22:20:04 -<==      Total: 2
+2020-11-05 22:20:04 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 22:20:04 -==> Parameters: 2(Integer)
+2020-11-05 22:20:04 -<==      Total: 3
+2020-11-05 22:31:16 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:31:16 -==> Parameters: 11(Integer)
+2020-11-05 22:31:16 -<==      Total: 2
+2020-11-05 22:31:16 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:31:16 -==> Parameters: 6(Integer)
+2020-11-05 22:31:16 -<==      Total: 1
+2020-11-05 22:31:16 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:31:16 -==> Parameters: 1(Integer)
+2020-11-05 22:31:16 -<==      Total: 1
+2020-11-05 22:35:02 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:35:02 -==> Parameters: 11(Integer)
+2020-11-05 22:35:02 -<==      Total: 2
+2020-11-05 22:35:02 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:35:02 -==> Parameters: 6(Integer)
+2020-11-05 22:35:02 -<==      Total: 1
+2020-11-05 22:35:02 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:35:02 -==> Parameters: 1(Integer)
+2020-11-05 22:35:02 -<==      Total: 1
+2020-11-05 22:45:32 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-05 22:45:32 -==> Parameters: 11(Integer)
+2020-11-05 22:45:32 -<==      Total: 2
+2020-11-05 22:45:32 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:45:32 -==> Parameters: 6(Integer)
+2020-11-05 22:45:32 -<==      Total: 1
+2020-11-05 22:45:32 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-05 22:45:32 -==> Parameters: 1(Integer)
+2020-11-05 22:45:32 -<==      Total: 1
+2020-11-05 22:45:43 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-05 22:45:43 -==> Parameters: 6(Integer)
+2020-11-05 22:45:43 -<==      Total: 3
+2020-11-05 22:45:45 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:45:45 -==> Parameters: 4(Integer)
+2020-11-05 22:45:45 -<==      Total: 1
+2020-11-05 22:49:35 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:49:35 -==> Parameters: 4(Integer)
+2020-11-05 22:49:35 -<==      Total: 1
+2020-11-05 22:50:54 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:50:54 -==> Parameters: 4(Integer)
+2020-11-05 22:50:54 -<==      Total: 1
+2020-11-05 22:52:19 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:52:19 -==> Parameters: 4(Integer)
+2020-11-05 22:52:19 -<==      Total: 1
+2020-11-05 22:56:07 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:56:07 -==> Parameters: 4(Integer)
+2020-11-05 22:56:07 -<==      Total: 1
+2020-11-05 22:56:54 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:56:54 -==> Parameters: 4(Integer)
+2020-11-05 22:56:54 -<==      Total: 1
+2020-11-05 22:57:09 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:57:09 -==> Parameters: 4(Integer)
+2020-11-05 22:57:09 -<==      Total: 1
+2020-11-05 22:58:26 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:58:26 -==> Parameters: 4(Integer)
+2020-11-05 22:58:26 -<==      Total: 1
+2020-11-05 22:58:31 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 22:58:31 -==> Parameters: 4(Integer)
+2020-11-05 22:58:31 -<==      Total: 1
+2020-11-05 23:01:52 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-05 23:01:52 -==> Parameters: 11(Integer)
+2020-11-05 23:01:52 -<==      Total: 1
+2020-11-05 23:01:52 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-05 23:01:52 -==> Parameters: 2(Integer)
+2020-11-05 23:01:52 -<==      Total: 1
+2020-11-05 23:01:52 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-05 23:01:52 -==> Parameters: 2(Integer)
+2020-11-05 23:01:52 -<==      Total: 2
+2020-11-05 23:01:52 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-05 23:01:52 -==> Parameters: 2(Integer)
+2020-11-05 23:01:52 -<==      Total: 3
+2020-11-05 23:43:14 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-05 23:43:14 -==> Parameters: 4(Integer)
+2020-11-05 23:43:14 -<==      Total: 1

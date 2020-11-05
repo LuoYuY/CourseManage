@@ -11,15 +11,16 @@
         <result column="endTime" property="endTime" jdbcType="VARCHAR"/>
         <result column="sum" property="sum" jdbcType="INTEGER"/>
         <result column="finishedSum" property="finishedSum" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
     </resultMap>
-<!--    <select id="getSelectedCoursesByStuId" parameterType="java.util.Map" resultMap="selectClass">-->
-<!--        SELECT * from selectClass WHERE studentId = #{studentId}-->
-<!--    </select>-->
+    <select id="getTasksByClassId" parameterType="java.util.Map" resultMap="task">
+        SELECT * from task WHERE classId = #{classId}
+    </select>
 
     <!--    insert 后返回操作的主键-->
     <insert id="addTask" parameterType="cn.org.test.pojo.Task" useGeneratedKeys="true" keyProperty="task.id">
         INSERT into task
-              (classId,title,content,startTime,endTime,sum,finishedSum)
+              (classId,title,content,startTime,endTime,sum,finishedSum,status)
         values(
         #{task.classId},
         #{task.title},
@@ -27,9 +28,24 @@
         #{task.startTime},
         #{task.endTime},
         #{task.sum},
-        #{task.finishedSum}
+        #{task.finishedSum},
+        #{task.status}
         )
     </insert>
+
+    <select id="getTaskById" parameterType="java.util.Map" resultMap="task">
+        SELECT * from task WHERE id = #{taskId}
+    </select>
+
+    <update id="updateTaskState" parameterType="java.util.Map" >
+        UPDATE task SET status = 2 WHERE id=#{taskId}
+    </update>
+
+    <update id="updateFinishedNum" parameterType="java.util.Map" >
+        UPDATE task SET finishedSum = finishedSum+1 WHERE id=#{taskId}
+    </update>
+
+
 
 <!--    <delete id="deleteSelectClass" parameterType="java.util.Map">-->
 <!--        delete from selectClass where classId=#{classId} and studentId=#{studentId}-->

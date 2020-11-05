@@ -1,9 +1,7 @@
 package cn.org.test.service;
 
+import cn.org.test.pojo.*;
 import cn.org.test.pojo.Class;
-import cn.org.test.pojo.Course;
-import cn.org.test.pojo.Grade;
-import cn.org.test.pojo.Semester;
 import cn.org.test.req.CreateCourseReq;
 
 import java.util.ArrayList;
@@ -21,4 +19,8 @@ public interface CourseService {
     Course getCourseDetail(Integer courseId);
 
     List<Class> getClassListTch(Integer courseId);
+
+    List<Task> getTasksList(Integer classId);
+
+    Task getTaskDetail(Integer taskId);
 }
