@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.org.test.mapper.TaskMapper">
+    <resultMap id="task" type="cn.org.test.pojo.Task">
+        <result column="id"   property="id" jdbcType="INTEGER"/>
+        <result column="classId" property="classId" jdbcType="INTEGER"/>
+        <result column="num" property="num" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="startTime" property="startTime" jdbcType="VARCHAR"/>
+        <result column="endTime" property="endTime" jdbcType="VARCHAR"/>
+        <result column="sum" property="sum" jdbcType="INTEGER"/>
+        <result column="finishedSum" property="finishedSum" jdbcType="INTEGER"/>
+    </resultMap>
+<!--    <select id="getSelectedCoursesByStuId" parameterType="java.util.Map" resultMap="selectClass">-->
+<!--        SELECT * from selectClass WHERE studentId = #{studentId}-->
+<!--    </select>-->
+
+    <!--    insert 后返回操作的主键-->
+    <insert id="addTask" parameterType="cn.org.test.pojo.Task" useGeneratedKeys="true" keyProperty="task.id">
+        INSERT into task
+              (classId,title,content,startTime,endTime,sum,finishedSum)
+        values(
+        #{task.classId},
+        #{task.title},
+        #{task.content},
+        #{task.startTime},
+        #{task.endTime},
+        #{task.sum},
+        #{task.finishedSum}
+        )
+    </insert>
+
+<!--    <delete id="deleteSelectClass" parameterType="java.util.Map">-->
+<!--        delete from selectClass where classId=#{classId} and studentId=#{studentId}-->
+<!--    </delete>-->
+</mapper>

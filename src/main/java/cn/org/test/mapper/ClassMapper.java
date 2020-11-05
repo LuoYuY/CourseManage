@@ -14,4 +14,8 @@ public interface ClassMapper {
     Class getClassById(@Param("id")Integer id);
 
     List<Class> getClassListToSelect();
+
+    Integer addNum(@Param("id")Integer id);
+
+    Integer deleteNum(@Param("id")Integer classId);
 }

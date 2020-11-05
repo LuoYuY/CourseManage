@@ -4,10 +4,8 @@ import cn.org.test.mapper.ClassMapper;
 import cn.org.test.mapper.GradeMapper;
 import cn.org.test.mapper.SelectClassMapper;
 import cn.org.test.mapper.SemesterMapper;
+import cn.org.test.pojo.*;
 import cn.org.test.pojo.Class;
-import cn.org.test.pojo.ClassForSelect;
-import cn.org.test.pojo.Grade;
-import cn.org.test.pojo.Semester;
 import cn.org.test.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -58,5 +56,51 @@ public class StudentServiceImpl implements StudentService {
             result.add(obj);
         }
         return result;
+    }
+
+    @Override
+    public List<SelectClass> getSelectedCourses(Integer studentId) {
+        List<SelectClass> list = selectClassMapper.getSelectedCoursesByStuId(studentId);
+        return list;
+    }
+
+    @Override
+    public boolean selectClass(Integer classId, Integer studentId) {
+        try{
+            //添加选课记录
+            selectClassMapper.addSelectClass(classId,studentId,0);
+            //class中 选课人数+1，class表更新
+            classMapper.addNum(classId);
+            return true;
+        }catch (Exception e) {
+            return false;
+        }
+    }
+
+    @Override
+    public boolean disSelectClass(Integer classId, Integer studentId) {
+        try{
+            //添加选课记录
+            selectClassMapper.deleteSelectClass(classId,studentId);
+            //class中 选课人数+1，class表更新
+            classMapper.deleteNum(classId);
+            return true;
+        }catch (Exception e) {
+            return false;
+        }
+    }
+
+    @Override
+    public List<Class> getClassesList(Integer studentId) {
+        List<SelectClass> list  = selectClassMapper.getSelectedCoursesByStuId(studentId);
+        List<Class> res = new ArrayList<>();
+        Iterator<SelectClass> itr = list.iterator();
+        while(itr.hasNext())
+        {
+            SelectClass item = itr.next();
+            Class obj = classMapper.getClassById(item.getClassId());
+            res.add(obj);
+        }
+        return res;
     }
 }

@@ -48,4 +48,19 @@
         SELECT * from class WHERE status in (0,1)
     </select>
 
+    <update id="addNum" parameterType="java.util.Map" >
+        update class
+        <set>
+            num=num+1
+        </set>
+        where id=#{id}
+    </update>
+
+    <update id="deleteNum" parameterType="java.util.Map" >
+        update class
+        <set>
+            num=num-1
+        </set>
+        where id=#{id}
+    </update>
 </mapper>

@@ -5,9 +5,9 @@ package cn.org.test.controller;
  */
 
 import cn.org.test.common.ServerResponse;
-import cn.org.test.common.UserLoginToken;
 import cn.org.test.pojo.Class;
 import cn.org.test.pojo.ClassForSelect;
+import cn.org.test.pojo.SelectClass;
 import cn.org.test.service.*;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -35,6 +35,38 @@ public class StudentController {
     @GetMapping(value = "/selectClassList")
     public ServerResponse selectClassList() {
         List<ClassForSelect> list = studentService.getAllClassList();
+        JSONArray array= JSONArray.parseArray(JSON.toJSONString(list));
+        return ServerResponse.createBySuccess(array);
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/getSelectedCourses")
+    public ServerResponse getSelectedCourses(Integer studentId) {
+        List<SelectClass> list = studentService.getSelectedCourses(studentId);
+        JSONArray array= JSONArray.parseArray(JSON.toJSONString(list));
+        return ServerResponse.createBySuccess(array);
+    }
+
+    @ResponseBody
+    @PostMapping(value = "/selectClass")
+    public ServerResponse selectClass(Integer classId,Integer studentId) {
+        if(studentService.selectClass(classId,studentId))
+            return ServerResponse.createBySuccess();
+        else return ServerResponse.createByError();
+    }
+
+    @ResponseBody
+    @PostMapping(value = "/disSelectClass")
+    public ServerResponse disSelectClass(Integer classId,Integer studentId) {
+        if(studentService.disSelectClass(classId,studentId))
+            return ServerResponse.createBySuccess();
+        else return ServerResponse.createByError();
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/getClassesList")
+    public ServerResponse getClassesList(Integer studentId) {
+        List<Class> list = studentService.getClassesList(studentId);
         JSONArray array= JSONArray.parseArray(JSON.toJSONString(list));
         return ServerResponse.createBySuccess(array);
     }

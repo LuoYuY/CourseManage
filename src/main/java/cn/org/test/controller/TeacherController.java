@@ -21,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -122,7 +123,7 @@ public class TeacherController {
         return ServerResponse.createBySuccess(arr);
     }
 
-//    @UserLoginToken
+    @UserLoginToken
     @ResponseBody
     @GetMapping(value = "/getCourseDetail")
     public ServerResponse getCourseDetail(Integer courseId, HttpServletResponse response) {
@@ -161,7 +162,7 @@ public class TeacherController {
     }
 
 
-//    @UserLoginToken
+    @UserLoginToken
     @ResponseBody
     @PostMapping(value = "/uploadFile")
     public ServerResponse uploadFile(@RequestParam("courseId")Integer courseId, @RequestParam("uploadFile")MultipartFile[] uploadFile, HttpServletRequest request, HttpServletResponse response) {
@@ -170,6 +171,45 @@ public class TeacherController {
 //            System.out.println(multipartFile);
 //        }
         if(fileService.saveFiles(courseId,uploadFile))
+            return ServerResponse.createBySuccess();
+        else return ServerResponse.createByErrorCodeMessage(2,"上传失败");
+    }
+
+    @UserLoginToken
+    @ResponseBody
+    @GetMapping(value = "/getClassDetail")
+    public ServerResponse getClassDetail(Integer classId, HttpServletResponse response) {
+        return ServerResponse.createBySuccess();
+    }
+
+
+    @UserLoginToken
+    @ResponseBody
+    @PostMapping(value = "/createTask")
+    public ServerResponse createTask(
+            @RequestParam("classId")Integer classId,
+            @RequestParam("uploadFile")MultipartFile[] uploadFile,
+            @RequestParam("title")String title,
+            @RequestParam("content")String content,
+            @RequestParam("date")String date,
+            @RequestParam("time")String time,
+            HttpServletRequest request, HttpServletResponse response) {
+
+        System.out.println("----------in controller------------");
+        Task t = new Task();
+        System.out.println("----------in controller2------------");
+        t.setClassId(classId);
+        System.out.println("----------in controller3------------");
+        t.setTitle(title);
+        t.setContent(content);
+        t.setEndTime(date+" "+time);
+        System.out.println("date+time:"+t.getEndTime());
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        t.setStartTime(formatter.format(new Date()));
+        System.out.println("startTime:"+t.getStartTime());
+
+
+        if(fileService.addTask(t,uploadFile))
             return ServerResponse.createBySuccess();
         else return ServerResponse.createByErrorCodeMessage(2,"上传失败");
     }

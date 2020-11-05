@@ -7,16 +7,16 @@
         <result column="classId" property="classId" jdbcType="INTEGER"/>
         <result column="status" property="status" jdbcType="INTEGER"/>
     </resultMap>
+    <select id="getSelectedCoursesByStuId" parameterType="java.util.Map" resultMap="selectClass">
+        SELECT * from selectClass WHERE studentId = #{studentId}
+    </select>
 
-<!--    &lt;!&ndash;    insert 后返回操作的主键&ndash;&gt;-->
-<!--    <insert id="addCourse" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="id" keyColumn="id">-->
-<!--        INSERT into course(name,teacherId,teacherName) values(#{name}, #{teacherId}, #{teacherName})-->
-<!--    </insert>-->
+    <!--    insert 后返回操作的主键-->
+    <insert id="addSelectClass" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT into selectClass(classId,studentId,status) values(#{classId}, #{studentId}, #{status})
+    </insert>
 
-<!--    <select id="getCoursesById" parameterType="java.util.Map" resultMap="course">-->
-<!--        SELECT * from course WHERE teacherId = #{teacherId}-->
-<!--    </select>-->
-<!--    <select id="getCourseById" parameterType="java.util.Map" resultMap="course">-->
-<!--        SELECT * from course WHERE id = #{id}-->
-<!--    </select>-->
+    <delete id="deleteSelectClass" parameterType="java.util.Map">
+        delete from selectClass where classId=#{classId} and studentId=#{studentId}
+    </delete>
 </mapper>

@@ -3583,3 +3583,1654 @@ java.lang.RuntimeException: 401
 2020-11-02 16:59:15 -==>  Preparing: SELECT * from grade WHERE id = ? 
 2020-11-02 16:59:15 -==> Parameters: 2(Integer)
 2020-11-02 16:59:15 -<==      Total: 1
+2020-11-02 17:19:02 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 17:19:02 -==> Parameters: 
+2020-11-02 17:19:02 -<==      Total: 3
+2020-11-02 17:19:02 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 17:19:02 -==> Parameters: 3(Integer)
+2020-11-02 17:19:02 -<==      Total: 1
+2020-11-02 17:19:02 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 17:19:02 -==> Parameters: 5(Integer)
+2020-11-02 17:19:02 -<==      Total: 1
+2020-11-02 17:19:02 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 17:19:02 -==> Parameters: 2(Integer)
+2020-11-02 17:19:02 -<==      Total: 1
+2020-11-02 17:19:02 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 17:19:02 -==> Parameters: 3(Integer)
+2020-11-02 17:19:02 -<==      Total: 1
+2020-11-02 17:19:02 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 17:19:02 -==> Parameters: 2(Integer)
+2020-11-02 17:19:02 -<==      Total: 1
+2020-11-02 17:19:02 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 17:19:02 -==> Parameters: 2(Integer)
+2020-11-02 17:19:02 -<==      Total: 1
+2020-11-02 17:21:02 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 16:59:06 CST 2020]; root of context hierarchy
+2020-11-02 17:21:02 -Unregistering JMX-exposed beans on shutdown
+2020-11-02 17:21:06 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 26520 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-02 17:21:06 -No active profile set, falling back to default profiles: default
+2020-11-02 17:21:06 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 17:21:06 CST 2020]; root of context hierarchy
+2020-11-02 17:21:07 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-02 17:21:07 -Tomcat initialized with port(s): 8080 (http)
+2020-11-02 17:21:08 -Root WebApplicationContext: initialization completed in 1334 ms
+2020-11-02 17:21:08 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-02 17:21:08 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-02 17:21:08 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-02 17:21:08 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-02 17:21:08 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-02 17:21:08 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 17:21:06 CST 2020]; root of context hierarchy
+2020-11-02 17:21:08 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-02 17:21:08 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-02 17:21:08 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-02 17:21:08 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-02 17:21:08 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-02 17:21:08 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 17:21:08 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-02 17:21:08 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 17:21:08 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 17:21:08 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 17:21:09 -Registering beans for JMX exposure on startup
+2020-11-02 17:21:09 -Tomcat started on port(s): 8080 (http)
+2020-11-02 17:21:09 -Started SpringBootUserApplication in 2.736 seconds (JVM running for 3.216)
+2020-11-02 17:21:12 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-02 17:21:12 -FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2020-11-02 17:21:16 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 17:21:16 -==> Parameters: 
+2020-11-02 17:21:16 -<==      Total: 3
+2020-11-02 17:21:16 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 17:21:16 -==> Parameters: 3(Integer)
+2020-11-02 17:21:16 -<==      Total: 1
+2020-11-02 17:21:16 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 17:21:16 -==> Parameters: 5(Integer)
+2020-11-02 17:21:16 -<==      Total: 1
+2020-11-02 17:21:16 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 17:21:16 -==> Parameters: 2(Integer)
+2020-11-02 17:21:16 -<==      Total: 1
+2020-11-02 17:21:16 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 17:21:16 -==> Parameters: 3(Integer)
+2020-11-02 17:21:16 -<==      Total: 1
+2020-11-02 17:21:16 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 17:21:16 -==> Parameters: 2(Integer)
+2020-11-02 17:21:16 -<==      Total: 1
+2020-11-02 17:21:16 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 17:21:16 -==> Parameters: 2(Integer)
+2020-11-02 17:21:16 -<==      Total: 1
+2020-11-02 18:40:17 -No mapping found for HTTP request with URI [/stu/getSelectedCourses] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-02 18:49:49 -No mapping found for HTTP request with URI [/stu/getSelectedCourses] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-02 18:53:01 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 17:21:06 CST 2020]; root of context hierarchy
+2020-11-02 18:53:01 -Unregistering JMX-exposed beans on shutdown
+2020-11-02 18:53:12 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 27905 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-02 18:53:12 -No active profile set, falling back to default profiles: default
+2020-11-02 18:53:12 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 18:53:12 CST 2020]; root of context hierarchy
+2020-11-02 18:53:13 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-02 18:53:13 -Tomcat initialized with port(s): 8080 (http)
+2020-11-02 18:53:13 -Root WebApplicationContext: initialization completed in 1471 ms
+2020-11-02 18:53:13 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-02 18:53:13 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-02 18:53:13 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-02 18:53:13 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-02 18:53:13 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-02 18:53:14 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 18:53:12 CST 2020]; root of context hierarchy
+2020-11-02 18:53:14 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-02 18:53:14 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-02 18:53:14 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-02 18:53:14 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-02 18:53:14 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-02 18:53:14 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-02 18:53:14 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 18:53:14 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-02 18:53:14 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 18:53:14 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 18:53:14 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 18:53:14 -Registering beans for JMX exposure on startup
+2020-11-02 18:53:14 -Tomcat started on port(s): 8080 (http)
+2020-11-02 18:53:14 -Started SpringBootUserApplication in 2.932 seconds (JVM running for 3.602)
+2020-11-02 18:53:16 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-02 18:53:16 -FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020-11-02 18:53:20 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 18:53:20 -==> Parameters: 
+2020-11-02 18:53:20 -<==      Total: 3
+2020-11-02 18:53:20 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 18:53:20 -==> Parameters: 3(Integer)
+2020-11-02 18:53:20 -<==      Total: 1
+2020-11-02 18:53:20 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 18:53:20 -==> Parameters: 5(Integer)
+2020-11-02 18:53:20 -<==      Total: 1
+2020-11-02 18:53:20 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 18:53:20 -==> Parameters: 2(Integer)
+2020-11-02 18:53:20 -<==      Total: 1
+2020-11-02 18:53:20 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 18:53:20 -==> Parameters: 3(Integer)
+2020-11-02 18:53:20 -<==      Total: 1
+2020-11-02 18:53:20 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 18:53:20 -==> Parameters: 2(Integer)
+2020-11-02 18:53:21 -<==      Total: 1
+2020-11-02 18:53:21 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 18:53:21 -==> Parameters: 2(Integer)
+2020-11-02 18:53:21 -<==      Total: 1
+2020-11-02 18:53:58 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 18:53:58 -==> Parameters: 11(Integer)
+2020-11-02 18:53:58 -<==      Total: 1
+2020-11-02 19:38:48 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 18:53:12 CST 2020]; root of context hierarchy
+2020-11-02 19:38:48 -Unregistering JMX-exposed beans on shutdown
+2020-11-02 19:38:54 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 28864 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-02 19:38:54 -No active profile set, falling back to default profiles: default
+2020-11-02 19:38:54 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 19:38:54 CST 2020]; root of context hierarchy
+2020-11-02 19:38:55 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-02 19:38:55 -Tomcat initialized with port(s): 8080 (http)
+2020-11-02 19:38:55 -Root WebApplicationContext: initialization completed in 1683 ms
+2020-11-02 19:38:56 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-02 19:38:56 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-02 19:38:56 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-02 19:38:56 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-02 19:38:56 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-02 19:38:56 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 19:38:54 CST 2020]; root of context hierarchy
+2020-11-02 19:38:56 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-02 19:38:56 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-02 19:38:56 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-02 19:38:56 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-02 19:38:56 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-02 19:38:56 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-02 19:38:56 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 19:38:56 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-02 19:38:56 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 19:38:56 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 19:38:56 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 19:38:57 -Registering beans for JMX exposure on startup
+2020-11-02 19:38:57 -Tomcat started on port(s): 8080 (http)
+2020-11-02 19:38:57 -Started SpringBootUserApplication in 3.26 seconds (JVM running for 3.729)
+2020-11-02 19:38:59 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-02 19:38:59 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-11-02 19:39:03 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 19:39:03 -==> Parameters: 
+2020-11-02 19:39:03 -<==      Total: 3
+2020-11-02 19:39:03 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 19:39:03 -==> Parameters: 3(Integer)
+2020-11-02 19:39:03 -<==      Total: 1
+2020-11-02 19:39:03 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 19:39:03 -==> Parameters: 5(Integer)
+2020-11-02 19:39:03 -<==      Total: 1
+2020-11-02 19:39:03 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 19:39:03 -==> Parameters: 2(Integer)
+2020-11-02 19:39:03 -<==      Total: 1
+2020-11-02 19:39:03 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 19:39:03 -==> Parameters: 3(Integer)
+2020-11-02 19:39:03 -<==      Total: 1
+2020-11-02 19:39:03 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 19:39:03 -==> Parameters: 2(Integer)
+2020-11-02 19:39:03 -<==      Total: 1
+2020-11-02 19:39:03 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 19:39:03 -==> Parameters: 2(Integer)
+2020-11-02 19:39:03 -<==      Total: 1
+2020-11-02 19:42:56 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 19:42:56 -==> Parameters: 
+2020-11-02 19:42:56 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 19:42:56 -==> Parameters: 11(Integer)
+2020-11-02 19:42:56 -<==      Total: 3
+2020-11-02 19:42:56 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 19:42:56 -==> Parameters: 3(Integer)
+2020-11-02 19:42:56 -<==      Total: 1
+2020-11-02 19:42:56 -<==      Total: 1
+2020-11-02 19:42:56 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 19:42:56 -==> Parameters: 5(Integer)
+2020-11-02 19:42:56 -<==      Total: 1
+2020-11-02 19:42:56 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 19:42:56 -==> Parameters: 2(Integer)
+2020-11-02 19:42:56 -<==      Total: 1
+2020-11-02 19:42:56 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 19:42:56 -==> Parameters: 3(Integer)
+2020-11-02 19:42:56 -<==      Total: 1
+2020-11-02 19:42:56 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 19:42:56 -==> Parameters: 2(Integer)
+2020-11-02 19:42:56 -<==      Total: 1
+2020-11-02 19:42:56 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 19:42:56 -==> Parameters: 2(Integer)
+2020-11-02 19:42:56 -<==      Total: 1
+2020-11-02 20:00:13 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:00:13 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:00:13 -==> Parameters: 
+2020-11-02 20:00:13 -==> Parameters: 11(Integer)
+2020-11-02 20:00:13 -<==      Total: 1
+2020-11-02 20:00:13 -<==      Total: 3
+2020-11-02 20:00:13 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:00:13 -==> Parameters: 3(Integer)
+2020-11-02 20:00:13 -<==      Total: 1
+2020-11-02 20:00:13 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:00:13 -==> Parameters: 5(Integer)
+2020-11-02 20:00:13 -<==      Total: 1
+2020-11-02 20:00:13 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:00:13 -==> Parameters: 2(Integer)
+2020-11-02 20:00:13 -<==      Total: 1
+2020-11-02 20:00:13 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:00:13 -==> Parameters: 3(Integer)
+2020-11-02 20:00:13 -<==      Total: 1
+2020-11-02 20:00:13 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:00:13 -==> Parameters: 2(Integer)
+2020-11-02 20:00:13 -<==      Total: 1
+2020-11-02 20:00:13 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:00:13 -==> Parameters: 2(Integer)
+2020-11-02 20:00:13 -<==      Total: 1
+2020-11-02 20:00:44 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:00:44 -==> Parameters: 
+2020-11-02 20:00:44 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:00:44 -==> Parameters: 11(Integer)
+2020-11-02 20:00:44 -<==      Total: 3
+2020-11-02 20:00:44 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:00:44 -==> Parameters: 3(Integer)
+2020-11-02 20:00:44 -<==      Total: 1
+2020-11-02 20:00:44 -<==      Total: 1
+2020-11-02 20:00:44 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:00:44 -==> Parameters: 5(Integer)
+2020-11-02 20:00:44 -<==      Total: 1
+2020-11-02 20:00:44 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:00:44 -==> Parameters: 2(Integer)
+2020-11-02 20:00:44 -<==      Total: 1
+2020-11-02 20:00:44 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:00:44 -==> Parameters: 3(Integer)
+2020-11-02 20:00:44 -<==      Total: 1
+2020-11-02 20:00:44 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:00:44 -==> Parameters: 2(Integer)
+2020-11-02 20:00:44 -<==      Total: 1
+2020-11-02 20:00:44 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:00:44 -==> Parameters: 2(Integer)
+2020-11-02 20:00:44 -<==      Total: 1
+2020-11-02 20:00:57 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:00:57 -==> Parameters: 1586880804@163.com(String)
+2020-11-02 20:00:57 -<==      Total: 0
+2020-11-02 20:00:57 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at cn.org.test.controller.UserController.loginPwd(UserController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-02 20:01:00 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:00 -==> Parameters: 1586880804@163.com(String)
+2020-11-02 20:01:00 -<==      Total: 0
+2020-11-02 20:01:00 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at cn.org.test.controller.UserController.loginPwd(UserController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-02 20:01:06 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 19:38:54 CST 2020]; root of context hierarchy
+2020-11-02 20:01:06 -Unregistering JMX-exposed beans on shutdown
+2020-11-02 20:01:08 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 29384 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-02 20:01:08 -No active profile set, falling back to default profiles: default
+2020-11-02 20:01:09 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:01:09 CST 2020]; root of context hierarchy
+2020-11-02 20:01:09 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-02 20:01:10 -Tomcat initialized with port(s): 8080 (http)
+2020-11-02 20:01:10 -Root WebApplicationContext: initialization completed in 1253 ms
+2020-11-02 20:01:10 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-02 20:01:10 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-02 20:01:10 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-02 20:01:10 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-02 20:01:10 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-02 20:01:10 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:01:09 CST 2020]; root of context hierarchy
+2020-11-02 20:01:10 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-02 20:01:10 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-02 20:01:10 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-02 20:01:10 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-02 20:01:10 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-02 20:01:10 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-02 20:01:10 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:01:10 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-02 20:01:11 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:01:11 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:01:11 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:01:11 -Registering beans for JMX exposure on startup
+2020-11-02 20:01:11 -Tomcat started on port(s): 8080 (http)
+2020-11-02 20:01:11 -Started SpringBootUserApplication in 2.489 seconds (JVM running for 2.936)
+2020-11-02 20:01:15 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-02 20:01:15 -FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020-11-02 20:01:18 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:18 -==> Parameters: 1586880804@163.com(String)
+2020-11-02 20:01:18 -<==      Total: 0
+2020-11-02 20:01:18 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at cn.org.test.controller.UserController.loginPwd(UserController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-02 20:01:18 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:18 -==> Parameters: 1653611386@qq.com(String)
+2020-11-02 20:01:18 -<==      Total: 1
+2020-11-02 20:01:19 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:19 -==> Parameters: 1653611386@qq.com(String)
+2020-11-02 20:01:19 -<==      Total: 1
+2020-11-02 20:01:35 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:35 -==> Parameters: 1586880804@163.com(String)
+2020-11-02 20:01:35 -<==      Total: 0
+2020-11-02 20:01:35 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at cn.org.test.controller.UserController.loginPwd(UserController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-02 20:01:38 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:38 -==> Parameters: 1586880804@163.com(String)
+2020-11-02 20:01:38 -<==      Total: 0
+2020-11-02 20:01:38 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at cn.org.test.controller.UserController.loginPwd(UserController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-02 20:01:38 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:38 -==> Parameters: 1586880804@163.com(String)
+2020-11-02 20:01:38 -<==      Total: 0
+2020-11-02 20:01:38 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at cn.org.test.controller.UserController.loginPwd(UserController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-02 20:01:43 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:43 -==> Parameters: 15868808504@163.com(String)
+2020-11-02 20:01:43 -<==      Total: 1
+2020-11-02 20:01:43 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-02 20:01:43 -==> Parameters: 15868808504@163.com(String)
+2020-11-02 20:01:43 -<==      Total: 1
+2020-11-02 20:01:46 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:01:46 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:01:46 -==> Parameters: 
+2020-11-02 20:01:46 -==> Parameters: 11(Integer)
+2020-11-02 20:01:46 -<==      Total: 1
+2020-11-02 20:01:46 -<==      Total: 3
+2020-11-02 20:01:46 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:01:46 -==> Parameters: 3(Integer)
+2020-11-02 20:01:46 -<==      Total: 1
+2020-11-02 20:01:46 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:01:46 -==> Parameters: 5(Integer)
+2020-11-02 20:01:46 -<==      Total: 1
+2020-11-02 20:01:46 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:01:46 -==> Parameters: 2(Integer)
+2020-11-02 20:01:46 -<==      Total: 1
+2020-11-02 20:01:46 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:01:46 -==> Parameters: 3(Integer)
+2020-11-02 20:01:46 -<==      Total: 1
+2020-11-02 20:01:46 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:01:46 -==> Parameters: 2(Integer)
+2020-11-02 20:01:46 -<==      Total: 1
+2020-11-02 20:01:46 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:01:46 -==> Parameters: 2(Integer)
+2020-11-02 20:01:47 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:07:45 -==> Parameters: 11(Integer)
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:07:45 -==> Parameters: 
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:07:45 -==> Parameters: 11(Integer)
+2020-11-02 20:07:45 -==> Parameters: 
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -<==      Total: 3
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:07:45 -==> Parameters: 3(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -<==      Total: 3
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:07:45 -==> Parameters: 3(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:07:45 -==> Parameters: 5(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:07:45 -==> Parameters: 5(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:07:45 -==> Parameters: 2(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:07:45 -==> Parameters: 2(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:07:45 -==> Parameters: 3(Integer)
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:07:45 -==> Parameters: 3(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:07:45 -==> Parameters: 2(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:07:45 -==> Parameters: 2(Integer)
+2020-11-02 20:07:45 -<==      Total: 1
+2020-11-02 20:07:45 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:07:45 -==> Parameters: 2(Integer)
+2020-11-02 20:07:46 -<==      Total: 1
+2020-11-02 20:07:46 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:07:46 -==> Parameters: 2(Integer)
+2020-11-02 20:07:46 -<==      Total: 1
+2020-11-02 20:07:46 -<==      Total: 1
+2020-11-02 20:20:06 -No mapping found for HTTP request with URI [/stu/selectClass] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-02 20:20:10 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:01:09 CST 2020]; root of context hierarchy
+2020-11-02 20:20:10 -Unregistering JMX-exposed beans on shutdown
+2020-11-02 20:20:13 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 29831 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-02 20:20:13 -No active profile set, falling back to default profiles: default
+2020-11-02 20:20:13 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:20:13 CST 2020]; root of context hierarchy
+2020-11-02 20:20:14 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-02 20:20:16 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 29897 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-02 20:20:16 -No active profile set, falling back to default profiles: default
+2020-11-02 20:20:16 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:20:16 CST 2020]; root of context hierarchy
+2020-11-02 20:20:17 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-02 20:20:17 -Tomcat initialized with port(s): 8080 (http)
+2020-11-02 20:20:17 -Root WebApplicationContext: initialization completed in 1211 ms
+2020-11-02 20:20:17 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-02 20:20:17 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-02 20:20:17 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-02 20:20:17 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-02 20:20:17 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-02 20:20:17 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminServiceImpl': Unsatisfied dependency expressed through field 'createApplicationMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'createApplicationMapper' defined in file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/cn/org/test/mapper/CreateApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/mapper/selectClassMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 10; The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+2020-11-02 20:20:17 -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-11-02 20:20:17 -Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminServiceImpl': Unsatisfied dependency expressed through field 'createApplicationMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'createApplicationMapper' defined in file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/cn/org/test/mapper/CreateApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/mapper/selectClassMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 10; The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at cn.org.test.SpringBootUserApplication.main(SpringBootUserApplication.java:16)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminServiceImpl': Unsatisfied dependency expressed through field 'createApplicationMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'createApplicationMapper' defined in file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/cn/org/test/mapper/CreateApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/mapper/selectClassMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 10; The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'createApplicationMapper' defined in file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/cn/org/test/mapper/CreateApplicationMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/mapper/selectClassMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 10; The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/mapper/selectClassMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 10; The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/mapper/selectClassMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 10; The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/lyy/IdeaProjects/com.lyy/blog/target/classes/mapper/selectClassMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 10; The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$48de257a.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$48de257a$$FastClassBySpringCGLIB$$2b50b640.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$48de257a.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 10; The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:520)
+	... 69 common frames omitted
+Caused by: org.xml.sax.SAXParseException: The content of element type "mapper" must match "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 72 common frames omitted
+2020-11-02 20:22:27 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 30017 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-02 20:22:27 -No active profile set, falling back to default profiles: default
+2020-11-02 20:22:28 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:22:28 CST 2020]; root of context hierarchy
+2020-11-02 20:22:28 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-02 20:22:29 -Tomcat initialized with port(s): 8080 (http)
+2020-11-02 20:22:29 -Root WebApplicationContext: initialization completed in 1148 ms
+2020-11-02 20:22:29 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-02 20:22:29 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-02 20:22:29 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-02 20:22:29 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-02 20:22:29 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-02 20:22:29 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:22:28 CST 2020]; root of context hierarchy
+2020-11-02 20:22:29 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-02 20:22:29 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-02 20:22:29 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-02 20:22:29 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-02 20:22:29 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-02 20:22:29 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-02 20:22:29 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-02 20:22:29 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:22:29 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-02 20:22:29 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:22:29 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:22:29 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:22:30 -Registering beans for JMX exposure on startup
+2020-11-02 20:22:30 -Tomcat started on port(s): 8080 (http)
+2020-11-02 20:22:30 -Started SpringBootUserApplication in 2.343 seconds (JVM running for 2.742)
+2020-11-02 20:22:34 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-02 20:22:34 -FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-11-02 20:22:38 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:22:38 -==> Parameters: 5(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:22:38 -<==    Updates: 1
+2020-11-02 20:22:38 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:22:38 -==> Parameters: 5(Integer)
+2020-11-02 20:22:38 -<==    Updates: 1
+2020-11-02 20:23:05 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:23:05 -==> Parameters: 5(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:23:05 -<==    Updates: 1
+2020-11-02 20:23:05 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:23:05 -==> Parameters: 5(Integer)
+2020-11-02 20:23:05 -<==    Updates: 1
+2020-11-02 20:23:31 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:23:31 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:23:31 -==> Parameters: 
+2020-11-02 20:23:31 -==> Parameters: 11(Integer)
+2020-11-02 20:23:31 -<==      Total: 2
+2020-11-02 20:23:31 -<==      Total: 3
+2020-11-02 20:23:31 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:23:31 -==> Parameters: 3(Integer)
+2020-11-02 20:23:31 -<==      Total: 1
+2020-11-02 20:23:31 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:23:31 -==> Parameters: 5(Integer)
+2020-11-02 20:23:31 -<==      Total: 1
+2020-11-02 20:23:31 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:23:31 -==> Parameters: 2(Integer)
+2020-11-02 20:23:31 -<==      Total: 1
+2020-11-02 20:23:31 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:23:31 -==> Parameters: 3(Integer)
+2020-11-02 20:23:31 -<==      Total: 1
+2020-11-02 20:23:31 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:23:31 -==> Parameters: 2(Integer)
+2020-11-02 20:23:31 -<==      Total: 1
+2020-11-02 20:23:31 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:23:31 -==> Parameters: 2(Integer)
+2020-11-02 20:23:31 -<==      Total: 1
+2020-11-02 20:24:10 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:24:10 -==> Parameters: 1(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:24:10 -<==    Updates: 1
+2020-11-02 20:24:10 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:24:10 -==> Parameters: 1(Integer)
+2020-11-02 20:24:10 -<==    Updates: 1
+2020-11-02 20:24:15 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:24:15 -==> Parameters: 11(Integer)
+2020-11-02 20:24:15 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:24:15 -==> Parameters: 
+2020-11-02 20:24:15 -<==      Total: 3
+2020-11-02 20:24:15 -<==      Total: 3
+2020-11-02 20:24:15 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:24:15 -==> Parameters: 3(Integer)
+2020-11-02 20:24:15 -<==      Total: 1
+2020-11-02 20:24:15 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:24:15 -==> Parameters: 5(Integer)
+2020-11-02 20:24:15 -<==      Total: 1
+2020-11-02 20:24:15 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:24:15 -==> Parameters: 2(Integer)
+2020-11-02 20:24:15 -<==      Total: 1
+2020-11-02 20:24:15 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:24:15 -==> Parameters: 3(Integer)
+2020-11-02 20:24:15 -<==      Total: 1
+2020-11-02 20:24:15 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:24:15 -==> Parameters: 2(Integer)
+2020-11-02 20:24:15 -<==      Total: 1
+2020-11-02 20:24:15 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:24:15 -==> Parameters: 2(Integer)
+2020-11-02 20:24:15 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:35:53 -==> Parameters: 
+2020-11-02 20:35:53 -==> Parameters: 11(Integer)
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:35:53 -==> Parameters: 
+2020-11-02 20:35:53 -==> Parameters: 11(Integer)
+2020-11-02 20:35:53 -<==      Total: 3
+2020-11-02 20:35:53 -<==      Total: 3
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:35:53 -==> Parameters: 3(Integer)
+2020-11-02 20:35:53 -<==      Total: 3
+2020-11-02 20:35:53 -<==      Total: 3
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:35:53 -==> Parameters: 5(Integer)
+2020-11-02 20:35:53 -==> Parameters: 3(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:35:53 -==> Parameters: 2(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:35:53 -==> Parameters: 5(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:35:53 -==> Parameters: 3(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:35:53 -==> Parameters: 2(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:35:53 -==> Parameters: 2(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:35:53 -==> Parameters: 3(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:35:53 -==> Parameters: 2(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:35:53 -==> Parameters: 2(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:35:53 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:35:53 -==> Parameters: 2(Integer)
+2020-11-02 20:35:53 -<==      Total: 1
+2020-11-02 20:36:16 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:36:16 -==> Parameters: 
+2020-11-02 20:36:16 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:36:16 -==> Parameters: 11(Integer)
+2020-11-02 20:36:16 -<==      Total: 3
+2020-11-02 20:36:16 -<==      Total: 3
+2020-11-02 20:36:16 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:36:16 -==> Parameters: 3(Integer)
+2020-11-02 20:36:17 -<==      Total: 1
+2020-11-02 20:36:17 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:36:17 -==> Parameters: 5(Integer)
+2020-11-02 20:36:17 -<==      Total: 1
+2020-11-02 20:36:17 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:36:17 -==> Parameters: 2(Integer)
+2020-11-02 20:36:17 -<==      Total: 1
+2020-11-02 20:36:17 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:36:17 -==> Parameters: 3(Integer)
+2020-11-02 20:36:17 -<==      Total: 1
+2020-11-02 20:36:17 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:36:17 -==> Parameters: 2(Integer)
+2020-11-02 20:36:17 -<==      Total: 1
+2020-11-02 20:36:17 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:36:17 -==> Parameters: 2(Integer)
+2020-11-02 20:36:17 -<==      Total: 1
+2020-11-02 20:36:19 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:36:19 -==> Parameters: 2(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:36:19 -<==    Updates: 1
+2020-11-02 20:36:19 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:36:19 -==> Parameters: 2(Integer)
+2020-11-02 20:36:19 -<==    Updates: 1
+2020-11-02 20:36:19 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:36:19 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:36:19 -==> Parameters: 
+2020-11-02 20:36:19 -==> Parameters: 11(Integer)
+2020-11-02 20:36:19 -<==      Total: 3
+2020-11-02 20:36:19 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:36:19 -==> Parameters: 3(Integer)
+2020-11-02 20:36:19 -<==      Total: 4
+2020-11-02 20:36:19 -<==      Total: 1
+2020-11-02 20:36:19 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:36:19 -==> Parameters: 5(Integer)
+2020-11-02 20:36:19 -<==      Total: 1
+2020-11-02 20:36:19 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:36:19 -==> Parameters: 2(Integer)
+2020-11-02 20:36:19 -<==      Total: 1
+2020-11-02 20:36:19 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:36:19 -==> Parameters: 3(Integer)
+2020-11-02 20:36:19 -<==      Total: 1
+2020-11-02 20:36:19 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:36:19 -==> Parameters: 2(Integer)
+2020-11-02 20:36:19 -<==      Total: 1
+2020-11-02 20:36:19 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:36:19 -==> Parameters: 2(Integer)
+2020-11-02 20:36:19 -<==      Total: 1
+2020-11-02 20:43:32 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:22:28 CST 2020]; root of context hierarchy
+2020-11-02 20:43:32 -Unregistering JMX-exposed beans on shutdown
+2020-11-02 20:43:35 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 30515 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-02 20:43:35 -No active profile set, falling back to default profiles: default
+2020-11-02 20:43:35 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:43:35 CST 2020]; root of context hierarchy
+2020-11-02 20:43:36 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-02 20:43:36 -Tomcat initialized with port(s): 8080 (http)
+2020-11-02 20:43:36 -Root WebApplicationContext: initialization completed in 1039 ms
+2020-11-02 20:43:37 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-02 20:43:37 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-02 20:43:37 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-02 20:43:37 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-02 20:43:37 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-02 20:43:37 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Nov 02 20:43:35 CST 2020]; root of context hierarchy
+2020-11-02 20:43:37 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-02 20:43:37 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-02 20:43:37 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-02 20:43:37 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2020-11-02 20:43:37 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-02 20:43:37 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-02 20:43:37 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-02 20:43:37 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-02 20:43:37 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-02 20:43:37 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-02 20:43:37 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:43:37 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:43:37 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-02 20:43:37 -Registering beans for JMX exposure on startup
+2020-11-02 20:43:37 -Tomcat started on port(s): 8080 (http)
+2020-11-02 20:43:37 -Started SpringBootUserApplication in 2.195 seconds (JVM running for 2.596)
+2020-11-02 20:44:08 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-02 20:44:08 -FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2020-11-02 20:44:12 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2020-11-02 20:44:12 -==> Parameters: 1(Integer), 11(Integer)
+2020-11-02 20:44:12 -<==    Updates: 1
+2020-11-02 20:44:12 -==>  Preparing: update class SET num=num-1 where id=? 
+2020-11-02 20:44:12 -==> Parameters: 1(Integer)
+2020-11-02 20:44:12 -<==    Updates: 1
+2020-11-02 20:46:59 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2020-11-02 20:46:59 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-02 20:46:59 -<==    Updates: 1
+2020-11-02 20:46:59 -==>  Preparing: update class SET num=num-1 where id=? 
+2020-11-02 20:46:59 -==> Parameters: 5(Integer)
+2020-11-02 20:46:59 -<==    Updates: 1
+2020-11-02 20:47:12 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:47:12 -==> Parameters: 
+2020-11-02 20:47:12 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:47:12 -==> Parameters: 11(Integer)
+2020-11-02 20:47:12 -<==      Total: 2
+2020-11-02 20:47:12 -<==      Total: 3
+2020-11-02 20:47:12 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:12 -==> Parameters: 3(Integer)
+2020-11-02 20:47:12 -<==      Total: 1
+2020-11-02 20:47:12 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:12 -==> Parameters: 5(Integer)
+2020-11-02 20:47:12 -<==      Total: 1
+2020-11-02 20:47:12 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:12 -==> Parameters: 2(Integer)
+2020-11-02 20:47:12 -<==      Total: 1
+2020-11-02 20:47:12 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:12 -==> Parameters: 3(Integer)
+2020-11-02 20:47:12 -<==      Total: 1
+2020-11-02 20:47:12 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:12 -==> Parameters: 2(Integer)
+2020-11-02 20:47:12 -<==      Total: 1
+2020-11-02 20:47:12 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:12 -==> Parameters: 2(Integer)
+2020-11-02 20:47:12 -<==      Total: 1
+2020-11-02 20:47:21 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:47:21 -==> Parameters: 1(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:47:21 -<==    Updates: 1
+2020-11-02 20:47:21 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:47:21 -==> Parameters: 1(Integer)
+2020-11-02 20:47:21 -<==    Updates: 1
+2020-11-02 20:47:21 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:47:21 -==> Parameters: 11(Integer)
+2020-11-02 20:47:21 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:47:21 -<==      Total: 3
+2020-11-02 20:47:21 -==> Parameters: 
+2020-11-02 20:47:21 -<==      Total: 3
+2020-11-02 20:47:21 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:21 -==> Parameters: 3(Integer)
+2020-11-02 20:47:21 -<==      Total: 1
+2020-11-02 20:47:21 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:21 -==> Parameters: 5(Integer)
+2020-11-02 20:47:21 -<==      Total: 1
+2020-11-02 20:47:21 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:21 -==> Parameters: 2(Integer)
+2020-11-02 20:47:21 -<==      Total: 1
+2020-11-02 20:47:21 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:21 -==> Parameters: 3(Integer)
+2020-11-02 20:47:21 -<==      Total: 1
+2020-11-02 20:47:21 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:21 -==> Parameters: 2(Integer)
+2020-11-02 20:47:21 -<==      Total: 1
+2020-11-02 20:47:21 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:21 -==> Parameters: 2(Integer)
+2020-11-02 20:47:21 -<==      Total: 1
+2020-11-02 20:47:29 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2020-11-02 20:47:29 -==> Parameters: 1(Integer), 11(Integer)
+2020-11-02 20:47:29 -<==    Updates: 1
+2020-11-02 20:47:29 -==>  Preparing: update class SET num=num-1 where id=? 
+2020-11-02 20:47:29 -==> Parameters: 1(Integer)
+2020-11-02 20:47:29 -<==    Updates: 1
+2020-11-02 20:47:33 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:47:33 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:47:33 -==> Parameters: 
+2020-11-02 20:47:33 -==> Parameters: 11(Integer)
+2020-11-02 20:47:33 -<==      Total: 2
+2020-11-02 20:47:33 -<==      Total: 3
+2020-11-02 20:47:33 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:33 -==> Parameters: 3(Integer)
+2020-11-02 20:47:33 -<==      Total: 1
+2020-11-02 20:47:33 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:33 -==> Parameters: 5(Integer)
+2020-11-02 20:47:33 -<==      Total: 1
+2020-11-02 20:47:33 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:33 -==> Parameters: 2(Integer)
+2020-11-02 20:47:33 -<==      Total: 1
+2020-11-02 20:47:33 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:33 -==> Parameters: 3(Integer)
+2020-11-02 20:47:33 -<==      Total: 1
+2020-11-02 20:47:33 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:47:33 -==> Parameters: 2(Integer)
+2020-11-02 20:47:33 -<==      Total: 1
+2020-11-02 20:47:33 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:47:33 -==> Parameters: 2(Integer)
+2020-11-02 20:47:33 -<==      Total: 1
+2020-11-02 20:49:34 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:49:34 -==> Parameters: 
+2020-11-02 20:49:34 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:49:34 -==> Parameters: 11(Integer)
+2020-11-02 20:49:34 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:49:34 -==> Parameters: 11(Integer)
+2020-11-02 20:49:34 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:49:34 -==> Parameters: 
+2020-11-02 20:49:34 -<==      Total: 3
+2020-11-02 20:49:34 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:34 -==> Parameters: 3(Integer)
+2020-11-02 20:49:34 -<==      Total: 2
+2020-11-02 20:49:34 -<==      Total: 2
+2020-11-02 20:49:34 -<==      Total: 3
+2020-11-02 20:49:34 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:34 -==> Parameters: 3(Integer)
+2020-11-02 20:49:34 -<==      Total: 1
+2020-11-02 20:49:34 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:34 -==> Parameters: 5(Integer)
+2020-11-02 20:49:34 -<==      Total: 1
+2020-11-02 20:49:34 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:34 -==> Parameters: 5(Integer)
+2020-11-02 20:49:34 -<==      Total: 1
+2020-11-02 20:49:34 -<==      Total: 1
+2020-11-02 20:49:35 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:35 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:35 -==> Parameters: 2(Integer)
+2020-11-02 20:49:35 -==> Parameters: 2(Integer)
+2020-11-02 20:49:35 -<==      Total: 1
+2020-11-02 20:49:35 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:35 -==> Parameters: 3(Integer)
+2020-11-02 20:49:35 -<==      Total: 1
+2020-11-02 20:49:35 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:35 -==> Parameters: 3(Integer)
+2020-11-02 20:49:35 -<==      Total: 1
+2020-11-02 20:49:35 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:35 -==> Parameters: 2(Integer)
+2020-11-02 20:49:35 -<==      Total: 1
+2020-11-02 20:49:35 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:35 -==> Parameters: 2(Integer)
+2020-11-02 20:49:35 -<==      Total: 1
+2020-11-02 20:49:35 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:35 -==> Parameters: 2(Integer)
+2020-11-02 20:49:35 -<==      Total: 1
+2020-11-02 20:49:35 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:35 -==> Parameters: 2(Integer)
+2020-11-02 20:49:35 -<==      Total: 1
+2020-11-02 20:49:35 -<==      Total: 1
+2020-11-02 20:49:40 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2020-11-02 20:49:40 -==> Parameters: 2(Integer), 11(Integer)
+2020-11-02 20:49:40 -<==    Updates: 1
+2020-11-02 20:49:40 -==>  Preparing: update class SET num=num-1 where id=? 
+2020-11-02 20:49:40 -==> Parameters: 2(Integer)
+2020-11-02 20:49:40 -<==    Updates: 1
+2020-11-02 20:49:40 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:49:40 -==> Parameters: 
+2020-11-02 20:49:40 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:49:40 -==> Parameters: 11(Integer)
+2020-11-02 20:49:41 -<==      Total: 3
+2020-11-02 20:49:41 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:41 -==> Parameters: 3(Integer)
+2020-11-02 20:49:41 -<==      Total: 1
+2020-11-02 20:49:41 -<==      Total: 1
+2020-11-02 20:49:41 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:41 -==> Parameters: 5(Integer)
+2020-11-02 20:49:41 -<==      Total: 1
+2020-11-02 20:49:41 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:41 -==> Parameters: 2(Integer)
+2020-11-02 20:49:41 -<==      Total: 1
+2020-11-02 20:49:41 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:41 -==> Parameters: 3(Integer)
+2020-11-02 20:49:41 -<==      Total: 1
+2020-11-02 20:49:41 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:41 -==> Parameters: 2(Integer)
+2020-11-02 20:49:41 -<==      Total: 1
+2020-11-02 20:49:41 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:41 -==> Parameters: 2(Integer)
+2020-11-02 20:49:41 -<==      Total: 1
+2020-11-02 20:49:53 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2020-11-02 20:49:53 -==> Parameters: 6(Integer), 11(Integer)
+2020-11-02 20:49:53 -<==    Updates: 1
+2020-11-02 20:49:53 -==>  Preparing: update class SET num=num-1 where id=? 
+2020-11-02 20:49:53 -==> Parameters: 6(Integer)
+2020-11-02 20:49:53 -<==    Updates: 1
+2020-11-02 20:49:53 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:49:53 -==> Parameters: 11(Integer)
+2020-11-02 20:49:53 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:49:53 -==> Parameters: 
+2020-11-02 20:49:53 -<==      Total: 0
+2020-11-02 20:49:53 -<==      Total: 3
+2020-11-02 20:49:53 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:53 -==> Parameters: 3(Integer)
+2020-11-02 20:49:53 -<==      Total: 1
+2020-11-02 20:49:53 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:53 -==> Parameters: 5(Integer)
+2020-11-02 20:49:54 -<==      Total: 1
+2020-11-02 20:49:54 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:54 -==> Parameters: 2(Integer)
+2020-11-02 20:49:54 -<==      Total: 1
+2020-11-02 20:49:54 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:54 -==> Parameters: 3(Integer)
+2020-11-02 20:49:54 -<==      Total: 1
+2020-11-02 20:49:54 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:54 -==> Parameters: 2(Integer)
+2020-11-02 20:49:54 -<==      Total: 1
+2020-11-02 20:49:54 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:54 -==> Parameters: 2(Integer)
+2020-11-02 20:49:54 -<==      Total: 1
+2020-11-02 20:49:57 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:49:57 -==> Parameters: 6(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:49:58 -<==    Updates: 1
+2020-11-02 20:49:58 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:49:58 -==> Parameters: 6(Integer)
+2020-11-02 20:49:58 -<==    Updates: 1
+2020-11-02 20:49:58 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:49:58 -==> Parameters: 
+2020-11-02 20:49:58 -<==      Total: 3
+2020-11-02 20:49:58 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:58 -==> Parameters: 3(Integer)
+2020-11-02 20:49:58 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:49:58 -==> Parameters: 11(Integer)
+2020-11-02 20:49:58 -<==      Total: 1
+2020-11-02 20:49:58 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:58 -==> Parameters: 5(Integer)
+2020-11-02 20:49:58 -<==      Total: 1
+2020-11-02 20:49:58 -<==      Total: 1
+2020-11-02 20:49:58 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:58 -==> Parameters: 2(Integer)
+2020-11-02 20:49:58 -<==      Total: 1
+2020-11-02 20:49:58 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:58 -==> Parameters: 3(Integer)
+2020-11-02 20:49:58 -<==      Total: 1
+2020-11-02 20:49:58 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:49:58 -==> Parameters: 2(Integer)
+2020-11-02 20:49:58 -<==      Total: 1
+2020-11-02 20:49:58 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:49:58 -==> Parameters: 2(Integer)
+2020-11-02 20:49:58 -<==      Total: 1
+2020-11-02 20:50:00 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:50:00 -==> Parameters: 1(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:50:00 -<==    Updates: 1
+2020-11-02 20:50:00 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:50:00 -==> Parameters: 1(Integer)
+2020-11-02 20:50:00 -<==    Updates: 1
+2020-11-02 20:50:00 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:50:00 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:50:00 -==> Parameters: 
+2020-11-02 20:50:00 -==> Parameters: 11(Integer)
+2020-11-02 20:50:00 -<==      Total: 3
+2020-11-02 20:50:00 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:50:00 -==> Parameters: 3(Integer)
+2020-11-02 20:50:00 -<==      Total: 2
+2020-11-02 20:50:00 -<==      Total: 1
+2020-11-02 20:50:00 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:50:00 -==> Parameters: 5(Integer)
+2020-11-02 20:50:00 -<==      Total: 1
+2020-11-02 20:50:00 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:50:00 -==> Parameters: 2(Integer)
+2020-11-02 20:50:00 -<==      Total: 1
+2020-11-02 20:50:00 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:50:00 -==> Parameters: 3(Integer)
+2020-11-02 20:50:01 -<==      Total: 1
+2020-11-02 20:50:01 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:50:01 -==> Parameters: 2(Integer)
+2020-11-02 20:50:01 -<==      Total: 1
+2020-11-02 20:50:01 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:50:01 -==> Parameters: 2(Integer)
+2020-11-02 20:50:01 -<==      Total: 1
+2020-11-02 20:50:01 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:50:01 -==> Parameters: 2(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:50:01 -<==    Updates: 1
+2020-11-02 20:50:01 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:50:01 -==> Parameters: 2(Integer)
+2020-11-02 20:50:01 -<==    Updates: 1
+2020-11-02 20:50:02 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:50:02 -==> Parameters: 
+2020-11-02 20:50:02 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:50:02 -==> Parameters: 11(Integer)
+2020-11-02 20:50:02 -<==      Total: 3
+2020-11-02 20:50:02 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:50:02 -==> Parameters: 3(Integer)
+2020-11-02 20:50:02 -<==      Total: 1
+2020-11-02 20:50:02 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:50:02 -==> Parameters: 5(Integer)
+2020-11-02 20:50:02 -<==      Total: 3
+2020-11-02 20:50:02 -<==      Total: 1
+2020-11-02 20:50:02 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:50:02 -==> Parameters: 2(Integer)
+2020-11-02 20:50:02 -<==      Total: 1
+2020-11-02 20:50:02 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:50:02 -==> Parameters: 3(Integer)
+2020-11-02 20:50:02 -<==      Total: 1
+2020-11-02 20:50:02 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:50:02 -==> Parameters: 2(Integer)
+2020-11-02 20:50:02 -<==      Total: 1
+2020-11-02 20:50:02 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:50:02 -==> Parameters: 2(Integer)
+2020-11-02 20:50:02 -<==      Total: 1
+2020-11-02 20:57:39 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2020-11-02 20:57:39 -==> Parameters: 1(Integer), 11(Integer)
+2020-11-02 20:57:39 -<==    Updates: 1
+2020-11-02 20:57:39 -==>  Preparing: update class SET num=num-1 where id=? 
+2020-11-02 20:57:39 -==> Parameters: 1(Integer)
+2020-11-02 20:57:39 -<==    Updates: 1
+2020-11-02 20:57:39 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:57:39 -==> Parameters: 11(Integer)
+2020-11-02 20:57:39 -<==      Total: 2
+2020-11-02 20:57:39 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:57:39 -==> Parameters: 
+2020-11-02 20:57:39 -<==      Total: 3
+2020-11-02 20:57:39 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:57:39 -==> Parameters: 3(Integer)
+2020-11-02 20:57:39 -<==      Total: 1
+2020-11-02 20:57:39 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:57:39 -==> Parameters: 5(Integer)
+2020-11-02 20:57:39 -<==      Total: 1
+2020-11-02 20:57:39 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:57:39 -==> Parameters: 2(Integer)
+2020-11-02 20:57:39 -<==      Total: 1
+2020-11-02 20:57:39 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:57:39 -==> Parameters: 3(Integer)
+2020-11-02 20:57:39 -<==      Total: 1
+2020-11-02 20:57:39 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:57:39 -==> Parameters: 2(Integer)
+2020-11-02 20:57:39 -<==      Total: 1
+2020-11-02 20:57:39 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:57:39 -==> Parameters: 2(Integer)
+2020-11-02 20:57:40 -<==      Total: 1
+2020-11-02 20:57:43 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2020-11-02 20:57:43 -==> Parameters: 2(Integer), 11(Integer)
+2020-11-02 20:57:43 -<==    Updates: 1
+2020-11-02 20:57:43 -==>  Preparing: update class SET num=num-1 where id=? 
+2020-11-02 20:57:43 -==> Parameters: 2(Integer)
+2020-11-02 20:57:44 -<==    Updates: 1
+2020-11-02 20:57:44 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:57:44 -==> Parameters: 11(Integer)
+2020-11-02 20:57:44 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:57:44 -==> Parameters: 
+2020-11-02 20:57:44 -<==      Total: 1
+2020-11-02 20:57:44 -<==      Total: 3
+2020-11-02 20:57:44 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:57:44 -==> Parameters: 3(Integer)
+2020-11-02 20:57:44 -<==      Total: 1
+2020-11-02 20:57:44 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:57:44 -==> Parameters: 5(Integer)
+2020-11-02 20:57:44 -<==      Total: 1
+2020-11-02 20:57:44 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:57:44 -==> Parameters: 2(Integer)
+2020-11-02 20:57:44 -<==      Total: 1
+2020-11-02 20:57:44 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:57:44 -==> Parameters: 3(Integer)
+2020-11-02 20:57:44 -<==      Total: 1
+2020-11-02 20:57:44 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:57:44 -==> Parameters: 2(Integer)
+2020-11-02 20:57:44 -<==      Total: 1
+2020-11-02 20:57:44 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:57:44 -==> Parameters: 2(Integer)
+2020-11-02 20:57:44 -<==      Total: 1
+2020-11-02 20:58:19 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:58:19 -==> Parameters: 11(Integer)
+2020-11-02 20:58:19 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:58:19 -==> Parameters: 
+2020-11-02 20:58:19 -<==      Total: 1
+2020-11-02 20:58:19 -<==      Total: 3
+2020-11-02 20:58:19 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:19 -==> Parameters: 3(Integer)
+2020-11-02 20:58:20 -<==      Total: 1
+2020-11-02 20:58:20 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:20 -==> Parameters: 5(Integer)
+2020-11-02 20:58:20 -<==      Total: 1
+2020-11-02 20:58:20 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:20 -==> Parameters: 2(Integer)
+2020-11-02 20:58:20 -<==      Total: 1
+2020-11-02 20:58:20 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:20 -==> Parameters: 3(Integer)
+2020-11-02 20:58:20 -<==      Total: 1
+2020-11-02 20:58:20 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:20 -==> Parameters: 2(Integer)
+2020-11-02 20:58:20 -<==      Total: 1
+2020-11-02 20:58:20 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:20 -==> Parameters: 2(Integer)
+2020-11-02 20:58:20 -<==      Total: 1
+2020-11-02 20:58:21 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2020-11-02 20:58:21 -==> Parameters: 1(Integer), 11(Integer), 0(Integer)
+2020-11-02 20:58:22 -<==    Updates: 1
+2020-11-02 20:58:22 -==>  Preparing: update class SET num=num+1 where id=? 
+2020-11-02 20:58:22 -==> Parameters: 1(Integer)
+2020-11-02 20:58:22 -<==    Updates: 1
+2020-11-02 20:58:22 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:58:22 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:58:22 -==> Parameters: 
+2020-11-02 20:58:22 -==> Parameters: 11(Integer)
+2020-11-02 20:58:22 -<==      Total: 3
+2020-11-02 20:58:22 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:22 -==> Parameters: 3(Integer)
+2020-11-02 20:58:22 -<==      Total: 2
+2020-11-02 20:58:22 -<==      Total: 1
+2020-11-02 20:58:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:22 -==> Parameters: 5(Integer)
+2020-11-02 20:58:22 -<==      Total: 1
+2020-11-02 20:58:22 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:22 -==> Parameters: 2(Integer)
+2020-11-02 20:58:22 -<==      Total: 1
+2020-11-02 20:58:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:22 -==> Parameters: 3(Integer)
+2020-11-02 20:58:22 -<==      Total: 1
+2020-11-02 20:58:22 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:22 -==> Parameters: 2(Integer)
+2020-11-02 20:58:22 -<==      Total: 1
+2020-11-02 20:58:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:22 -==> Parameters: 2(Integer)
+2020-11-02 20:58:22 -<==      Total: 1
+2020-11-02 20:58:37 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2020-11-02 20:58:37 -==> Parameters: 1(Integer), 11(Integer)
+2020-11-02 20:58:37 -<==    Updates: 1
+2020-11-02 20:58:37 -==>  Preparing: update class SET num=num-1 where id=? 
+2020-11-02 20:58:37 -==> Parameters: 1(Integer)
+2020-11-02 20:58:37 -<==    Updates: 1
+2020-11-02 20:58:37 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:58:37 -==> Parameters: 
+2020-11-02 20:58:37 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:58:37 -==> Parameters: 11(Integer)
+2020-11-02 20:58:37 -<==      Total: 3
+2020-11-02 20:58:37 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:37 -==> Parameters: 3(Integer)
+2020-11-02 20:58:37 -<==      Total: 1
+2020-11-02 20:58:37 -<==      Total: 1
+2020-11-02 20:58:37 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:37 -==> Parameters: 5(Integer)
+2020-11-02 20:58:37 -<==      Total: 1
+2020-11-02 20:58:37 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:37 -==> Parameters: 2(Integer)
+2020-11-02 20:58:37 -<==      Total: 1
+2020-11-02 20:58:37 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:37 -==> Parameters: 3(Integer)
+2020-11-02 20:58:37 -<==      Total: 1
+2020-11-02 20:58:37 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:37 -==> Parameters: 2(Integer)
+2020-11-02 20:58:37 -<==      Total: 1
+2020-11-02 20:58:37 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:37 -==> Parameters: 2(Integer)
+2020-11-02 20:58:37 -<==      Total: 1
+2020-11-02 20:58:54 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:58:54 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:58:54 -==> Parameters: 
+2020-11-02 20:58:54 -==> Parameters: 11(Integer)
+2020-11-02 20:58:54 -<==      Total: 3
+2020-11-02 20:58:54 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:54 -==> Parameters: 3(Integer)
+2020-11-02 20:58:54 -<==      Total: 1
+2020-11-02 20:58:54 -<==      Total: 1
+2020-11-02 20:58:54 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:54 -==> Parameters: 5(Integer)
+2020-11-02 20:58:54 -<==      Total: 1
+2020-11-02 20:58:54 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:54 -==> Parameters: 2(Integer)
+2020-11-02 20:58:54 -<==      Total: 1
+2020-11-02 20:58:54 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:54 -==> Parameters: 3(Integer)
+2020-11-02 20:58:54 -<==      Total: 1
+2020-11-02 20:58:54 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:58:54 -==> Parameters: 2(Integer)
+2020-11-02 20:58:54 -<==      Total: 1
+2020-11-02 20:58:54 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:58:54 -==> Parameters: 2(Integer)
+2020-11-02 20:58:54 -<==      Total: 1
+2020-11-02 20:59:18 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-02 20:59:18 -==> Parameters: 
+2020-11-02 20:59:18 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-02 20:59:18 -==> Parameters: 11(Integer)
+2020-11-02 20:59:18 -<==      Total: 3
+2020-11-02 20:59:18 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:59:18 -==> Parameters: 3(Integer)
+2020-11-02 20:59:18 -<==      Total: 1
+2020-11-02 20:59:18 -<==      Total: 1
+2020-11-02 20:59:18 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:59:18 -==> Parameters: 5(Integer)
+2020-11-02 20:59:18 -<==      Total: 1
+2020-11-02 20:59:18 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:59:18 -==> Parameters: 2(Integer)
+2020-11-02 20:59:18 -<==      Total: 1
+2020-11-02 20:59:18 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:59:18 -==> Parameters: 3(Integer)
+2020-11-02 20:59:18 -<==      Total: 1
+2020-11-02 20:59:18 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-02 20:59:18 -==> Parameters: 2(Integer)
+2020-11-02 20:59:18 -<==      Total: 1
+2020-11-02 20:59:18 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-02 20:59:18 -==> Parameters: 2(Integer)
+2020-11-02 20:59:18 -<==      Total: 1

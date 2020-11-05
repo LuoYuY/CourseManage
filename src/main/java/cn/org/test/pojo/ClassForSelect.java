@@ -20,6 +20,7 @@ public class ClassForSelect {
     private String gradeName;
     private Integer maxNum;
     private Integer status;
+    private Integer num;
 
     @Override
     public boolean equals(Object o) {
@@ -44,6 +45,6 @@ public class ClassForSelect {
         return Objects.hash(id, name, courseName, teacherName, startDate, endDate, semesterName, gradeName, maxNum, status, num);
     }
 
-    private Integer num;
+
 
 }
