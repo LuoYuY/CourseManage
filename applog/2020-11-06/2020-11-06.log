@@ -1941,3 +1941,55 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 2020-11-06 02:09:06 -==>  Preparing: INSERT into taskStu (studentId,taskId,status,filename,filepath,uploadTime) values( ?, ?, ?, ?, ?, ? ) 
 2020-11-06 02:09:06 -==> Parameters: 11(Integer), 6(Integer), 2(Integer), 人件读后感.odt(String), http://localhost:8080/download/studentTask/11/人件读后感.odt(String), 2020-11-06 02:09:06(String)
 2020-11-06 02:09:06 -<==    Updates: 1
+2020-11-06 02:12:07 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Nov 06 02:08:47 CST 2020]; root of context hierarchy
+2020-11-06 02:12:07 -Unregistering JMX-exposed beans on shutdown
+2020-11-06 20:44:16 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 8188 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-06 20:44:16 -No active profile set, falling back to default profiles: default
+2020-11-06 20:44:16 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Nov 06 20:44:16 CST 2020]; root of context hierarchy
+2020-11-06 20:44:17 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-06 20:44:18 -Tomcat initialized with port(s): 8080 (http)
+2020-11-06 20:44:18 -Root WebApplicationContext: initialization completed in 1642 ms
+2020-11-06 20:44:18 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-06 20:44:18 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-06 20:44:18 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-06 20:44:18 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-06 20:44:18 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-06 20:44:19 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Nov 06 20:44:16 CST 2020]; root of context hierarchy
+2020-11-06 20:44:19 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-06 20:44:19 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-06 20:44:19 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-06 20:44:19 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2020-11-06 20:44:19 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2020-11-06 20:44:19 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2020-11-06 20:44:19 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2020-11-06 20:44:19 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-06 20:44:19 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-06 20:44:19 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-06 20:44:19 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-06 20:44:19 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-06 20:44:19 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-06 20:44:19 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-06 20:44:19 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-06 20:44:19 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-06 20:44:19 -Registering beans for JMX exposure on startup
+2020-11-06 20:44:19 -Tomcat started on port(s): 8080 (http)
+2020-11-06 20:44:19 -Started SpringBootUserApplication in 3.536 seconds (JVM running for 4.172)
+2020-11-06 21:03:20 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Nov 06 20:44:16 CST 2020]; root of context hierarchy
+2020-11-06 21:03:20 -Unregistering JMX-exposed beans on shutdown

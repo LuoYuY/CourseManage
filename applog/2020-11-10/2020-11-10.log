@@ -1,0 +1,240 @@
+2020-11-10 00:08:44 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:08:44 -==> Parameters: 2(Integer)
+2020-11-10 00:08:44 -<==      Total: 1
+2020-11-10 00:08:44 -==>  Preparing: SELECT * from course WHERE teacherId = ? 
+2020-11-10 00:08:44 -==> Parameters: 2(Integer)
+2020-11-10 00:08:44 -<==      Total: 3
+2020-11-10 00:08:46 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:08:46 -==> Parameters: 2(Integer)
+2020-11-10 00:08:46 -<==      Total: 1
+2020-11-10 00:08:46 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-11-10 00:08:46 -==> Parameters: 2(Integer)
+2020-11-10 00:08:46 -<==      Total: 5
+2020-11-10 00:08:49 -==>  Preparing: SELECT * from semester 
+2020-11-10 00:08:49 -==> Parameters: 
+2020-11-10 00:08:49 -==>  Preparing: SELECT * from grade 
+2020-11-10 00:08:49 -==> Parameters: 
+2020-11-10 00:08:49 -<==      Total: 4
+2020-11-10 00:08:49 -<==      Total: 7
+2020-11-10 00:09:00 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-10 00:09:00 -==> Parameters: 15868808504@163.com(String)
+2020-11-10 00:09:00 -<==      Total: 1
+2020-11-10 00:09:00 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-10 00:09:00 -==> Parameters: 15868808504@163.com(String)
+2020-11-10 00:09:01 -<==      Total: 1
+2020-11-10 00:09:03 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2020-11-10 00:09:03 -==> Parameters: 
+2020-11-10 00:09:03 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-10 00:09:03 -==> Parameters: 11(Integer)
+2020-11-10 00:09:03 -<==      Total: 3
+2020-11-10 00:09:03 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-10 00:09:03 -==> Parameters: 3(Integer)
+2020-11-10 00:09:03 -<==      Total: 2
+2020-11-10 00:09:03 -<==      Total: 1
+2020-11-10 00:09:03 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-10 00:09:03 -==> Parameters: 5(Integer)
+2020-11-10 00:09:03 -<==      Total: 1
+2020-11-10 00:09:03 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-10 00:09:03 -==> Parameters: 2(Integer)
+2020-11-10 00:09:03 -<==      Total: 1
+2020-11-10 00:09:03 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-10 00:09:03 -==> Parameters: 3(Integer)
+2020-11-10 00:09:03 -<==      Total: 1
+2020-11-10 00:09:03 -==>  Preparing: SELECT * from semester where id = ? 
+2020-11-10 00:09:03 -==> Parameters: 2(Integer)
+2020-11-10 00:09:03 -<==      Total: 1
+2020-11-10 00:09:03 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2020-11-10 00:09:03 -==> Parameters: 2(Integer)
+2020-11-10 00:09:03 -<==      Total: 1
+2020-11-10 00:09:04 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-10 00:09:04 -==> Parameters: 11(Integer)
+2020-11-10 00:09:04 -<==      Total: 2
+2020-11-10 00:09:04 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-10 00:09:04 -==> Parameters: 6(Integer)
+2020-11-10 00:09:04 -<==      Total: 1
+2020-11-10 00:09:04 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-10 00:09:04 -==> Parameters: 1(Integer)
+2020-11-10 00:09:04 -<==      Total: 1
+2020-11-10 00:09:06 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-10 00:09:06 -==> Parameters: 6(Integer)
+2020-11-10 00:09:06 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:09:06 -==> Parameters: 11(Integer)
+2020-11-10 00:09:06 -<==      Total: 1
+2020-11-10 00:09:06 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-10 00:09:06 -==> Parameters: 2(Integer)
+2020-11-10 00:09:06 -<==      Total: 3
+2020-11-10 00:09:06 -<==      Total: 1
+2020-11-10 00:09:06 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-10 00:09:06 -==> Parameters: 2(Integer)
+2020-11-10 00:09:06 -<==      Total: 2
+2020-11-10 00:09:06 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-10 00:09:06 -==> Parameters: 2(Integer)
+2020-11-10 00:09:06 -<==      Total: 3
+2020-11-10 00:09:10 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-10 00:09:10 -==> Parameters: 4(Integer)
+2020-11-10 00:09:10 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-10 00:09:10 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-10 00:09:10 -<==      Total: 1
+2020-11-10 00:09:10 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-10 00:09:10 -==> Parameters: 4(Integer)
+2020-11-10 00:09:10 -<==      Total: 0
+2020-11-10 00:09:10 -<==      Total: 1
+2020-11-10 00:09:21 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-10 00:09:21 -==> Parameters: 6(Integer)
+2020-11-10 00:09:21 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:09:21 -==> Parameters: 11(Integer)
+2020-11-10 00:09:21 -<==      Total: 3
+2020-11-10 00:09:21 -<==      Total: 1
+2020-11-10 00:09:21 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-10 00:09:21 -==> Parameters: 2(Integer)
+2020-11-10 00:09:21 -<==      Total: 1
+2020-11-10 00:09:21 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-10 00:09:21 -==> Parameters: 2(Integer)
+2020-11-10 00:09:21 -<==      Total: 2
+2020-11-10 00:09:21 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-10 00:09:21 -==> Parameters: 2(Integer)
+2020-11-10 00:09:21 -<==      Total: 3
+2020-11-10 00:09:40 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? 
+2020-11-10 00:09:40 -==> Parameters: 5(Integer)
+2020-11-10 00:09:40 -<==      Total: 2
+2020-11-10 00:09:40 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-10 00:09:40 -==> Parameters: 5(Integer)
+2020-11-10 00:09:40 -<==      Total: 1
+2020-11-10 00:09:40 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-10 00:09:40 -==> Parameters: 6(Integer)
+2020-11-10 00:09:40 -<==      Total: 1
+2020-11-10 00:09:40 -==>  Preparing: SELECT * from selectClass WHERE classId = ? 
+2020-11-10 00:09:40 -==> Parameters: 6(Integer)
+2020-11-10 00:09:40 -<==      Total: 2
+2020-11-10 00:09:40 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:09:40 -==> Parameters: 11(Integer)
+2020-11-10 00:09:40 -<==      Total: 1
+2020-11-10 00:09:40 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:09:40 -==> Parameters: 12(Integer)
+2020-11-10 00:09:40 -<==      Total: 1
+2020-11-10 00:11:08 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-10 00:11:08 -==> Parameters: 11(Integer)
+2020-11-10 00:11:08 -<==      Total: 2
+2020-11-10 00:11:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-10 00:11:08 -==> Parameters: 6(Integer)
+2020-11-10 00:11:08 -<==      Total: 1
+2020-11-10 00:11:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-10 00:11:08 -==> Parameters: 1(Integer)
+2020-11-10 00:11:08 -<==      Total: 1
+2020-11-10 00:11:10 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-10 00:11:10 -==> Parameters: 6(Integer)
+2020-11-10 00:11:10 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:11:10 -<==      Total: 3
+2020-11-10 00:11:10 -==> Parameters: 11(Integer)
+2020-11-10 00:11:10 -<==      Total: 1
+2020-11-10 00:11:10 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-10 00:11:10 -==> Parameters: 2(Integer)
+2020-11-10 00:11:10 -<==      Total: 1
+2020-11-10 00:11:10 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-10 00:11:10 -==> Parameters: 2(Integer)
+2020-11-10 00:11:11 -<==      Total: 2
+2020-11-10 00:11:11 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-10 00:11:11 -==> Parameters: 2(Integer)
+2020-11-10 00:11:11 -<==      Total: 3
+2020-11-10 00:11:21 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-10 00:11:21 -==> Parameters: 4(Integer)
+2020-11-10 00:11:21 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-10 00:11:21 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-10 00:11:21 -<==      Total: 1
+2020-11-10 00:11:21 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-10 00:11:21 -==> Parameters: 4(Integer)
+2020-11-10 00:11:21 -<==      Total: 0
+2020-11-10 00:11:21 -<==      Total: 1
+2020-11-10 00:11:29 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-10 00:11:29 -==> Parameters: 5(Integer)
+2020-11-10 00:11:29 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-10 00:11:29 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-10 00:11:29 -<==      Total: 1
+2020-11-10 00:11:29 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-10 00:11:29 -==> Parameters: 5(Integer)
+2020-11-10 00:11:29 -<==      Total: 1
+2020-11-10 00:11:29 -<==      Total: 0
+2020-11-10 00:11:38 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-10 00:11:38 -==> Parameters: 6(Integer)
+2020-11-10 00:11:38 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-10 00:11:38 -==> Parameters: 6(Integer), 11(Integer)
+2020-11-10 00:11:38 -<==      Total: 1
+2020-11-10 00:11:38 -==>  Preparing: UPDATE task SET status = 2 WHERE id=? 
+2020-11-10 00:11:38 -==> Parameters: 6(Integer)
+2020-11-10 00:11:39 -<==      Total: 1
+2020-11-10 00:11:39 -<==    Updates: 1
+2020-11-10 00:11:39 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-10 00:11:39 -==> Parameters: 6(Integer)
+2020-11-10 00:11:39 -<==      Total: 0
+2020-11-10 00:11:48 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-10 00:11:48 -==> Parameters: 4(Integer)
+2020-11-10 00:11:48 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-10 00:11:48 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-10 00:11:48 -<==      Total: 1
+2020-11-10 00:11:48 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-10 00:11:48 -==> Parameters: 4(Integer)
+2020-11-10 00:11:48 -<==      Total: 0
+2020-11-10 00:11:48 -<==      Total: 1
+2020-11-10 00:13:11 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-10 00:13:11 -==> Parameters: 4(Integer)
+2020-11-10 00:13:11 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-10 00:13:11 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-10 00:13:11 -<==      Total: 1
+2020-11-10 00:13:11 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-10 00:13:11 -==> Parameters: 4(Integer)
+2020-11-10 00:13:11 -<==      Total: 0
+2020-11-10 00:13:11 -<==      Total: 1
+2020-11-10 00:14:07 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-10 00:14:07 -==> Parameters: 4(Integer)
+2020-11-10 00:14:07 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-10 00:14:07 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-10 00:14:07 -<==      Total: 1
+2020-11-10 00:14:07 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-10 00:14:07 -==> Parameters: 4(Integer)
+2020-11-10 00:14:07 -<==      Total: 0
+2020-11-10 00:14:07 -<==      Total: 1
+2020-11-10 00:14:08 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:14:08 -==> Parameters: 2(Integer)
+2020-11-10 00:14:08 -<==      Total: 1
+2020-11-10 00:14:08 -==>  Preparing: SELECT * from createClassApplication WHERE teacherId = ? 
+2020-11-10 00:14:08 -==> Parameters: 2(Integer)
+2020-11-10 00:14:08 -<==      Total: 6
+2020-11-10 00:14:12 -==>  Preparing: SELECT * from grade 
+2020-11-10 00:14:12 -==> Parameters: 
+2020-11-10 00:14:12 -<==      Total: 7
+2020-11-10 00:14:26 -==>  Preparing: SELECT t1.id id,user_name,name,reason,createDate,status,finishDate from SC2.createApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-11-10 00:14:26 -==> Parameters: 
+2020-11-10 00:14:26 -<==      Total: 5
+2020-11-10 00:14:32 -==>  Preparing: SELECT t1.id id,t1.name name,user_name,courseName,startDate,endDate,semesterName,gradeName,maxNum,createDate,status,finishDate from SC2.createClassApplication t1 left join SC2.USER t2 on t2.id = t1.teacherId order by createDate desc; 
+2020-11-10 00:14:32 -==> Parameters: 
+2020-11-10 00:14:32 -<==      Total: 6
+2020-11-10 00:14:44 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-10 00:14:44 -==> Parameters: 1653611386@qq.com(String)
+2020-11-10 00:14:44 -<==      Total: 1
+2020-11-10 00:14:44 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-10 00:14:44 -==> Parameters: 1653611386@qq.com(String)
+2020-11-10 00:14:44 -<==      Total: 1
+2020-11-10 00:14:47 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:14:47 -==> Parameters: 2(Integer)
+2020-11-10 00:14:47 -<==      Total: 1
+2020-11-10 00:14:47 -==>  Preparing: SELECT * from createApplication WHERE teacherId = ? 
+2020-11-10 00:14:47 -==> Parameters: 2(Integer)
+2020-11-10 00:14:47 -<==      Total: 5
+2020-11-10 00:14:51 -==>  Preparing: SELECT * from semester 
+2020-11-10 00:14:51 -==> Parameters: 
+2020-11-10 00:14:51 -==>  Preparing: SELECT * from grade 
+2020-11-10 00:14:51 -==> Parameters: 
+2020-11-10 00:14:51 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:14:51 -==> Parameters: 2(Integer)
+2020-11-10 00:14:51 -<==      Total: 4
+2020-11-10 00:14:51 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-10 00:14:51 -==> Parameters: 2(Integer)
+2020-11-10 00:14:51 -<==      Total: 7
+2020-11-10 00:14:51 -<==      Total: 1
+2020-11-10 00:14:51 -<==      Total: 1
+2020-11-10 00:14:51 -==>  Preparing: SELECT * from createClassApplication WHERE teacherId = ? 
+2020-11-10 00:14:51 -==> Parameters: 2(Integer)
+2020-11-10 00:14:51 -==>  Preparing: SELECT * from course WHERE teacherId = ? 
+2020-11-10 00:14:51 -==> Parameters: 2(Integer)
+2020-11-10 00:14:51 -<==      Total: 3
+2020-11-10 00:14:51 -<==      Total: 6

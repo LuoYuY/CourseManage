@@ -2,25 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="339c93d2-10e7-4b74-8777-f6e1455bb2e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/applog/2020-11-06/2020-11-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/2/人件读后感.odt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/2/人月神话读后感.odt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/2/感想.odt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/TaskStuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/pojo/TaskStu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/taskStuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentTask/11/人月神话读后感.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applog/2020-11-07/2020-11-07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applog/2020-11-08/2020-11-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applog/2020-11-09/2020-11-09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applog/2020-11-10/2020-11-10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseWare/2/Part 2 索引结构及使用.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseWare/2/Part 4 物理结构与实现.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseWare/2/黑客与画家读书笔记.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/common/TaskScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/ScoreReportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/pojo/ScoreReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/TaskScoreDataListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/scoreReportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentTask/11/软件发展过程的总结与分析.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentTask/12/算法进阶班第一课 .pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentTask/12/算法进阶班第二课.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applog/2020-11-05/2020-11-05.log" beforeDir="false" afterPath="$PROJECT_DIR$/applog/2020-11-05/2020-11-05.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applog/2020-11-06/2020-11-06.log" beforeDir="false" afterPath="$PROJECT_DIR$/applog/2020-11-06/2020-11-06.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/TaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/TaskMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/pojo/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/pojo/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/CourseWareMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/CourseWareMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/SelectClassMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/SelectClassMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/TaskStuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/mapper/TaskStuMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/taskMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/taskMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/courseWareMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/courseWareMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/selectClassMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/selectClassMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/taskStuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/taskStuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/test/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/test/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +89,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="SpringBootUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -132,7 +143,11 @@
       <workItem from="1603975305330" duration="2581000" />
       <workItem from="1603990340596" duration="784000" />
       <workItem from="1604027539581" duration="48958000" />
-      <workItem from="1604504583527" duration="24694000" />
+      <workItem from="1604504583527" duration="24890000" />
+      <workItem from="1604666639623" duration="610000" />
+      <workItem from="1604675841484" duration="4000" />
+      <workItem from="1604754207881" duration="22730000" />
+      <workItem from="1604904003982" duration="4066000" />
     </task>
     <task id="LOCAL-00001" summary="modify login">
       <created>1601978985029</created>
@@ -246,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604577411073</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add 作业提交">
+      <created>1604599841675</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1604599841675</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +303,8 @@
     <MESSAGE value="add 静态资源路径配置，课件下载" />
     <MESSAGE value="add 获取待选课列表" />
     <MESSAGE value="add 发布作业" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 发布作业" />
+    <MESSAGE value="add 作业提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 作业提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="214" width="800" height="677" key="#Auto_Import" timestamp="1604219058526">
@@ -300,54 +323,54 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="667" y="357" width="705" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1603784488967" />
-    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1604593433891">
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1604932366195">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1604593433891" />
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1604932366195" />
     <state x="746" y="439" width="484" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603796247300">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="746" y="439" width="484" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1853.1053@67.27.1853.1053" timestamp="1603796247300" />
-    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2" timestamp="1604577410840">
+    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2" timestamp="1604599841490">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1604577410840" />
-    <state x="827" y="92" width="424" height="484" key="FileChooserDialogImpl" timestamp="1604595341829">
+    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1604599841490" />
+    <state x="827" y="92" width="424" height="484" key="FileChooserDialogImpl" timestamp="1604904929399">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="827" y="92" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1604595341829" />
-    <state width="1807" height="167" key="GridCell.Tab.0.bottom" timestamp="1604599726705">
+    <state x="827" y="92" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1604904929399" />
+    <state width="1807" height="173" key="GridCell.Tab.0.bottom" timestamp="1604933074070">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="167" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1604599726705" />
-    <state width="1807" height="167" key="GridCell.Tab.0.center" timestamp="1604599726704">
+    <state width="1807" height="173" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1604933074070" />
+    <state width="1807" height="173" key="GridCell.Tab.0.center" timestamp="1604933074069">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="167" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1604599726704" />
-    <state width="1807" height="167" key="GridCell.Tab.0.left" timestamp="1604599726704">
+    <state width="1807" height="173" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1604933074069" />
+    <state width="1807" height="173" key="GridCell.Tab.0.left" timestamp="1604933074069">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="167" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1604599726704" />
-    <state width="1807" height="167" key="GridCell.Tab.0.right" timestamp="1604599726705">
+    <state width="1807" height="173" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1604933074069" />
+    <state width="1807" height="173" key="GridCell.Tab.0.right" timestamp="1604933074070">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="167" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1604599726705" />
-    <state width="1807" height="167" key="GridCell.Tab.1.bottom" timestamp="1604599726707">
+    <state width="1807" height="173" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1604933074070" />
+    <state width="1807" height="173" key="GridCell.Tab.1.bottom" timestamp="1604933074070">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="167" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1604599726707" />
-    <state width="1807" height="167" key="GridCell.Tab.1.center" timestamp="1604599726706">
+    <state width="1807" height="173" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1604933074070" />
+    <state width="1807" height="173" key="GridCell.Tab.1.center" timestamp="1604933074070">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="167" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1604599726706" />
-    <state width="1807" height="167" key="GridCell.Tab.1.left" timestamp="1604599726706">
+    <state width="1807" height="173" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1604933074070" />
+    <state width="1807" height="173" key="GridCell.Tab.1.left" timestamp="1604933074070">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="167" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1604599726706" />
-    <state width="1807" height="167" key="GridCell.Tab.1.right" timestamp="1604599726706">
+    <state width="1807" height="173" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1604933074070" />
+    <state width="1807" height="173" key="GridCell.Tab.1.right" timestamp="1604933074070">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="167" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1604599726706" />
+    <state width="1807" height="173" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1604933074070" />
     <state width="1807" height="344" key="GridCell.Tab.2.bottom" timestamp="1604364822711">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -368,18 +391,18 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1603293673142" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1601892370027">
+    <state x="482" y="187" key="SettingsEditor" timestamp="1604754390485">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1601892370027" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1604584859288">
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1604754390485" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1604599871765">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1604584859288" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1604027570124">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1604599871765" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1604904911413">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1604027570124" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1604904911413" />
     <state x="761" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603783879949">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -392,10 +415,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1604563101990" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1604306804312">
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1604757553209">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1604306804312" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1604757553209" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -439,51 +462,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/utils/RedisUtil.java</url>
           <line>117</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/UserServiceImpl.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/TeacherServiceImpl.java</url>

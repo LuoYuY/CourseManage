@@ -63,7 +63,7 @@ public class UserServiceImpl implements UserService {
         email.sendEmail("来自MyCourse的验证码", "验证码为  "+code);
 
         //将验证码存入redis缓存中 形式为 ip_code :  具体code , 生存时间为60秒
-        redisUtil.set(ip+"_code",code,300);
+        redisUtil.set(ip+"_code",code,60);
         //System.out.println((String)redisUtil.get(ip+"_code"));
     }
 
@@ -76,10 +76,9 @@ public class UserServiceImpl implements UserService {
         String verifyCode=registerStudentReq.getVerifyCode();
 
         //校验逻辑
-
         logger.info("--------------------start registerStudent----------------------");
+        logger.info("verifyCode"+verifyCode);
         if(verifyCode(verifyCode,ip)){
-
             //持久化到数据库
             User user = new User();
             user.setUserId(user_id);
@@ -124,6 +123,7 @@ public class UserServiceImpl implements UserService {
 
     Boolean verifyCode(String verifyCode,String ip) {
         String code = (String)redisUtil.get(ip+"_code");
+        logger.info("code"+code);
         if(code!=null && verifyCode.equals(code)) {
             return true;
         }

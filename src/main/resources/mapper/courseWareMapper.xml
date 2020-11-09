@@ -24,4 +24,7 @@
     <select id="getFilesByCourseId" parameterType="java.util.Map" resultMap="courseWare">
         SELECT * from courseWare WHERE courseId = #{courseId}
     </select>
+    <delete id="deleteById" parameterType="java.util.Map">
+        delete from courseWare WHERE id = #{courseWareId}
+    </delete>
 </mapper>

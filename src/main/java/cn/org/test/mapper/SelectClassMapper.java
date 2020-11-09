@@ -17,4 +17,5 @@ public interface SelectClassMapper {
 
     Integer deleteSelectClass(@Param("classId")Integer classId,@Param("studentId")Integer studentId);
 
+    List<SelectClass> getSelectClassByClassId(@Param("classId")Integer id);
 }

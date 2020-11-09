@@ -10,6 +10,9 @@
     <select id="getSelectedCoursesByStuId" parameterType="java.util.Map" resultMap="selectClass">
         SELECT * from selectClass WHERE studentId = #{studentId}
     </select>
+    <select id="getSelectClassByClassId" parameterType="java.util.Map" resultMap="selectClass">
+        SELECT * from selectClass WHERE classId = #{classId}
+    </select>
 
     <!--    insert 后返回操作的主键-->
     <insert id="addSelectClass" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="id" keyColumn="id">

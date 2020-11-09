@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.org.test.mapper.ScoreReportMapper">
+    <resultMap id="scoreReport" type="cn.org.test.pojo.ScoreReport">
+        <result column="id" property="id" jdbcType="INTEGER"/>
+        <result column="studentId" property="studentId" jdbcType="INTEGER"/>
+        <result column="taskId" property="taskId" jdbcType="INTEGER"/>
+        <result column="classId" property="classId" jdbcType="INTEGER"/>
+        <result column="score" property="score" jdbcType="INTEGER"/>
+    </resultMap>
+<!--    <select id="getSelectedCoursesByStuId" parameterType="java.util.Map" resultMap="selectClass">-->
+<!--        SELECT * from selectClass WHERE studentId = #{studentId}-->
+<!--    </select>-->
+<!--    <select id="getSelectClassByClassId" parameterType="java.util.Map" resultMap="selectClass">-->
+<!--        SELECT * from selectClass WHERE classId = #{classId}-->
+<!--    </select>-->
+<!--    &lt;!&ndash;    insert 后返回操作的主键&ndash;&gt;-->
+    <insert id="addTaskScore" parameterType="java.util.Map">
+        INSERT into scoreReport(taskId,classId,studentId,score) values(#{taskId},#{classId}, #{studentId}, #{score})
+    </insert>
+
+        <select id="getScoreReportById" parameterType="java.util.Map" resultMap="scoreReport">
+            SELECT * from scoreReport WHERE studentId = #{studentId} and taskId = #{taskId}
+        </select>
+
+    <update id="updateScore" parameterType="java.util.Map" >
+        UPDATE scoreReport SET score = #{score} WHERE taskId=#{taskId} and studentId=#{studentId}
+    </update>
+
+<!--    Integer updateScore(@Param("studentId")Integer studentId, @Param("taskId")Integer taskId, @Param("score")Integer score);-->
+
+<!--    <delete id="deleteSelectClass" parameterType="java.util.Map">-->
+<!--        delete from selectClass where classId=#{classId} and studentId=#{studentId}-->
+<!--    </delete>-->
+</mapper>

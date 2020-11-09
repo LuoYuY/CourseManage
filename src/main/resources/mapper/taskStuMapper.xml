@@ -33,10 +33,17 @@
         SELECT * from taskStu WHERE taskId = #{taskId} and studentId=#{userId}
     </select>
 
-<!--    <update id="updateTaskState" parameterType="java.util.Map" >-->
-<!--        UPDATE task SET status = 2 WHERE id=#{taskId}-->
-<!--    </update>-->
-     <delete id="deleteById" parameterType="java.util.Map">
+    <update id="updateScore" parameterType="java.util.Map" >
+        UPDATE taskStu SET score = #{score} WHERE taskId=#{taskId} and studentId=#{studentId}
+    </update>
+
+<!--    void updateScore(@Param("studentId")Integer studentId, @Param("taskId")Integer taskId, @Param("score")Integer score);-->
+
+    <delete id="deleteById" parameterType="java.util.Map">
         delete from taskStu where id=#{id}
      </delete>
+
+    <select id="getTaskStuByTaskId" parameterType="java.util.Map" resultMap="taskStu">
+        SELECT * from taskStu WHERE taskId = #{taskId}
+    </select>
 </mapper>

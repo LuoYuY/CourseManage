@@ -1,0 +1,861 @@
+2020-11-07 21:03:37 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 5003 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-07 21:03:37 -No active profile set, falling back to default profiles: default
+2020-11-07 21:03:37 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Sat Nov 07 21:03:37 CST 2020]; root of context hierarchy
+2020-11-07 21:03:38 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-07 21:03:38 -Tomcat initialized with port(s): 8080 (http)
+2020-11-07 21:03:38 -Root WebApplicationContext: initialization completed in 1718 ms
+2020-11-07 21:03:38 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-07 21:03:38 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-07 21:03:38 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-07 21:03:38 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-07 21:03:38 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-07 21:03:39 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Sat Nov 07 21:03:37 CST 2020]; root of context hierarchy
+2020-11-07 21:03:39 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-07 21:03:39 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-07 21:03:39 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-07 21:03:39 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2020-11-07 21:03:39 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2020-11-07 21:03:39 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2020-11-07 21:03:39 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2020-11-07 21:03:39 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-07 21:03:39 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-07 21:03:39 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-07 21:03:39 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-07 21:03:39 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:03:39 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-07 21:03:39 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 21:03:39 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 21:03:39 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 21:03:40 -Registering beans for JMX exposure on startup
+2020-11-07 21:03:40 -Tomcat started on port(s): 8080 (http)
+2020-11-07 21:03:40 -Started SpringBootUserApplication in 3.736 seconds (JVM running for 4.326)
+2020-11-07 21:06:56 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-07 21:06:56 -FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2020-11-07 21:06:59 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-07 21:06:59 -==> Parameters: 15868808504@163.com(String)
+2020-11-07 21:06:59 -<==      Total: 1
+2020-11-07 21:07:00 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-07 21:07:00 -==> Parameters: 15868808504@163.com(String)
+2020-11-07 21:07:00 -<==      Total: 1
+2020-11-07 21:07:08 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-07 21:07:08 -==> Parameters: 11(Integer)
+2020-11-07 21:07:08 -<==      Total: 2
+2020-11-07 21:07:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-07 21:07:08 -==> Parameters: 6(Integer)
+2020-11-07 21:07:08 -<==      Total: 1
+2020-11-07 21:07:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-07 21:07:08 -==> Parameters: 1(Integer)
+2020-11-07 21:07:08 -<==      Total: 1
+2020-11-07 21:07:12 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-07 21:07:12 -==> Parameters: 6(Integer)
+2020-11-07 21:07:12 -<==      Total: 3
+2020-11-07 21:07:12 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 21:07:12 -==> Parameters: 11(Integer)
+2020-11-07 21:07:12 -<==      Total: 1
+2020-11-07 21:07:12 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-07 21:07:12 -==> Parameters: 2(Integer)
+2020-11-07 21:07:12 -<==      Total: 1
+2020-11-07 21:07:12 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-07 21:07:12 -==> Parameters: 2(Integer)
+2020-11-07 21:07:12 -<==      Total: 2
+2020-11-07 21:07:12 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-07 21:07:12 -==> Parameters: 2(Integer)
+2020-11-07 21:07:12 -<==      Total: 3
+2020-11-07 21:07:15 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:07:15 -==> Parameters: 4(Integer)
+2020-11-07 21:07:15 -<==      Total: 1
+2020-11-07 21:07:22 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:07:22 -==> Parameters: 5(Integer)
+2020-11-07 21:07:22 -<==      Total: 1
+2020-11-07 21:35:35 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Sat Nov 07 21:03:37 CST 2020]; root of context hierarchy
+2020-11-07 21:35:35 -Unregistering JMX-exposed beans on shutdown
+2020-11-07 21:35:41 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 6598 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-07 21:35:41 -No active profile set, falling back to default profiles: default
+2020-11-07 21:35:41 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Sat Nov 07 21:35:41 CST 2020]; root of context hierarchy
+2020-11-07 21:35:42 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-07 21:35:43 -Tomcat initialized with port(s): 8080 (http)
+2020-11-07 21:35:43 -Root WebApplicationContext: initialization completed in 1818 ms
+2020-11-07 21:35:43 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-07 21:35:43 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-07 21:35:43 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-07 21:35:43 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-07 21:35:43 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-07 21:35:44 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Sat Nov 07 21:35:41 CST 2020]; root of context hierarchy
+2020-11-07 21:35:44 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-07 21:35:44 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-07 21:35:44 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-07 21:35:44 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2020-11-07 21:35:44 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2020-11-07 21:35:44 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2020-11-07 21:35:44 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2020-11-07 21:35:44 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-07 21:35:44 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-07 21:35:44 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-07 21:35:44 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-07 21:35:44 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 21:35:44 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-07 21:35:44 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 21:35:44 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 21:35:44 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 21:35:45 -Registering beans for JMX exposure on startup
+2020-11-07 21:35:45 -Tomcat started on port(s): 8080 (http)
+2020-11-07 21:35:45 -Started SpringBootUserApplication in 3.599 seconds (JVM running for 4.31)
+2020-11-07 21:36:17 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-07 21:36:17 -FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2020-11-07 21:36:20 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:36:20 -==> Parameters: 4(Integer)
+2020-11-07 21:36:20 -<==      Total: 1
+2020-11-07 21:36:20 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:36:20 -==> Parameters: 4(Integer)
+2020-11-07 21:36:20 -<==      Total: 1
+2020-11-07 21:46:24 -No mapping found for HTTP request with URI [/stu/getStuTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-07 21:46:24 -No mapping found for HTTP request with URI [/stu/getStuTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-07 21:46:57 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:46:57 -==> Parameters: 5(Integer)
+2020-11-07 21:46:57 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:46:57 -==> Parameters: 4(Integer)
+2020-11-07 21:46:57 -<==      Total: 1
+2020-11-07 21:46:57 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:46:57 -==> Parameters: 5(Integer)
+2020-11-07 21:46:57 -<==      Total: 1
+2020-11-07 21:46:57 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:46:57 -==> Parameters: 4(Integer)
+2020-11-07 21:46:57 -<==      Total: 0
+2020-11-07 21:46:57 -<==      Total: 1
+2020-11-07 21:47:01 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-07 21:47:01 -==> Parameters: 11(Integer)
+2020-11-07 21:47:01 -<==      Total: 2
+2020-11-07 21:47:01 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-07 21:47:01 -==> Parameters: 6(Integer)
+2020-11-07 21:47:01 -<==      Total: 1
+2020-11-07 21:47:01 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-07 21:47:01 -==> Parameters: 1(Integer)
+2020-11-07 21:47:01 -<==      Total: 1
+2020-11-07 21:47:04 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-07 21:47:04 -==> Parameters: 6(Integer)
+2020-11-07 21:47:04 -<==      Total: 3
+2020-11-07 21:47:05 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 21:47:05 -==> Parameters: 11(Integer)
+2020-11-07 21:47:05 -<==      Total: 1
+2020-11-07 21:47:05 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-07 21:47:05 -==> Parameters: 2(Integer)
+2020-11-07 21:47:05 -<==      Total: 1
+2020-11-07 21:47:05 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-07 21:47:05 -==> Parameters: 2(Integer)
+2020-11-07 21:47:05 -<==      Total: 2
+2020-11-07 21:47:05 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-07 21:47:05 -==> Parameters: 2(Integer)
+2020-11-07 21:47:05 -<==      Total: 3
+2020-11-07 21:47:07 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:47:07 -==> Parameters: 4(Integer)
+2020-11-07 21:47:07 -<==      Total: 1
+2020-11-07 21:47:07 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:47:07 -==> Parameters: 4(Integer)
+2020-11-07 21:47:07 -<==      Total: 1
+2020-11-07 21:49:20 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:49:20 -==> Parameters: 4(Integer)
+2020-11-07 21:49:20 -<==      Total: 1
+2020-11-07 21:49:20 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:49:20 -==> Parameters: 4(Integer)
+2020-11-07 21:49:21 -<==      Total: 1
+2020-11-07 21:49:21 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:49:21 -==> Parameters: 4(Integer)
+2020-11-07 21:49:21 -<==      Total: 1
+2020-11-07 21:49:21 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:49:21 -==> Parameters: 4(Integer)
+2020-11-07 21:49:21 -<==      Total: 1
+2020-11-07 21:49:26 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2020-11-07 21:49:26 -==> Parameters: 11(Integer)
+2020-11-07 21:49:26 -<==      Total: 2
+2020-11-07 21:49:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-07 21:49:26 -==> Parameters: 6(Integer)
+2020-11-07 21:49:26 -<==      Total: 1
+2020-11-07 21:49:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2020-11-07 21:49:26 -==> Parameters: 1(Integer)
+2020-11-07 21:49:26 -<==      Total: 1
+2020-11-07 21:49:29 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-07 21:49:29 -==> Parameters: 6(Integer)
+2020-11-07 21:49:29 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 21:49:29 -==> Parameters: 11(Integer)
+2020-11-07 21:49:29 -<==      Total: 3
+2020-11-07 21:49:29 -<==      Total: 1
+2020-11-07 21:49:29 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-07 21:49:29 -==> Parameters: 2(Integer)
+2020-11-07 21:49:29 -<==      Total: 1
+2020-11-07 21:49:29 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-07 21:49:29 -==> Parameters: 2(Integer)
+2020-11-07 21:49:29 -<==      Total: 2
+2020-11-07 21:49:29 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-07 21:49:29 -==> Parameters: 2(Integer)
+2020-11-07 21:49:29 -<==      Total: 3
+2020-11-07 21:49:32 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:49:32 -==> Parameters: 4(Integer)
+2020-11-07 21:49:32 -<==      Total: 1
+2020-11-07 21:49:32 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:49:32 -==> Parameters: 4(Integer)
+2020-11-07 21:49:32 -<==      Total: 1
+2020-11-07 21:51:27 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:51:27 -==> Parameters: 4(Integer)
+2020-11-07 21:51:27 -<==      Total: 1
+2020-11-07 21:51:27 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:51:27 -==> Parameters: 4(Integer)
+2020-11-07 21:51:27 -<==      Total: 1
+2020-11-07 21:51:58 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:51:58 -==> Parameters: 4(Integer)
+2020-11-07 21:51:58 -<==      Total: 1
+2020-11-07 21:51:58 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:51:58 -==> Parameters: 4(Integer)
+2020-11-07 21:51:58 -<==      Total: 1
+2020-11-07 21:53:30 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:53:30 -==> Parameters: 4(Integer)
+2020-11-07 21:53:30 -<==      Total: 1
+2020-11-07 21:53:30 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:53:30 -==> Parameters: 4(Integer)
+2020-11-07 21:53:30 -<==      Total: 1
+2020-11-07 21:54:02 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:54:02 -==> Parameters: 4(Integer)
+2020-11-07 21:54:02 -<==      Total: 1
+2020-11-07 21:54:02 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:54:02 -==> Parameters: 4(Integer)
+2020-11-07 21:54:02 -<==      Total: 1
+2020-11-07 21:54:06 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:54:06 -==> Parameters: 4(Integer)
+2020-11-07 21:54:06 -<==      Total: 1
+2020-11-07 21:54:06 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:54:06 -==> Parameters: 4(Integer)
+2020-11-07 21:54:06 -<==      Total: 1
+2020-11-07 21:54:34 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:54:34 -==> Parameters: 4(Integer)
+2020-11-07 21:54:34 -<==      Total: 1
+2020-11-07 21:54:34 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:54:34 -==> Parameters: 4(Integer)
+2020-11-07 21:54:34 -<==      Total: 1
+2020-11-07 21:54:53 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:54:53 -==> Parameters: 5(Integer)
+2020-11-07 21:54:53 -<==      Total: 1
+2020-11-07 21:54:53 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:54:53 -==> Parameters: 5(Integer)
+2020-11-07 21:54:53 -<==      Total: 0
+2020-11-07 21:57:52 -No mapping found for HTTP request with URI [/stu/getStuTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-07 21:57:52 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 21:57:52 -==> Parameters: 5(Integer)
+2020-11-07 21:57:52 -<==      Total: 1
+2020-11-07 21:57:52 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 21:57:52 -==> Parameters: 5(Integer)
+2020-11-07 21:57:52 -<==      Total: 0
+2020-11-07 22:01:01 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Sat Nov 07 21:35:41 CST 2020]; root of context hierarchy
+2020-11-07 22:01:01 -Unregistering JMX-exposed beans on shutdown
+2020-11-07 22:01:07 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 7701 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2020-11-07 22:01:07 -No active profile set, falling back to default profiles: default
+2020-11-07 22:01:07 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Sat Nov 07 22:01:07 CST 2020]; root of context hierarchy
+2020-11-07 22:01:08 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-07 22:01:09 -Tomcat initialized with port(s): 8080 (http)
+2020-11-07 22:01:09 -Root WebApplicationContext: initialization completed in 1890 ms
+2020-11-07 22:01:09 -Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-07 22:01:09 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-07 22:01:09 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-07 22:01:09 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-07 22:01:09 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-07 22:01:10 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Sat Nov 07 22:01:07 CST 2020]; root of context hierarchy
+2020-11-07 22:01:10 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2020-11-07 22:01:10 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2020-11-07 22:01:10 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2020-11-07 22:01:10 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2020-11-07 22:01:10 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2020-11-07 22:01:10 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2020-11-07 22:01:10 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2020-11-07 22:01:10 -Mapped "{[/stu/getStuTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getStuTaskDetail(java.lang.Integer,java.lang.Integer)
+2020-11-07 22:01:10 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2020-11-07 22:01:10 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2020-11-07 22:01:10 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2020-11-07 22:01:10 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-11-07 22:01:10 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-07 22:01:10 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-07 22:01:10 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 22:01:10 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 22:01:10 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-07 22:01:10 -Registering beans for JMX exposure on startup
+2020-11-07 22:01:10 -Tomcat started on port(s): 8080 (http)
+2020-11-07 22:01:10 -Started SpringBootUserApplication in 3.564 seconds (JVM running for 4.265)
+2020-11-07 22:01:12 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-07 22:01:12 -FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2020-11-07 22:01:16 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:01:16 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-07 22:01:16 -<==      Total: 0
+2020-11-07 22:01:40 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:01:40 -==> Parameters: 6(Integer), 11(Integer)
+2020-11-07 22:01:40 -<==      Total: 1
+2020-11-07 22:08:26 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:08:26 -==> Parameters: 5(Integer), null
+2020-11-07 22:08:26 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:08:26 -==> Parameters: 5(Integer)
+2020-11-07 22:08:26 -<==      Total: 0
+2020-11-07 22:08:26 -<==      Total: 1
+2020-11-07 22:08:26 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:08:26 -==> Parameters: 5(Integer)
+2020-11-07 22:08:26 -<==      Total: 0
+2020-11-07 22:08:43 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:08:43 -==> Parameters: 5(Integer), null
+2020-11-07 22:08:43 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:08:43 -==> Parameters: 5(Integer)
+2020-11-07 22:08:43 -<==      Total: 0
+2020-11-07 22:08:43 -<==      Total: 1
+2020-11-07 22:08:43 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:08:43 -==> Parameters: 5(Integer)
+2020-11-07 22:08:43 -<==      Total: 0
+2020-11-07 22:08:53 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:08:53 -==> Parameters: 5(Integer), null
+2020-11-07 22:08:53 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:08:53 -==> Parameters: 5(Integer)
+2020-11-07 22:08:53 -<==      Total: 0
+2020-11-07 22:08:53 -<==      Total: 1
+2020-11-07 22:08:53 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:08:53 -==> Parameters: 5(Integer)
+2020-11-07 22:08:53 -<==      Total: 0
+2020-11-07 22:08:56 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:08:56 -==> Parameters: 4(Integer)
+2020-11-07 22:08:56 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:08:56 -==> Parameters: 4(Integer), null
+2020-11-07 22:08:56 -<==      Total: 1
+2020-11-07 22:08:56 -<==      Total: 0
+2020-11-07 22:08:56 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:08:56 -==> Parameters: 4(Integer)
+2020-11-07 22:08:56 -<==      Total: 1
+2020-11-07 22:09:02 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:09:02 -==> Parameters: 6(Integer), null
+2020-11-07 22:09:02 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:09:02 -==> Parameters: 6(Integer)
+2020-11-07 22:09:02 -<==      Total: 0
+2020-11-07 22:09:02 -<==      Total: 1
+2020-11-07 22:09:02 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:09:02 -==> Parameters: 6(Integer)
+2020-11-07 22:09:02 -<==      Total: 0
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:10:20 -==> Parameters: 5(Integer), null
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:10:20 -==> Parameters: 5(Integer)
+2020-11-07 22:10:20 -<==      Total: 0
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:10:20 -==> Parameters: 6(Integer), null
+2020-11-07 22:10:20 -<==      Total: 1
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:10:20 -==> Parameters: 5(Integer)
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:10:20 -==> Parameters: 4(Integer)
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:10:20 -==> Parameters: 4(Integer), null
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:10:20 -==> Parameters: 6(Integer)
+2020-11-07 22:10:20 -<==      Total: 0
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:10:20 -==> Parameters: 5(Integer), null
+2020-11-07 22:10:20 -<==      Total: 1
+2020-11-07 22:10:20 -<==      Total: 0
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:10:20 -==> Parameters: 4(Integer)
+2020-11-07 22:10:20 -<==      Total: 0
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:10:20 -==> Parameters: 5(Integer)
+2020-11-07 22:10:20 -<==      Total: 0
+2020-11-07 22:10:20 -<==      Total: 1
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:10:20 -==> Parameters: 6(Integer)
+2020-11-07 22:10:20 -<==      Total: 1
+2020-11-07 22:10:20 -<==      Total: 1
+2020-11-07 22:10:20 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:10:20 -==> Parameters: 5(Integer)
+2020-11-07 22:10:20 -<==      Total: 0
+2020-11-07 22:10:20 -<==      Total: 0
+2020-11-07 22:10:24 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:10:24 -==> Parameters: 6(Integer)
+2020-11-07 22:10:24 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:10:24 -==> Parameters: 6(Integer), null
+2020-11-07 22:10:24 -<==      Total: 1
+2020-11-07 22:10:24 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:10:24 -<==      Total: 0
+2020-11-07 22:10:24 -==> Parameters: 6(Integer)
+2020-11-07 22:10:24 -<==      Total: 0
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:11:21 -==> Parameters: 5(Integer), null
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:11:21 -==> Parameters: 5(Integer)
+2020-11-07 22:11:21 -<==      Total: 0
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:11:21 -==> Parameters: 5(Integer), null
+2020-11-07 22:11:21 -<==      Total: 1
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:11:21 -==> Parameters: 5(Integer)
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:11:21 -==> Parameters: 4(Integer), null
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:11:21 -==> Parameters: 4(Integer)
+2020-11-07 22:11:21 -<==      Total: 0
+2020-11-07 22:11:21 -<==      Total: 0
+2020-11-07 22:11:21 -<==      Total: 0
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:11:21 -==> Parameters: 6(Integer)
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:11:21 -==> Parameters: 5(Integer)
+2020-11-07 22:11:21 -==> Parameters: 6(Integer), null
+2020-11-07 22:11:21 -<==      Total: 1
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:11:21 -==> Parameters: 4(Integer)
+2020-11-07 22:11:21 -<==      Total: 1
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:11:21 -==> Parameters: 6(Integer)
+2020-11-07 22:11:21 -<==      Total: 0
+2020-11-07 22:11:21 -<==      Total: 1
+2020-11-07 22:11:21 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:11:21 -==> Parameters: 5(Integer)
+2020-11-07 22:11:21 -<==      Total: 1
+2020-11-07 22:11:21 -<==      Total: 0
+2020-11-07 22:11:21 -<==      Total: 0
+2020-11-07 22:11:25 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:11:25 -==> Parameters: 6(Integer), null
+2020-11-07 22:11:25 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:11:25 -==> Parameters: 6(Integer)
+2020-11-07 22:11:25 -<==      Total: 0
+2020-11-07 22:11:25 -<==      Total: 1
+2020-11-07 22:11:25 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:11:25 -==> Parameters: 6(Integer)
+2020-11-07 22:11:25 -<==      Total: 0
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:12:00 -==> Parameters: 5(Integer)
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:12:00 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:12:00 -<==      Total: 1
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:12:00 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:12:00 -==> Parameters: 5(Integer)
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:12:00 -==> Parameters: 4(Integer)
+2020-11-07 22:12:00 -<==      Total: 0
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:12:00 -==> Parameters: 6(Integer), 11(Integer)
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:12:00 -==> Parameters: 6(Integer)
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:12:00 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:12:00 -<==      Total: 0
+2020-11-07 22:12:00 -<==      Total: 0
+2020-11-07 22:12:00 -<==      Total: 1
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:12:00 -==> Parameters: 4(Integer)
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:12:00 -==> Parameters: 5(Integer)
+2020-11-07 22:12:00 -<==      Total: 1
+2020-11-07 22:12:00 -<==      Total: 1
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:12:00 -<==      Total: 0
+2020-11-07 22:12:00 -==> Parameters: 6(Integer)
+2020-11-07 22:12:00 -<==      Total: 1
+2020-11-07 22:12:00 -<==      Total: 1
+2020-11-07 22:12:00 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:12:00 -==> Parameters: 5(Integer)
+2020-11-07 22:12:00 -<==      Total: 0
+2020-11-07 22:12:00 -<==      Total: 0
+2020-11-07 22:12:02 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:12:02 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:12:02 -==> Parameters: 6(Integer), 11(Integer)
+2020-11-07 22:12:02 -==> Parameters: 6(Integer)
+2020-11-07 22:12:02 -<==      Total: 1
+2020-11-07 22:12:02 -<==      Total: 1
+2020-11-07 22:12:02 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:12:02 -==> Parameters: 6(Integer)
+2020-11-07 22:12:02 -<==      Total: 0
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:15:41 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:15:41 -==> Parameters: 5(Integer)
+2020-11-07 22:15:41 -<==      Total: 0
+2020-11-07 22:15:41 -<==      Total: 1
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:15:41 -==> Parameters: 5(Integer)
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:15:41 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:15:41 -==> Parameters: 4(Integer)
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:15:41 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:15:41 -<==      Total: 0
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:15:41 -==> Parameters: 5(Integer)
+2020-11-07 22:15:41 -<==      Total: 0
+2020-11-07 22:15:41 -<==      Total: 1
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:15:41 -==> Parameters: 4(Integer)
+2020-11-07 22:15:41 -<==      Total: 0
+2020-11-07 22:15:41 -<==      Total: 1
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:15:41 -==> Parameters: 5(Integer)
+2020-11-07 22:15:41 -<==      Total: 1
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:15:41 -==> Parameters: 6(Integer)
+2020-11-07 22:15:41 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:15:41 -==> Parameters: 6(Integer), 11(Integer)
+2020-11-07 22:15:41 -<==      Total: 0
+2020-11-07 22:15:42 -<==      Total: 1
+2020-11-07 22:15:42 -<==      Total: 1
+2020-11-07 22:15:42 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:15:42 -==> Parameters: 6(Integer)
+2020-11-07 22:15:42 -<==      Total: 0
+2020-11-07 22:15:46 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:15:46 -==> Parameters: 6(Integer), 11(Integer)
+2020-11-07 22:15:46 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:15:46 -==> Parameters: 6(Integer)
+2020-11-07 22:15:46 -<==      Total: 1
+2020-11-07 22:15:46 -<==      Total: 1
+2020-11-07 22:15:46 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:15:46 -==> Parameters: 6(Integer)
+2020-11-07 22:15:46 -<==      Total: 0
+2020-11-07 22:15:49 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:15:49 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-07 22:15:49 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:15:49 -==> Parameters: 4(Integer)
+2020-11-07 22:15:49 -<==      Total: 0
+2020-11-07 22:15:49 -<==      Total: 1
+2020-11-07 22:15:49 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:15:49 -==> Parameters: 4(Integer)
+2020-11-07 22:15:49 -<==      Total: 1
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:18:47 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:18:47 -==> Parameters: 5(Integer)
+2020-11-07 22:18:47 -<==      Total: 0
+2020-11-07 22:18:47 -<==      Total: 1
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:18:47 -==> Parameters: 5(Integer)
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:18:47 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:18:47 -<==      Total: 0
+2020-11-07 22:18:47 -<==      Total: 0
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:18:47 -==> Parameters: 5(Integer)
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:18:47 -==> Parameters: 4(Integer)
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:18:47 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-07 22:18:47 -<==      Total: 1
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:18:47 -==> Parameters: 5(Integer)
+2020-11-07 22:18:47 -<==      Total: 1
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:18:47 -==> Parameters: 6(Integer)
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:18:47 -==> Parameters: 6(Integer), 11(Integer)
+2020-11-07 22:18:47 -<==      Total: 0
+2020-11-07 22:18:47 -<==      Total: 0
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:18:47 -==> Parameters: 4(Integer)
+2020-11-07 22:18:47 -<==      Total: 1
+2020-11-07 22:18:47 -<==      Total: 1
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:18:47 -==> Parameters: 6(Integer)
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:18:47 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-07 22:18:47 -<==      Total: 1
+2020-11-07 22:18:47 -<==      Total: 0
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:18:47 -==> Parameters: 4(Integer)
+2020-11-07 22:18:47 -<==      Total: 0
+2020-11-07 22:18:47 -<==      Total: 1
+2020-11-07 22:18:47 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:18:47 -==> Parameters: 4(Integer)
+2020-11-07 22:18:47 -<==      Total: 1
+2020-11-07 22:19:29 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:19:29 -==> Parameters: 4(Integer)
+2020-11-07 22:19:29 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:19:29 -==> Parameters: 4(Integer), 11(Integer)
+2020-11-07 22:19:29 -<==      Total: 1
+2020-11-07 22:19:29 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:19:29 -<==      Total: 0
+2020-11-07 22:19:29 -==> Parameters: 4(Integer)
+2020-11-07 22:19:29 -<==      Total: 1
+2020-11-07 22:20:06 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:20:06 -==> Parameters: 5(Integer)
+2020-11-07 22:20:06 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:20:06 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:20:06 -<==      Total: 1
+2020-11-07 22:20:06 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:20:06 -==> Parameters: 5(Integer)
+2020-11-07 22:20:06 -<==      Total: 0
+2020-11-07 22:20:06 -<==      Total: 0
+2020-11-07 22:20:36 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:20:36 -==> Parameters: 5(Integer)
+2020-11-07 22:20:36 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:20:36 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:20:36 -<==      Total: 1
+2020-11-07 22:20:36 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:20:36 -==> Parameters: 5(Integer)
+2020-11-07 22:20:36 -<==      Total: 0
+2020-11-07 22:20:36 -<==      Total: 0
+2020-11-07 22:21:00 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:21:00 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:21:00 -<==      Total: 0
+2020-11-07 22:21:00 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:21:00 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:21:00 -<==      Total: 0
+2020-11-07 22:21:00 -==>  Preparing: UPDATE task SET finishedSum = finishedSum+1 WHERE id=? 
+2020-11-07 22:21:00 -==> Parameters: 5(Integer)
+2020-11-07 22:21:01 -<==    Updates: 1
+2020-11-07 22:21:01 -==>  Preparing: INSERT into taskStu (studentId,taskId,status,filename,filepath,uploadTime) values( ?, ?, ?, ?, ?, ? ) 
+2020-11-07 22:21:01 -==> Parameters: 11(Integer), 5(Integer), 2(Integer), 算法初级班第一课.pdf(String), http://localhost:8080/download/studentTask/11/算法初级班第一课.pdf(String), 2020-11-07 22:21:01(String)
+2020-11-07 22:21:01 -<==    Updates: 1
+2020-11-07 22:21:07 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:21:07 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:21:07 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:21:07 -==> Parameters: 5(Integer)
+2020-11-07 22:21:07 -<==      Total: 1
+2020-11-07 22:21:07 -<==      Total: 1
+2020-11-07 22:21:07 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:21:07 -==> Parameters: 5(Integer)
+2020-11-07 22:21:07 -<==      Total: 0
+2020-11-07 22:23:50 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:23:50 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:23:50 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:23:50 -==> Parameters: 5(Integer)
+2020-11-07 22:23:50 -<==      Total: 1
+2020-11-07 22:23:50 -<==      Total: 1
+2020-11-07 22:23:50 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:23:50 -==> Parameters: 5(Integer)
+2020-11-07 22:23:50 -<==      Total: 0
+2020-11-07 22:23:59 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:23:59 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:23:59 -<==      Total: 1
+2020-11-07 22:23:59 -==>  Preparing: delete from taskStu where id=? 
+2020-11-07 22:23:59 -==> Parameters: 9(Integer)
+2020-11-07 22:23:59 -<==    Updates: 1
+2020-11-07 22:23:59 -==>  Preparing: INSERT into taskStu (studentId,taskId,status,filename,filepath,uploadTime) values( ?, ?, ?, ?, ?, ? ) 
+2020-11-07 22:23:59 -==> Parameters: 11(Integer), 5(Integer), 2(Integer), 算法初级班第二课.pdf(String), http://localhost:8080/download/studentTask/11/算法初级班第二课.pdf(String), 2020-11-07 22:23:59(String)
+2020-11-07 22:23:59 -<==    Updates: 1
+2020-11-07 22:23:59 -==>  Preparing: SELECT * from taskStu WHERE taskId = ? and studentId=? 
+2020-11-07 22:23:59 -==> Parameters: 5(Integer), 11(Integer)
+2020-11-07 22:23:59 -<==      Total: 1
+2020-11-07 22:24:21 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-07 22:24:21 -==> Parameters: 1653611386@qq.com(String)
+2020-11-07 22:24:21 -<==      Total: 1
+2020-11-07 22:24:21 -==>  Preparing: SELECT * from USER where address = ? 
+2020-11-07 22:24:21 -==> Parameters: 1653611386@qq.com(String)
+2020-11-07 22:24:21 -<==      Total: 1
+2020-11-07 22:24:51 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 22:24:51 -==> Parameters: 2(Integer)
+2020-11-07 22:24:51 -<==      Total: 1
+2020-11-07 22:24:51 -==>  Preparing: SELECT * from course WHERE teacherId = ? 
+2020-11-07 22:24:51 -==> Parameters: 2(Integer)
+2020-11-07 22:24:51 -<==      Total: 3
+2020-11-07 22:24:52 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 22:24:52 -==> Parameters: 2(Integer)
+2020-11-07 22:24:52 -<==      Total: 1
+2020-11-07 22:24:52 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-07 22:24:52 -==> Parameters: 2(Integer)
+2020-11-07 22:24:52 -<==      Total: 1
+2020-11-07 22:24:52 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-07 22:24:52 -==> Parameters: 2(Integer)
+2020-11-07 22:24:52 -<==      Total: 2
+2020-11-07 22:24:52 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-07 22:24:52 -==> Parameters: 2(Integer)
+2020-11-07 22:24:53 -<==      Total: 3
+2020-11-07 22:24:58 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 22:24:58 -==> Parameters: 2(Integer)
+2020-11-07 22:24:58 -<==      Total: 1
+2020-11-07 22:24:58 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-07 22:24:58 -==> Parameters: 3(Integer)
+2020-11-07 22:24:58 -<==      Total: 1
+2020-11-07 22:24:58 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-07 22:24:58 -==> Parameters: 3(Integer)
+2020-11-07 22:24:58 -<==      Total: 2
+2020-11-07 22:24:58 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-07 22:24:58 -==> Parameters: 3(Integer)
+2020-11-07 22:24:58 -<==      Total: 5
+2020-11-07 22:25:01 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 22:25:01 -==> Parameters: 2(Integer)
+2020-11-07 22:25:01 -<==      Total: 1
+2020-11-07 22:25:01 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-07 22:25:01 -==> Parameters: 4(Integer)
+2020-11-07 22:25:01 -<==      Total: 1
+2020-11-07 22:25:01 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-07 22:25:01 -==> Parameters: 4(Integer)
+2020-11-07 22:25:01 -<==      Total: 0
+2020-11-07 22:25:01 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-07 22:25:01 -==> Parameters: 4(Integer)
+2020-11-07 22:25:01 -<==      Total: 0
+2020-11-07 22:25:03 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 22:25:03 -==> Parameters: 2(Integer)
+2020-11-07 22:25:03 -<==      Total: 1
+2020-11-07 22:25:03 -==>  Preparing: SELECT * from course WHERE id = ? 
+2020-11-07 22:25:03 -==> Parameters: 2(Integer)
+2020-11-07 22:25:03 -<==      Total: 1
+2020-11-07 22:25:03 -==>  Preparing: SELECT * from class WHERE courseId = ? 
+2020-11-07 22:25:03 -==> Parameters: 2(Integer)
+2020-11-07 22:25:03 -<==      Total: 2
+2020-11-07 22:25:03 -==>  Preparing: SELECT * from courseWare WHERE courseId = ? 
+2020-11-07 22:25:03 -==> Parameters: 2(Integer)
+2020-11-07 22:25:03 -<==      Total: 3
+2020-11-07 22:25:15 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 22:25:15 -==> Parameters: 2(Integer)
+2020-11-07 22:25:15 -<==      Total: 1
+2020-11-07 22:25:15 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-07 22:25:15 -==> Parameters: 2(Integer)
+2020-11-07 22:25:15 -<==      Total: 0
+2020-11-07 22:25:20 -==>  Preparing: SELECT * from USER where id = ? 
+2020-11-07 22:25:20 -==> Parameters: 2(Integer)
+2020-11-07 22:25:20 -<==      Total: 1
+2020-11-07 22:25:20 -==>  Preparing: SELECT * from task WHERE classId = ? 
+2020-11-07 22:25:20 -==> Parameters: 6(Integer)
+2020-11-07 22:25:20 -<==      Total: 3
+2020-11-07 22:25:22 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:25:22 -==> Parameters: 5(Integer)
+2020-11-07 22:25:22 -<==      Total: 1
+2020-11-07 22:25:22 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:25:22 -==> Parameters: 5(Integer)
+2020-11-07 22:25:22 -<==      Total: 0
+2020-11-07 22:25:24 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:25:24 -==> Parameters: 6(Integer)
+2020-11-07 22:25:24 -<==      Total: 1
+2020-11-07 22:25:24 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:25:24 -==> Parameters: 6(Integer)
+2020-11-07 22:25:24 -<==      Total: 0
+2020-11-07 22:25:27 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:25:27 -==> Parameters: 4(Integer)
+2020-11-07 22:25:27 -<==      Total: 1
+2020-11-07 22:25:27 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:25:27 -==> Parameters: 4(Integer)
+2020-11-07 22:25:27 -<==      Total: 1
+2020-11-07 22:25:28 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:25:28 -==> Parameters: 5(Integer)
+2020-11-07 22:25:28 -<==      Total: 1
+2020-11-07 22:25:28 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:25:28 -==> Parameters: 5(Integer)
+2020-11-07 22:25:28 -<==      Total: 0
+2020-11-07 22:25:29 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:25:29 -==> Parameters: 6(Integer)
+2020-11-07 22:25:29 -<==      Total: 1
+2020-11-07 22:25:29 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:25:29 -==> Parameters: 6(Integer)
+2020-11-07 22:25:30 -<==      Total: 0
+2020-11-07 22:25:37 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:25:37 -==> Parameters: 4(Integer)
+2020-11-07 22:25:37 -<==      Total: 1
+2020-11-07 22:25:37 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:25:37 -==> Parameters: 4(Integer)
+2020-11-07 22:25:37 -<==      Total: 1
+2020-11-07 22:25:38 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:25:38 -==> Parameters: 5(Integer)
+2020-11-07 22:25:38 -<==      Total: 1
+2020-11-07 22:25:38 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:25:38 -==> Parameters: 5(Integer)
+2020-11-07 22:25:38 -<==      Total: 0
+2020-11-07 22:25:41 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:25:41 -==> Parameters: 6(Integer)
+2020-11-07 22:25:41 -<==      Total: 1
+2020-11-07 22:25:41 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:25:41 -==> Parameters: 6(Integer)
+2020-11-07 22:25:41 -<==      Total: 0
+2020-11-07 22:27:56 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:27:56 -==> Parameters: 6(Integer)
+2020-11-07 22:27:56 -<==      Total: 1
+2020-11-07 22:27:56 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:27:56 -==> Parameters: 6(Integer)
+2020-11-07 22:27:56 -<==      Total: 0
+2020-11-07 22:28:10 -No mapping found for HTTP request with URI [/stu//tch/getTaskDetail] in DispatcherServlet with name 'dispatcherServlet'
+2020-11-07 22:28:24 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:28:24 -==> Parameters: 6(Integer)
+2020-11-07 22:28:24 -<==      Total: 1
+2020-11-07 22:28:24 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:28:24 -==> Parameters: 6(Integer)
+2020-11-07 22:28:24 -<==      Total: 0
+2020-11-07 22:28:42 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:28:42 -==> Parameters: 6(Integer)
+2020-11-07 22:28:42 -<==      Total: 1
+2020-11-07 22:28:42 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:28:42 -==> Parameters: 6(Integer)
+2020-11-07 22:28:43 -<==      Total: 0
+2020-11-07 22:31:14 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:31:14 -==> Parameters: 6(Integer)
+2020-11-07 22:31:14 -<==      Total: 1
+2020-11-07 22:31:14 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:31:14 -==> Parameters: 6(Integer)
+2020-11-07 22:31:14 -<==      Total: 0
+2020-11-07 22:49:44 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:49:44 -==> Parameters: 6(Integer)
+2020-11-07 22:49:44 -<==      Total: 1
+2020-11-07 22:49:44 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:49:44 -==> Parameters: 6(Integer)
+2020-11-07 22:49:44 -<==      Total: 0
+2020-11-07 22:49:50 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:49:50 -==> Parameters: 5(Integer)
+2020-11-07 22:49:50 -<==      Total: 1
+2020-11-07 22:49:50 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:49:50 -==> Parameters: 5(Integer)
+2020-11-07 22:49:50 -<==      Total: 0
+2020-11-07 22:49:52 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:49:52 -==> Parameters: 4(Integer)
+2020-11-07 22:49:52 -<==      Total: 1
+2020-11-07 22:49:52 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:49:52 -==> Parameters: 4(Integer)
+2020-11-07 22:49:52 -<==      Total: 1
+2020-11-07 22:49:59 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:49:59 -==> Parameters: 6(Integer)
+2020-11-07 22:49:59 -<==      Total: 1
+2020-11-07 22:49:59 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:49:59 -==> Parameters: 6(Integer)
+2020-11-07 22:49:59 -<==      Total: 0
+2020-11-07 22:50:00 -==>  Preparing: SELECT * from task WHERE id = ? 
+2020-11-07 22:50:00 -==> Parameters: 4(Integer)
+2020-11-07 22:50:00 -<==      Total: 1
+2020-11-07 22:50:00 -==>  Preparing: SELECT * from taskWare WHERE taskId = ? 
+2020-11-07 22:50:00 -==> Parameters: 4(Integer)
+2020-11-07 22:50:00 -<==      Total: 1

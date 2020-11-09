@@ -5,13 +5,12 @@ package cn.org.test.controller;
  */
 
 import cn.org.test.common.ServerResponse;
+import cn.org.test.pojo.*;
 import cn.org.test.pojo.Class;
-import cn.org.test.pojo.ClassForSelect;
-import cn.org.test.pojo.SelectClass;
-import cn.org.test.pojo.Task;
 import cn.org.test.service.*;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -99,4 +98,19 @@ public class StudentController {
         if(result) return ServerResponse.createBySuccess();
         else return ServerResponse.createByError();
     }
+
+
+    @ResponseBody
+    @GetMapping(value = "/getStuTaskDetail")
+    public ServerResponse getStuTaskDetail(Integer taskId,Integer studentId) {
+        TaskStu taskStu = courseService.getStuTaskDetail(taskId,studentId);
+        JSONObject obj = new JSONObject();
+        if(taskStu!=null) {
+            obj.put("taskStu",taskStu);
+        }
+        else obj.put("taskStu",null);
+        return ServerResponse.createBySuccess(obj);
+    }
+
+
 }

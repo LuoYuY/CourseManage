@@ -14,4 +14,6 @@ public interface CourseWareMapper {
     Integer addCourseWare(@Param("file") CourseWare file);
 
     List<CourseWare> getFilesByCourseId(@Param("courseId")Integer courseId);
+
+    Integer deleteById(@Param("courseWareId")Integer courseWareId);
 }
