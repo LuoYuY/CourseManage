@@ -46,16 +46,18 @@ public class UserController {
     //login with the username and password
     @ResponseBody
     @PostMapping(value = "/loginPwd")
-    public ServerResponse loginPwd(String email, String password, HttpServletResponse response) throws UnsupportedEncodingException {
+    public ServerResponse loginPwd(String email, String password, Integer role,HttpServletResponse response) throws UnsupportedEncodingException {
 
         System.out.println("password:"+password);
         User userForBase = new User();
         User userTemp = userService.findUserByEmail(email);
+        if(userTemp == null || userTemp.getRoleId()!=role) {
+            return ServerResponse.createByErrorCodeMessage(1, "用户名或密码错误！");
+        }
         System.out.println("userTemp:"+userTemp.getAddress()+userTemp.getPassword());
         userForBase.setId(userTemp.getId());
         userForBase.setAddress(userTemp.getAddress());
         userForBase.setPassword(userTemp.getPassword());
-
         if (!userForBase.getPassword().equals(password)) {
             return ServerResponse.createByErrorCodeMessage(1, "用户名或密码错误！");
         } else {

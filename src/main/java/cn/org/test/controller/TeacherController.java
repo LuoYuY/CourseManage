@@ -251,6 +251,8 @@ public class TeacherController {
             result.put("taskWare", array);
         } else result.put("taskWare", null);
 
+        Course course = courseService.getCourseByClassId(t.getClassId());
+        result.put("courseId",course.getId());
         return ServerResponse.createBySuccess(result);
     }
 

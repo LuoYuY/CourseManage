@@ -198,4 +198,11 @@ public class CourseServiceImpl implements CourseService {
     public void deleteCourseWare(Integer courseWareId) {
         courseWareMapper.deleteById(courseWareId);
     }
+
+    @Override
+    public Course getCourseByClassId(Integer classId) {
+        Class c = classMapper.getClassById(classId);
+        Course course = courseMapper.getCourseById(c.getCourseId());
+        return course;
+    }
 }

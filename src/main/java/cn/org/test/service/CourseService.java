@@ -42,4 +42,6 @@ public interface CourseService {
     void updateStuTaskScore(TaskScore taskScore, Integer taskId);
 
     void deleteCourseWare(Integer courseWareId);
+
+    Course getCourseByClassId(Integer classId);
 }
