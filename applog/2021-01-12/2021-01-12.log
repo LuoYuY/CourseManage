@@ -1,0 +1,760 @@
+2021-01-12 00:28:51 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:28:51 -==> Parameters: 6(Integer), 10966294(Integer), 0(Integer)
+2021-01-12 00:28:51 -<==    Updates: 1
+2021-01-12 00:28:51 -partitions revoked:[stu-menage-2, stu-menage-3, stu-menage-0, stu-menage-1]
+2021-01-12 00:28:51 -partitions assigned:[stu-menage-2, stu-menage-3, stu-menage-0, stu-menage-1]
+2021-01-12 00:28:52 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:28:52 -==> Parameters: 6(Integer), 10966294(Integer), 0(Integer)
+2021-01-12 00:28:52 -<==    Updates: 1
+2021-01-12 00:28:52 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:28:52 -==> Parameters: 6(Integer), 16372555(Integer), 0(Integer)
+2021-01-12 00:28:52 -<==    Updates: 1
+2021-01-12 00:40:20 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:40:20 -==> Parameters: 6(Integer), 17500001(Integer), 0(Integer)
+2021-01-12 00:40:20 -<==    Updates: 1
+2021-01-12 00:40:58 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:40:58 -==> Parameters: 6(Integer), 17109862(Integer), 0(Integer)
+2021-01-12 00:40:58 -<==    Updates: 1
+2021-01-12 00:42:02 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:42:02 -==> Parameters: 6(Integer), 13519249(Integer), 0(Integer)
+2021-01-12 00:42:02 -<==    Updates: 1
+2021-01-12 00:44:09 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Mon Jan 11 22:17:13 CST 2021]; root of context hierarchy
+2021-01-12 00:44:09 -Stopping beans in phase 2147483547
+2021-01-12 00:44:09 -Shutting down ExecutorService
+2021-01-12 00:44:09 -Consumer stopped
+2021-01-12 00:44:09 -Stopping beans in phase 0
+2021-01-12 00:44:09 -Unregistering JMX-exposed beans on shutdown
+2021-01-12 00:44:12 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 27004 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2021-01-12 00:44:12 -No active profile set, falling back to default profiles: default
+2021-01-12 00:44:12 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Tue Jan 12 00:44:12 CST 2021]; root of context hierarchy
+2021-01-12 00:44:13 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-12 00:44:13 -Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$fcf79a30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-12 00:44:13 -Tomcat initialized with port(s): 8090 (http)
+2021-01-12 00:44:13 -Root WebApplicationContext: initialization completed in 1164 ms
+2021-01-12 00:44:13 -Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-12 00:44:13 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-12 00:44:13 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-12 00:44:13 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-12 00:44:13 -Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-12 00:44:14 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Tue Jan 12 00:44:12 CST 2021]; root of context hierarchy
+2021-01-12 00:44:14 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/course/courseWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-12 00:44:14 -Mapped "{[/course/taskWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskWareDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-12 00:44:14 -Mapped "{[/course/taskDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-12 00:44:14 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2021-01-12 00:44:14 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/stu/getStuTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getStuTaskDetail(java.lang.Integer,java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/tch/getStuTaskStatus],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getStuTaskStatus(java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/tch/downloadExcel],methods=[GET]}" onto public void cn.org.test.controller.TeacherController.downloadExcel(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-12 00:44:14 -Mapped "{[/tch/uploadTaskScore],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadTaskScore(java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-12 00:44:14 -Mapped "{[/tch/deleteCourseWare],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.deleteCourseWare(java.lang.Integer)
+2021-01-12 00:44:14 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2021-01-12 00:44:14 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2021-01-12 00:44:14 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2021-01-12 00:44:14 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-01-12 00:44:14 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:44:14 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-12 00:44:14 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-12 00:44:14 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-12 00:44:14 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-12 00:44:14 -Registering beans for JMX exposure on startup
+2021-01-12 00:44:14 -Starting beans in phase 2147483547
+2021-01-12 00:44:14 -Initializing ExecutorService 
+2021-01-12 00:44:14 -Tomcat started on port(s): 8090 (http)
+2021-01-12 00:44:14 -Started SpringBootUserApplication in 2.63 seconds (JVM running for 3.08)
+2021-01-12 00:44:15 -partitions revoked:[]
+2021-01-12 00:44:15 -partitions assigned:[stu-menage-2, stu-menage-3, stu-menage-0, stu-menage-1]
+2021-01-12 00:45:10 -FrameworkServlet 'dispatcherServlet': initialization started
+2021-01-12 00:45:10 -FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15137779(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12654903(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13585317(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13118382(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16412635(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16978302(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16243751(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14837986(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18382637(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18160515(Integer), 0(Integer)
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17886352(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19640403(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13244408(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18270073(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12379565(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13236533(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14207466(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18896000(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11031903(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18889581(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16090025(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 10249730(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15067955(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12230468(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 10015946(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13602521(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18309364(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12247040(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14890144(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19767210(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14392686(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17770419(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11773472(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17889313(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17366625(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16375155(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19669249(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11115471(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19032059(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19606717(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13398943(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15609546(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14574698(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12564483(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12589449(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18802650(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14170063(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19469292(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11712455(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11898850(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18876457(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12565162(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16980272(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15245334(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18860991(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13679770(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14179711(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15453837(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15817719(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19623516(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15008762(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18875628(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11832738(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19768313(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 19520909(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13008330(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13070017(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17203055(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11013400(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15643443(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16828319(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 10890650(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12540402(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15802066(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16444611(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17806496(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17646265(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18995691(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 12218226(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17759582(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17407234(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11964467(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 10156795(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16862118(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14617324(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 17466529(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16531549(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18453448(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11781556(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 13393324(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11593744(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 10656464(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11177988(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 14215102(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11034786(Integer), 0(Integer)
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 15967437(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 16729867(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 18291081(Integer), 0(Integer)
+2021-01-12 00:45:15 -==> Parameters: 6(Integer), 11135199(Integer), 0(Integer)
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:15 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:16 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:45:16 -==> Parameters: 6(Integer), 16757030(Integer), 0(Integer)
+2021-01-12 00:45:16 -<==    Updates: 1
+2021-01-12 00:45:57 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Tue Jan 12 00:44:12 CST 2021]; root of context hierarchy
+2021-01-12 00:45:57 -Stopping beans in phase 2147483547
+2021-01-12 00:45:57 -Shutting down ExecutorService
+2021-01-12 00:45:57 -Consumer stopped
+2021-01-12 00:45:57 -Stopping beans in phase 0
+2021-01-12 00:45:57 -Unregistering JMX-exposed beans on shutdown
+2021-01-12 00:46:00 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 5458 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2021-01-12 00:46:00 -No active profile set, falling back to default profiles: default
+2021-01-12 00:46:00 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Tue Jan 12 00:46:00 CST 2021]; root of context hierarchy
+2021-01-12 00:46:01 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-12 00:46:01 -Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$fcf79a30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-12 00:46:01 -Tomcat initialized with port(s): 8090 (http)
+2021-01-12 00:46:01 -Root WebApplicationContext: initialization completed in 1152 ms
+2021-01-12 00:46:01 -Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-12 00:46:01 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-12 00:46:01 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-12 00:46:01 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-12 00:46:01 -Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-12 00:46:02 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Tue Jan 12 00:46:00 CST 2021]; root of context hierarchy
+2021-01-12 00:46:02 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/course/courseWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-12 00:46:02 -Mapped "{[/course/taskWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskWareDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-12 00:46:02 -Mapped "{[/course/taskDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-12 00:46:02 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2021-01-12 00:46:02 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/stu/getStuTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getStuTaskDetail(java.lang.Integer,java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/tch/getStuTaskStatus],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getStuTaskStatus(java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/tch/downloadExcel],methods=[GET]}" onto public void cn.org.test.controller.TeacherController.downloadExcel(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-12 00:46:02 -Mapped "{[/tch/uploadTaskScore],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadTaskScore(java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-12 00:46:02 -Mapped "{[/tch/deleteCourseWare],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.deleteCourseWare(java.lang.Integer)
+2021-01-12 00:46:02 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2021-01-12 00:46:02 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2021-01-12 00:46:02 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2021-01-12 00:46:02 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-01-12 00:46:02 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-12 00:46:02 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-12 00:46:02 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-12 00:46:02 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-12 00:46:02 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-12 00:46:02 -Registering beans for JMX exposure on startup
+2021-01-12 00:46:02 -Starting beans in phase 2147483547
+2021-01-12 00:46:02 -Initializing ExecutorService 
+2021-01-12 00:46:02 -Tomcat started on port(s): 8090 (http)
+2021-01-12 00:46:02 -Started SpringBootUserApplication in 2.494 seconds (JVM running for 2.865)
+2021-01-12 00:46:02 -partitions revoked:[]
+2021-01-12 00:46:03 -partitions assigned:[stu-menage-2, stu-menage-3, stu-menage-0, stu-menage-1]
+2021-01-12 00:46:19 -FrameworkServlet 'dispatcherServlet': initialization started
+2021-01-12 00:46:19 -FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2021-01-12 00:46:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:25 -==> Parameters: 6(Integer), 18376821(Integer), 0(Integer)
+2021-01-12 00:46:25 -<==    Updates: 1
+2021-01-12 00:46:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:25 -==> Parameters: 6(Integer), 16174418(Integer), 0(Integer)
+2021-01-12 00:46:25 -<==    Updates: 1
+2021-01-12 00:46:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:25 -==> Parameters: 6(Integer), 15833395(Integer), 0(Integer)
+2021-01-12 00:46:25 -<==    Updates: 1
+2021-01-12 00:46:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:25 -==> Parameters: 6(Integer), 17123658(Integer), 0(Integer)
+2021-01-12 00:46:25 -<==    Updates: 1
+2021-01-12 00:46:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:25 -==> Parameters: 6(Integer), 12968897(Integer), 0(Integer)
+2021-01-12 00:46:25 -<==    Updates: 1
+2021-01-12 00:46:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:25 -==> Parameters: 6(Integer), 16317228(Integer), 0(Integer)
+2021-01-12 00:46:25 -<==    Updates: 1
+2021-01-12 00:46:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:25 -==> Parameters: 6(Integer), 14452628(Integer), 0(Integer)
+2021-01-12 00:46:25 -<==    Updates: 1
+2021-01-12 00:46:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:25 -==> Parameters: 6(Integer), 10587947(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 10514084(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 11073117(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 12311554(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 17123290(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 12427777(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 15590267(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 13073568(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 19828409(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 10204860(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 11199929(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 14904701(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 19077204(Integer), 0(Integer)
+2021-01-12 00:46:26 -<==    Updates: 1
+2021-01-12 00:46:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:26 -==> Parameters: 6(Integer), 18473162(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 15256575(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 19012139(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 10992047(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 14933417(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 17995743(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 13947718(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 18992134(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 12468963(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 10681516(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 19110545(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 14447317(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 18638672(Integer), 0(Integer)
+2021-01-12 00:46:27 -<==    Updates: 1
+2021-01-12 00:46:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:27 -==> Parameters: 6(Integer), 11267966(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 15127695(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 11361368(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 11616291(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 10863141(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 15504466(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 18731426(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 15103900(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 14117195(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 11551379(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 16624044(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 17890480(Integer), 0(Integer)
+2021-01-12 00:46:28 -<==    Updates: 1
+2021-01-12 00:46:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:28 -==> Parameters: 6(Integer), 14517684(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 10077035(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 11815741(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 19938855(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 16488030(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 15382588(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 14925506(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 11673899(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 17815357(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 14107184(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 17240687(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 15658877(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 13934597(Integer), 0(Integer)
+2021-01-12 00:46:29 -<==    Updates: 1
+2021-01-12 00:46:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:29 -==> Parameters: 6(Integer), 13208697(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 12350283(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 16493008(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 12200676(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 18631391(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 11090066(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 13255698(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 15307637(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 13716269(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 14132269(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 14275767(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 10093885(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 14432566(Integer), 0(Integer)
+2021-01-12 00:46:30 -<==    Updates: 1
+2021-01-12 00:46:30 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:30 -==> Parameters: 6(Integer), 10060146(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 16421079(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 10994064(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 19650511(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 10991594(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 18067671(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 10900381(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 18583241(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 12644984(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 16653322(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 19641787(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 14591827(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 14176536(Integer), 0(Integer)
+2021-01-12 00:46:31 -<==    Updates: 1
+2021-01-12 00:46:31 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:31 -==> Parameters: 6(Integer), 16589247(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 19861852(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 10172407(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 11513676(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 19078711(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 11504094(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 14949869(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 10424005(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 10135757(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 16673960(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 18107937(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 15266143(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 13913850(Integer), 0(Integer)
+2021-01-12 00:46:32 -<==    Updates: 1
+2021-01-12 00:46:32 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:32 -==> Parameters: 6(Integer), 12197347(Integer), 0(Integer)
+2021-01-12 00:46:33 -<==    Updates: 1
+2021-01-12 00:46:33 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:33 -==> Parameters: 6(Integer), 14838544(Integer), 0(Integer)
+2021-01-12 00:46:33 -<==    Updates: 1
+2021-01-12 00:46:33 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-12 00:46:33 -==> Parameters: 6(Integer), 13147902(Integer), 0(Integer)
+2021-01-12 00:46:33 -<==    Updates: 1
+2021-01-12 13:35:01 -partitions revoked:[stu-menage-2, stu-menage-3, stu-menage-0, stu-menage-1]
+2021-01-12 13:35:01 -partitions assigned:[stu-menage-2, stu-menage-3, stu-menage-0, stu-menage-1]

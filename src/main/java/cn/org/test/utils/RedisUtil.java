@@ -2,6 +2,7 @@ package cn.org.test.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
@@ -656,6 +657,16 @@ public final class RedisUtil {
         } catch (Exception e) {
             e.printStackTrace();
             return 0;
+        }
+    }
+
+    public Long execute(DefaultRedisScript<Long> redisScript, List<String> singletonList, String s) {
+        try{
+            Long result = redisTemplate.execute(redisScript, singletonList, s);
+            return result;
+        }catch (Exception e) {
+            e.printStackTrace();
+            return Long.parseLong("0");
         }
     }
 }

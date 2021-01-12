@@ -1,0 +1,1512 @@
+2021-01-10 20:56:13 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 14987 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2021-01-10 20:56:13 -No active profile set, falling back to default profiles: default
+2021-01-10 20:56:14 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e117e3: startup date [Sun Jan 10 20:56:14 CST 2021]; root of context hierarchy
+2021-01-10 20:56:14 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-10 20:56:15 -Tomcat initialized with port(s): 8090 (http)
+2021-01-10 20:56:15 -Root WebApplicationContext: initialization completed in 1146 ms
+2021-01-10 20:56:15 -Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-10 20:56:15 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-10 20:56:15 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-10 20:56:15 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-10 20:56:15 -Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-10 20:56:15 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e117e3: startup date [Sun Jan 10 20:56:14 CST 2021]; root of context hierarchy
+2021-01-10 20:56:15 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/course/courseWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 20:56:15 -Mapped "{[/course/taskWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskWareDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 20:56:15 -Mapped "{[/course/taskDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 20:56:15 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2021-01-10 20:56:15 -Mapped "{[/stu/getStuTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getStuTaskDetail(java.lang.Integer,java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/getStuTaskStatus],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getStuTaskStatus(java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/tch/downloadExcel],methods=[GET]}" onto public void cn.org.test.controller.TeacherController.downloadExcel(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-10 20:56:15 -Mapped "{[/tch/uploadTaskScore],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadTaskScore(java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-10 20:56:15 -Mapped "{[/tch/deleteCourseWare],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.deleteCourseWare(java.lang.Integer)
+2021-01-10 20:56:15 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2021-01-10 20:56:15 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2021-01-10 20:56:15 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2021-01-10 20:56:15 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-01-10 20:56:15 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 20:56:15 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-10 20:56:15 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 20:56:15 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 20:56:15 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 20:56:16 -Registering beans for JMX exposure on startup
+2021-01-10 20:56:16 -Tomcat started on port(s): 8090 (http)
+2021-01-10 20:56:16 -Started SpringBootUserApplication in 2.476 seconds (JVM running for 2.924)
+2021-01-10 20:56:19 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e117e3: startup date [Sun Jan 10 20:56:14 CST 2021]; root of context hierarchy
+2021-01-10 20:56:19 -Unregistering JMX-exposed beans on shutdown
+2021-01-10 21:09:51 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 15879 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2021-01-10 21:09:51 -No active profile set, falling back to default profiles: default
+2021-01-10 21:09:51 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Sun Jan 10 21:09:51 CST 2021]; root of context hierarchy
+2021-01-10 21:09:52 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-10 21:09:52 -Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$9188040e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-10 21:09:52 -Tomcat initialized with port(s): 8090 (http)
+2021-01-10 21:09:53 -Root WebApplicationContext: initialization completed in 1016 ms
+2021-01-10 21:09:53 -Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-10 21:09:53 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-10 21:09:53 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-10 21:09:53 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-10 21:09:53 -Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-10 21:09:53 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Sun Jan 10 21:09:51 CST 2021]; root of context hierarchy
+2021-01-10 21:09:53 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/course/courseWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 21:09:53 -Mapped "{[/course/taskWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskWareDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 21:09:53 -Mapped "{[/course/taskDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 21:09:53 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2021-01-10 21:09:53 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/stu/getStuTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getStuTaskDetail(java.lang.Integer,java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/tch/getStuTaskStatus],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getStuTaskStatus(java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/tch/downloadExcel],methods=[GET]}" onto public void cn.org.test.controller.TeacherController.downloadExcel(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-10 21:09:53 -Mapped "{[/tch/uploadTaskScore],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadTaskScore(java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-10 21:09:53 -Mapped "{[/tch/deleteCourseWare],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.deleteCourseWare(java.lang.Integer)
+2021-01-10 21:09:53 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2021-01-10 21:09:53 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2021-01-10 21:09:53 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2021-01-10 21:09:53 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-01-10 21:09:53 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 21:09:53 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-10 21:09:53 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 21:09:53 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 21:09:53 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 21:09:53 -Registering beans for JMX exposure on startup
+2021-01-10 21:09:53 -Starting beans in phase 2147483647
+2021-01-10 21:09:54 -Tomcat started on port(s): 8090 (http)
+2021-01-10 21:09:54 -Started SpringBootUserApplication in 2.295 seconds (JVM running for 2.72)
+2021-01-10 21:10:07 -FrameworkServlet 'dispatcherServlet': initialization started
+2021-01-10 21:10:07 -FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2021-01-10 21:10:07 -No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcherServlet'
+2021-01-10 21:11:11 -No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcherServlet'
+2021-01-10 21:12:09 -No mapping found for HTTP request with URI [/selectClassList] in DispatcherServlet with name 'dispatcherServlet'
+2021-01-10 21:12:18 -No mapping found for HTTP request with URI [/selectClassList] in DispatcherServlet with name 'dispatcherServlet'
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-01-10 21:12:51 -==> Parameters: 
+2021-01-10 21:12:51 -==> Parameters: 
+2021-01-10 21:12:51 -<==      Total: 5
+2021-01-10 21:12:51 -<==      Total: 5
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==> Parameters: 3(Integer)
+2021-01-10 21:12:51 -==> Parameters: 3(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 5(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 5(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 3(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 3(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==> Parameters: 3(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==> Parameters: 3(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:12:51 -==> Parameters: 2(Integer)
+2021-01-10 21:12:51 -<==      Total: 1
+2021-01-10 21:12:51 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:51 -==> Parameters: 3(Integer)
+2021-01-10 21:12:52 -<==      Total: 1
+2021-01-10 21:12:52 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:12:52 -==> Parameters: 3(Integer)
+2021-01-10 21:12:52 -<==      Total: 1
+2021-01-10 21:12:52 -<==      Total: 1
+2021-01-10 21:13:05 -No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcherServlet'
+2021-01-10 21:20:46 -==>  Preparing: SELECT * from USER where address = ? 
+2021-01-10 21:20:46 -==> Parameters: 1653611386@qq.com(String)
+2021-01-10 21:20:46 -<==      Total: 1
+2021-01-10 21:22:04 -==>  Preparing: SELECT * from USER where address = ? 
+2021-01-10 21:22:04 -==> Parameters: 15868808504@163.com(String)
+2021-01-10 21:22:04 -<==      Total: 1
+2021-01-10 21:22:04 -==>  Preparing: SELECT * from USER where address = ? 
+2021-01-10 21:22:04 -==> Parameters: 15868808504@163.com(String)
+2021-01-10 21:22:04 -<==      Total: 1
+2021-01-10 21:22:07 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-01-10 21:22:07 -==> Parameters: 
+2021-01-10 21:22:07 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-01-10 21:22:07 -==> Parameters: 11(Integer)
+2021-01-10 21:22:08 -<==      Total: 5
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:08 -==> Parameters: 3(Integer)
+2021-01-10 21:22:08 -<==      Total: 2
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:08 -==> Parameters: 5(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:08 -==> Parameters: 2(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:08 -==> Parameters: 3(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:08 -==> Parameters: 2(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:08 -==> Parameters: 2(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:08 -==> Parameters: 3(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:08 -==> Parameters: 2(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:08 -==> Parameters: 2(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:08 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:08 -==> Parameters: 3(Integer)
+2021-01-10 21:22:08 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 21:22:22 -==> Parameters: 8(Integer), 11(Integer), 0(Integer)
+2021-01-10 21:22:22 -<==    Updates: 1
+2021-01-10 21:22:22 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 21:22:22 -==> Parameters: 8(Integer)
+2021-01-10 21:22:22 -<==    Updates: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-01-10 21:22:22 -==> Parameters: 
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-01-10 21:22:22 -==> Parameters: 11(Integer)
+2021-01-10 21:22:22 -<==      Total: 5
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:22 -==> Parameters: 3(Integer)
+2021-01-10 21:22:22 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:22 -==> Parameters: 5(Integer)
+2021-01-10 21:22:22 -<==      Total: 3
+2021-01-10 21:22:22 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:22 -==> Parameters: 2(Integer)
+2021-01-10 21:22:22 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:22 -==> Parameters: 3(Integer)
+2021-01-10 21:22:22 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:22 -==> Parameters: 2(Integer)
+2021-01-10 21:22:22 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:22 -==> Parameters: 2(Integer)
+2021-01-10 21:22:22 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:22 -==> Parameters: 3(Integer)
+2021-01-10 21:22:22 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:22 -==> Parameters: 2(Integer)
+2021-01-10 21:22:22 -<==      Total: 1
+2021-01-10 21:22:22 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:22 -==> Parameters: 2(Integer)
+2021-01-10 21:22:23 -<==      Total: 1
+2021-01-10 21:22:23 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:23 -==> Parameters: 3(Integer)
+2021-01-10 21:22:23 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: delete from selectClass where classId=? and studentId=? 
+2021-01-10 21:22:26 -==> Parameters: 8(Integer), 11(Integer)
+2021-01-10 21:22:26 -<==    Updates: 1
+2021-01-10 21:22:26 -==>  Preparing: update class SET num=num-1 where id=? 
+2021-01-10 21:22:26 -==> Parameters: 8(Integer)
+2021-01-10 21:22:26 -<==    Updates: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-01-10 21:22:26 -==> Parameters: 11(Integer)
+2021-01-10 21:22:26 -<==      Total: 2
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-01-10 21:22:26 -==> Parameters: 
+2021-01-10 21:22:26 -<==      Total: 5
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:26 -==> Parameters: 3(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:26 -==> Parameters: 5(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:26 -==> Parameters: 2(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:26 -==> Parameters: 3(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:26 -==> Parameters: 2(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:26 -==> Parameters: 2(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:26 -==> Parameters: 3(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:26 -==> Parameters: 2(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:26 -==> Parameters: 2(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:26 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:26 -==> Parameters: 3(Integer)
+2021-01-10 21:22:26 -<==      Total: 1
+2021-01-10 21:22:29 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 21:22:29 -==> Parameters: 8(Integer), 11(Integer), 0(Integer)
+2021-01-10 21:22:30 -<==    Updates: 1
+2021-01-10 21:22:30 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 21:22:30 -==> Parameters: 8(Integer)
+2021-01-10 21:22:30 -<==    Updates: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-01-10 21:22:30 -==> Parameters: 
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-01-10 21:22:30 -==> Parameters: 11(Integer)
+2021-01-10 21:22:30 -<==      Total: 5
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:30 -==> Parameters: 3(Integer)
+2021-01-10 21:22:30 -<==      Total: 3
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:30 -==> Parameters: 5(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:30 -==> Parameters: 2(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:30 -==> Parameters: 3(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:30 -==> Parameters: 2(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:30 -==> Parameters: 2(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:30 -==> Parameters: 3(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:30 -==> Parameters: 2(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:30 -==> Parameters: 2(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:30 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:30 -==> Parameters: 3(Integer)
+2021-01-10 21:22:30 -<==      Total: 1
+2021-01-10 21:22:33 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-01-10 21:22:33 -==> Parameters: 11(Integer)
+2021-01-10 21:22:33 -<==      Total: 3
+2021-01-10 21:22:33 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 21:22:33 -==> Parameters: 6(Integer)
+2021-01-10 21:22:33 -<==      Total: 1
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 21:22:34 -==> Parameters: 1(Integer)
+2021-01-10 21:22:34 -<==      Total: 1
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 21:22:34 -==> Parameters: 8(Integer)
+2021-01-10 21:22:34 -<==      Total: 1
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-01-10 21:22:34 -==> Parameters: 11(Integer)
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-01-10 21:22:34 -==> Parameters: 
+2021-01-10 21:22:34 -<==      Total: 3
+2021-01-10 21:22:34 -<==      Total: 5
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:34 -==> Parameters: 3(Integer)
+2021-01-10 21:22:34 -<==      Total: 1
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:34 -==> Parameters: 5(Integer)
+2021-01-10 21:22:34 -<==      Total: 1
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:34 -==> Parameters: 2(Integer)
+2021-01-10 21:22:34 -<==      Total: 1
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:34 -==> Parameters: 3(Integer)
+2021-01-10 21:22:34 -<==      Total: 1
+2021-01-10 21:22:34 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:34 -==> Parameters: 2(Integer)
+2021-01-10 21:22:34 -<==      Total: 1
+2021-01-10 21:22:35 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:35 -==> Parameters: 2(Integer)
+2021-01-10 21:22:35 -<==      Total: 1
+2021-01-10 21:22:35 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:35 -==> Parameters: 3(Integer)
+2021-01-10 21:22:35 -<==      Total: 1
+2021-01-10 21:22:35 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:35 -==> Parameters: 2(Integer)
+2021-01-10 21:22:35 -<==      Total: 1
+2021-01-10 21:22:35 -==>  Preparing: SELECT * from semester where id = ? 
+2021-01-10 21:22:35 -==> Parameters: 2(Integer)
+2021-01-10 21:22:35 -<==      Total: 1
+2021-01-10 21:22:35 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-01-10 21:22:35 -==> Parameters: 3(Integer)
+2021-01-10 21:22:35 -<==      Total: 1
+2021-01-10 21:27:49 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Sun Jan 10 21:09:51 CST 2021]; root of context hierarchy
+2021-01-10 21:27:49 -Stopping beans in phase 2147483647
+2021-01-10 21:27:49 -Stopping beans in phase 0
+2021-01-10 21:27:49 -Unregistering JMX-exposed beans on shutdown
+2021-01-10 23:11:21 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 21167 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2021-01-10 23:11:21 -No active profile set, falling back to default profiles: default
+2021-01-10 23:11:21 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Sun Jan 10 23:11:21 CST 2021]; root of context hierarchy
+2021-01-10 23:11:22 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-10 23:11:22 -Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$9188040e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-10 23:11:23 -Tomcat initialized with port(s): 8090 (http)
+2021-01-10 23:11:23 -Root WebApplicationContext: initialization completed in 1377 ms
+2021-01-10 23:11:23 -Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-10 23:11:23 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-10 23:11:23 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-10 23:11:23 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-10 23:11:23 -Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-10 23:11:23 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Sun Jan 10 23:11:21 CST 2021]; root of context hierarchy
+2021-01-10 23:11:23 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/course/courseWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 23:11:23 -Mapped "{[/course/taskWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskWareDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 23:11:23 -Mapped "{[/course/taskDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 23:11:23 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2021-01-10 23:11:23 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/stu/getStuTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getStuTaskDetail(java.lang.Integer,java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/tch/getStuTaskStatus],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getStuTaskStatus(java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/tch/downloadExcel],methods=[GET]}" onto public void cn.org.test.controller.TeacherController.downloadExcel(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-10 23:11:23 -Mapped "{[/tch/uploadTaskScore],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadTaskScore(java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-10 23:11:23 -Mapped "{[/tch/deleteCourseWare],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.deleteCourseWare(java.lang.Integer)
+2021-01-10 23:11:23 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2021-01-10 23:11:23 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2021-01-10 23:11:23 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2021-01-10 23:11:23 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-01-10 23:11:23 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:11:23 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-10 23:11:23 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 23:11:23 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 23:11:23 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 23:11:24 -Registering beans for JMX exposure on startup
+2021-01-10 23:11:24 -Starting beans in phase 2147483647
+2021-01-10 23:11:24 -Tomcat started on port(s): 8090 (http)
+2021-01-10 23:11:24 -Started SpringBootUserApplication in 2.898 seconds (JVM running for 3.492)
+2021-01-10 23:11:26 -FrameworkServlet 'dispatcherServlet': initialization started
+2021-01-10 23:11:26 -FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2021-01-10 23:11:26 -Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "temp-id"
+2021-01-10 23:11:57 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:11:57 -==> Parameters: 6(Integer)
+2021-01-10 23:11:57 -<==      Total: 1
+2021-01-10 23:11:57 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:11:57 -==> Parameters: 6(Integer)
+2021-01-10 23:11:57 -<==    Updates: 1
+2021-01-10 23:11:57 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:11:57 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:11:57 -<==    Updates: 1
+2021-01-10 23:12:12 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:12:12 -==> Parameters: 6(Integer)
+2021-01-10 23:12:12 -<==      Total: 1
+2021-01-10 23:12:12 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:12:12 -==> Parameters: 6(Integer)
+2021-01-10 23:12:12 -<==    Updates: 1
+2021-01-10 23:12:12 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:12:12 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:12:12 -<==    Updates: 1
+2021-01-10 23:12:14 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:12:14 -==> Parameters: 6(Integer)
+2021-01-10 23:12:14 -<==      Total: 1
+2021-01-10 23:12:14 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:12:14 -==> Parameters: 6(Integer)
+2021-01-10 23:12:14 -<==    Updates: 1
+2021-01-10 23:12:14 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:12:14 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:12:14 -<==    Updates: 1
+2021-01-10 23:15:09 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:15:09 -==> Parameters: 6(Integer)
+2021-01-10 23:15:09 -<==      Total: 1
+2021-01-10 23:15:09 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:15:09 -==> Parameters: 6(Integer)
+2021-01-10 23:15:10 -<==    Updates: 1
+2021-01-10 23:15:10 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:15:10 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:15:10 -<==    Updates: 1
+2021-01-10 23:15:15 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:15:15 -==> Parameters: 6(Integer)
+2021-01-10 23:15:15 -<==      Total: 1
+2021-01-10 23:15:15 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:15:15 -==> Parameters: 6(Integer)
+2021-01-10 23:15:15 -<==    Updates: 1
+2021-01-10 23:15:15 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:15:15 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:15:15 -<==    Updates: 1
+2021-01-10 23:16:25 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:16:25 -==> Parameters: 6(Integer)
+2021-01-10 23:16:25 -<==      Total: 1
+2021-01-10 23:16:25 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:16:25 -==> Parameters: 6(Integer)
+2021-01-10 23:16:25 -<==    Updates: 1
+2021-01-10 23:16:25 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:16:25 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:16:25 -<==    Updates: 1
+2021-01-10 23:16:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:16:27 -==> Parameters: 6(Integer)
+2021-01-10 23:16:27 -<==      Total: 1
+2021-01-10 23:16:27 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:16:27 -==> Parameters: 6(Integer)
+2021-01-10 23:16:27 -<==    Updates: 1
+2021-01-10 23:16:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:16:27 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:16:28 -<==    Updates: 1
+2021-01-10 23:17:06 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:06 -==> Parameters: 6(Integer)
+2021-01-10 23:17:06 -<==      Total: 1
+2021-01-10 23:17:06 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:06 -==> Parameters: 6(Integer)
+2021-01-10 23:17:06 -<==    Updates: 1
+2021-01-10 23:17:06 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:06 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:06 -<==    Updates: 1
+2021-01-10 23:17:06 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:06 -==> Parameters: 6(Integer)
+2021-01-10 23:17:06 -<==      Total: 1
+2021-01-10 23:17:06 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:06 -==> Parameters: 6(Integer)
+2021-01-10 23:17:06 -<==    Updates: 1
+2021-01-10 23:17:06 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:06 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==      Total: 1
+2021-01-10 23:17:07 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==      Total: 1
+2021-01-10 23:17:07 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==      Total: 1
+2021-01-10 23:17:07 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==      Total: 1
+2021-01-10 23:17:07 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:07 -<==    Updates: 1
+2021-01-10 23:17:07 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:07 -<==      Total: 1
+2021-01-10 23:17:07 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:07 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==      Total: 1
+2021-01-10 23:17:08 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==      Total: 1
+2021-01-10 23:17:08 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==      Total: 1
+2021-01-10 23:17:08 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==      Total: 1
+2021-01-10 23:17:08 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:08 -<==    Updates: 1
+2021-01-10 23:17:08 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:08 -<==      Total: 1
+2021-01-10 23:17:08 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:08 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==      Total: 1
+2021-01-10 23:17:09 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==      Total: 1
+2021-01-10 23:17:09 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==      Total: 1
+2021-01-10 23:17:09 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==      Total: 1
+2021-01-10 23:17:09 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:09 -<==    Updates: 1
+2021-01-10 23:17:09 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:09 -==> Parameters: 6(Integer)
+2021-01-10 23:17:10 -<==      Total: 1
+2021-01-10 23:17:10 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer)
+2021-01-10 23:17:10 -<==    Updates: 1
+2021-01-10 23:17:10 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:10 -<==    Updates: 1
+2021-01-10 23:17:10 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer)
+2021-01-10 23:17:10 -<==      Total: 1
+2021-01-10 23:17:10 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer)
+2021-01-10 23:17:10 -<==    Updates: 1
+2021-01-10 23:17:10 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:10 -<==    Updates: 1
+2021-01-10 23:17:10 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer)
+2021-01-10 23:17:10 -<==      Total: 1
+2021-01-10 23:17:10 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer)
+2021-01-10 23:17:10 -<==    Updates: 1
+2021-01-10 23:17:10 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:10 -<==    Updates: 1
+2021-01-10 23:17:10 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer)
+2021-01-10 23:17:10 -<==      Total: 1
+2021-01-10 23:17:10 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer)
+2021-01-10 23:17:10 -<==    Updates: 1
+2021-01-10 23:17:10 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:17:10 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:17:10 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==      Total: 1
+2021-01-10 23:18:27 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:18:27 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==      Total: 1
+2021-01-10 23:18:27 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:18:27 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==      Total: 1
+2021-01-10 23:18:27 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:18:27 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==      Total: 1
+2021-01-10 23:18:27 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:18:27 -<==    Updates: 1
+2021-01-10 23:18:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:27 -<==      Total: 1
+2021-01-10 23:18:27 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:18:27 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==    Updates: 1
+2021-01-10 23:18:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:18:28 -<==    Updates: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==      Total: 1
+2021-01-10 23:18:28 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==    Updates: 1
+2021-01-10 23:18:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:18:28 -<==    Updates: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==      Total: 1
+2021-01-10 23:18:28 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==    Updates: 1
+2021-01-10 23:18:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:18:28 -<==    Updates: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==      Total: 1
+2021-01-10 23:18:28 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==    Updates: 1
+2021-01-10 23:18:28 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:18:28 -<==    Updates: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==      Total: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==      Total: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==      Total: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==      Total: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:28 -<==      Total: 1
+2021-01-10 23:18:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:28 -==> Parameters: 6(Integer)
+2021-01-10 23:18:29 -<==      Total: 1
+2021-01-10 23:18:29 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:29 -==> Parameters: 6(Integer)
+2021-01-10 23:18:29 -<==      Total: 1
+2021-01-10 23:18:29 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:29 -==> Parameters: 6(Integer)
+2021-01-10 23:18:29 -<==      Total: 1
+2021-01-10 23:18:29 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:29 -==> Parameters: 6(Integer)
+2021-01-10 23:18:29 -<==      Total: 1
+2021-01-10 23:18:29 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:29 -==> Parameters: 6(Integer)
+2021-01-10 23:18:29 -<==      Total: 1
+2021-01-10 23:18:29 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:29 -==> Parameters: 6(Integer)
+2021-01-10 23:18:29 -<==      Total: 1
+2021-01-10 23:18:29 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:29 -==> Parameters: 6(Integer)
+2021-01-10 23:18:29 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:38 -<==      Total: 1
+2021-01-10 23:18:38 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:38 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:18:39 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:39 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:18:39 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:39 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:18:39 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:39 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:18:39 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:39 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:18:39 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:39 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:18:39 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:39 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:18:39 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:39 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:18:39 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:18:39 -==> Parameters: 6(Integer)
+2021-01-10 23:18:39 -<==      Total: 1
+2021-01-10 23:21:12 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:12 -==> Parameters: 6(Integer)
+2021-01-10 23:21:12 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:12 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:21:13 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==    Updates: 1
+2021-01-10 23:21:13 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:21:13 -<==    Updates: 1
+2021-01-10 23:21:13 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:21:13 -<==    Updates: 1
+2021-01-10 23:21:13 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:21:13 -<==    Updates: 1
+2021-01-10 23:21:13 -<==    Updates: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==    Updates: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -<==      Total: 1
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:13 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:13 -==> Parameters: 6(Integer)
+2021-01-10 23:21:14 -<==      Total: 1
+2021-01-10 23:21:14 -<==      Total: 1
+2021-01-10 23:21:14 -<==      Total: 1
+2021-01-10 23:21:14 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:21:14 -==> Parameters: 6(Integer)
+2021-01-10 23:21:14 -<==      Total: 1
+2021-01-10 23:22:21 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Sun Jan 10 23:11:21 CST 2021]; root of context hierarchy
+2021-01-10 23:22:21 -Stopping beans in phase 2147483647
+2021-01-10 23:22:21 -Stopping beans in phase 0
+2021-01-10 23:22:21 -Unregistering JMX-exposed beans on shutdown
+2021-01-10 23:22:34 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 21587 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2021-01-10 23:22:34 -No active profile set, falling back to default profiles: default
+2021-01-10 23:22:34 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Sun Jan 10 23:22:34 CST 2021]; root of context hierarchy
+2021-01-10 23:22:35 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-10 23:22:35 -Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$d30eb3e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-10 23:22:35 -Tomcat initialized with port(s): 8090 (http)
+2021-01-10 23:22:36 -Root WebApplicationContext: initialization completed in 1482 ms
+2021-01-10 23:22:36 -Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-10 23:22:36 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-10 23:22:36 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-10 23:22:36 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-10 23:22:36 -Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-10 23:22:36 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Sun Jan 10 23:22:34 CST 2021]; root of context hierarchy
+2021-01-10 23:22:36 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/course/courseWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 23:22:36 -Mapped "{[/course/taskWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskWareDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 23:22:36 -Mapped "{[/course/taskDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-01-10 23:22:36 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2021-01-10 23:22:36 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/stu/getStuTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getStuTaskDetail(java.lang.Integer,java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/tch/getStuTaskStatus],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getStuTaskStatus(java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/tch/downloadExcel],methods=[GET]}" onto public void cn.org.test.controller.TeacherController.downloadExcel(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-10 23:22:36 -Mapped "{[/tch/uploadTaskScore],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadTaskScore(java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-01-10 23:22:36 -Mapped "{[/tch/deleteCourseWare],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.deleteCourseWare(java.lang.Integer)
+2021-01-10 23:22:36 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2021-01-10 23:22:36 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2021-01-10 23:22:36 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2021-01-10 23:22:36 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-01-10 23:22:36 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-10 23:22:36 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-10 23:22:36 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 23:22:36 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 23:22:36 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-10 23:22:37 -Registering beans for JMX exposure on startup
+2021-01-10 23:22:37 -Starting beans in phase 2147483647
+2021-01-10 23:22:37 -Tomcat started on port(s): 8090 (http)
+2021-01-10 23:22:37 -Started SpringBootUserApplication in 2.855 seconds (JVM running for 3.438)
+2021-01-10 23:22:40 -FrameworkServlet 'dispatcherServlet': initialization started
+2021-01-10 23:22:40 -FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:44 -<==      Total: 1
+2021-01-10 23:22:44 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:44 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:45 -<==      Total: 1
+2021-01-10 23:22:45 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:45 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:22:46 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:22:46 -==> Parameters: 6(Integer)
+2021-01-10 23:22:46 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: update class SET num=num+1 where id=? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==    Updates: 1
+2021-01-10 23:23:26 -==>  Preparing: INSERT into selectClass(classId,studentId,status) values(?, ?, ?) 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer), 66666(Integer), 0(Integer)
+2021-01-10 23:23:26 -<==    Updates: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:26 -<==      Total: 1
+2021-01-10 23:23:26 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:26 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:27 -<==      Total: 1
+2021-01-10 23:23:27 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:27 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1
+2021-01-10 23:23:28 -==>  Preparing: SELECT * from class WHERE id = ? 
+2021-01-10 23:23:28 -==> Parameters: 6(Integer)
+2021-01-10 23:23:28 -<==      Total: 1

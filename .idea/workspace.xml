@@ -2,36 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="339c93d2-10e7-4b74-8777-f6e1455bb2e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/applog/2020-11-11/2020-11-11.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applog/2020-11-12/2020-11-12.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applog/2020-11-14/2020-11-14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/4/backgroud1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/4/基础班1 , 2节代码.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/4/算法初级班第二课.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/4/算法基础班第七课.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/4/算法基础班第三课.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/4/算法进阶班第一课 .pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseWare/4/算法进阶班第二课.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task/10/算法基础班第七课.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task/10/算法基础班第五课.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task/10/算法基础班第四课.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task/10/算法进阶班第一课 .pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task/7/Part 7 反范式模式及数据库设计示例.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task/7/Part 8 处理并发和大规模数据量.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task/8/大数据产品链条.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task/9/Part 6 基于数据的数据库方法学.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applog/2021-01-10/2021-01-10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applog/2021-01-11/2021-01-11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applog/2021-01-12/2021-01-12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/select.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applog/2020-10-11/2020-10-11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/applog/2020-10-12/2020-10-12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/applog/2020-11-10/2020-11-10.log" beforeDir="false" afterPath="$PROJECT_DIR$/applog/2020-11-10/2020-11-10.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applog/2020-11-10/2020-11-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/applog/2020-11-11/2020-11-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/applog/2020-11-12/2020-11-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/applog/2020-11-14/2020-11-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/applog/2020-11-15/2020-11-15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/pojo/SelectClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/pojo/SelectClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/test/utils/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/test/utils/RedisUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/test/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/test/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +78,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">
     <configuration name="SpringBootUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -151,6 +140,14 @@
       <workItem from="1605019480827" duration="1198000" />
       <workItem from="1605081975034" duration="7004000" />
       <workItem from="1605313230218" duration="2155000" />
+      <workItem from="1605373450447" duration="570000" />
+      <workItem from="1605428018790" duration="2973000" />
+      <workItem from="1605688312920" duration="167000" />
+      <workItem from="1605688651392" duration="4403000" />
+      <workItem from="1605752625437" duration="701000" />
+      <workItem from="1605860212175" duration="1232000" />
+      <workItem from="1606038520638" duration="599000" />
+      <workItem from="1610283358558" duration="18639000" />
     </task>
     <task id="LOCAL-00001" summary="modify login">
       <created>1601978985029</created>
@@ -278,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604938543200</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add 下载完善">
+      <created>1605373498691</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1605373498691</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,21 +319,14 @@
     <MESSAGE value="add 发布作业" />
     <MESSAGE value="add 作业提交" />
     <MESSAGE value="add 课件删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 课件删除" />
+    <MESSAGE value="add 下载完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 下载完善" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="214" width="800" height="677" key="#Auto_Import" timestamp="1604219058526">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="214" width="800" height="677" key="#Auto_Import/67.27.1853.1053@67.27.1853.1053" timestamp="1604219058526" />
-    <state x="588" y="214" width="800" height="677" key="#Project_Structure" timestamp="1599632847252">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="588" y="214" width="800" height="677" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1599632847252" />
-    <state x="588" y="214" width="800" height="677" key="#SQL_Dialects" timestamp="1601444103031">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="588" y="214" width="800" height="677" key="#SQL_Dialects/67.27.1853.1053@67.27.1853.1053" timestamp="1601444103031" />
     <state x="667" y="357" width="705" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603784488967">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -342,46 +339,55 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="746" y="439" width="484" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1853.1053@67.27.1853.1053" timestamp="1603796247300" />
-    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2" timestamp="1605373482963">
+    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2" timestamp="1605373498408">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1605373482963" />
-    <state x="827" y="92" width="424" height="484" key="FileChooserDialogImpl" timestamp="1605313238581">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="558" y="126" width="860" height="852" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1605373498408" />
+    <state x="696" y="81" width="374" height="402" key="FileChooserDialogImpl" timestamp="1610284075116">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="827" y="92" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1605313238581" />
-    <state width="1807" height="173" key="GridCell.Tab.0.bottom" timestamp="1605373428445">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="696" y="81" width="374" height="402" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1610284075116" />
+    <state x="827" y="92" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1605752723812" />
+    <state width="1487" height="140" key="GridCell.Tab.0.bottom" timestamp="1610383559924">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1807" height="173" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1605373428445" />
-    <state width="1807" height="173" key="GridCell.Tab.0.center" timestamp="1605373428444">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1487" height="140" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1610383559924" />
+    <state width="1807" height="403" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1605688478916" />
+    <state width="1487" height="140" key="GridCell.Tab.0.center" timestamp="1610383559924">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1807" height="173" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1605373428444" />
-    <state width="1807" height="173" key="GridCell.Tab.0.left" timestamp="1605373428444">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1487" height="140" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1610383559924" />
+    <state width="1807" height="403" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1605688478915" />
+    <state width="1487" height="140" key="GridCell.Tab.0.left" timestamp="1610383559923">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1807" height="173" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1605373428444" />
-    <state width="1807" height="173" key="GridCell.Tab.0.right" timestamp="1605373428444">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1487" height="140" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1610383559923" />
+    <state width="1807" height="403" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1605688478914" />
+    <state width="1487" height="140" key="GridCell.Tab.0.right" timestamp="1610383559924">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1807" height="173" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1605373428444" />
-    <state width="1807" height="173" key="GridCell.Tab.1.bottom" timestamp="1605373428446">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1487" height="140" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1610383559924" />
+    <state width="1807" height="403" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1605688478915" />
+    <state width="1487" height="140" key="GridCell.Tab.1.bottom" timestamp="1610383559925">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1807" height="173" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1605373428446" />
-    <state width="1807" height="173" key="GridCell.Tab.1.center" timestamp="1605373428445">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1487" height="140" key="GridCell.Tab.1.bottom/67.27.1533.873@67.27.1533.873" timestamp="1610383559925" />
+    <state width="1807" height="403" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1605688478918" />
+    <state width="1487" height="140" key="GridCell.Tab.1.center" timestamp="1610383559924">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1807" height="173" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1605373428445" />
-    <state width="1807" height="173" key="GridCell.Tab.1.left" timestamp="1605373428445">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1487" height="140" key="GridCell.Tab.1.center/67.27.1533.873@67.27.1533.873" timestamp="1610383559924" />
+    <state width="1807" height="403" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1605688478917" />
+    <state width="1487" height="140" key="GridCell.Tab.1.left" timestamp="1610383559924">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1807" height="173" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1605373428445" />
-    <state width="1807" height="173" key="GridCell.Tab.1.right" timestamp="1605373428446">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1487" height="140" key="GridCell.Tab.1.left/67.27.1533.873@67.27.1533.873" timestamp="1610383559924" />
+    <state width="1807" height="403" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1605688478916" />
+    <state width="1487" height="140" key="GridCell.Tab.1.right" timestamp="1610383559925">
+      <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1807" height="173" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1605373428445" />
+    <state width="1487" height="140" key="GridCell.Tab.1.right/67.27.1533.873@67.27.1533.873" timestamp="1610383559924" />
+    <state width="1807" height="403" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1605688478917" />
     <state width="1807" height="344" key="GridCell.Tab.2.bottom" timestamp="1604364822711">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -402,26 +408,26 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1603293673142" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1604754390485">
+    <state x="482" y="187" key="SettingsEditor" timestamp="1605688390634">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1604754390485" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1604938709165">
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1605688390634" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605373505720">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1604938709165" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1605373450436">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1605373505720" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1606039771100">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605373450436" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1606039771100" />
     <state x="761" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603783879949">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="761" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1603783879949" />
-    <state x="302" y="256" width="1372" height="592" key="new project wizard" timestamp="1605314955189">
+    <state x="302" y="256" width="1372" height="592" key="new project wizard" timestamp="1605688474365">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="302" y="256" width="1372" height="592" key="new project wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1605314955189" />
+    <state x="302" y="256" width="1372" height="592" key="new project wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1605688474365" />
     <state x="738" y="181" width="500" height="743" key="refactoring.ChangeSignatureDialog" timestamp="1602496541240">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -472,11 +478,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/pojo/Email.java</url>
           <line>61</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/utils/RedisUtil.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cn/org/test/service/impl/TeacherServiceImpl.java</url>

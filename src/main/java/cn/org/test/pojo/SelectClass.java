@@ -14,6 +14,13 @@ public class SelectClass {
     private Integer classId;
     private Integer status;
 
+    public SelectClass(Integer classId, Integer studentId, int i) {
+        this.classId = classId;
+        this.studentId = studentId;
+        this.status = i;
+
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
