@@ -11,6 +11,8 @@ import cn.org.test.utils.RedisUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
@@ -28,6 +30,8 @@ import java.util.*;
  */
 @Service
 public class StudentServiceImpl implements StudentService {
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     public ClassMapper classMapper;
     @Autowired
@@ -36,9 +40,6 @@ public class StudentServiceImpl implements StudentService {
     public SemesterMapper semesterMapper;
     @Autowired
     public GradeMapper gradeMapper;
-
-    @Autowired
-    private KafkaTemplate kafkaTemplate;
 
     @Autowired
     private RedisUtil redisUtil;
@@ -99,47 +100,56 @@ public class StudentServiceImpl implements StudentService {
 //    }
 
 
+
+
+
+    @Autowired
+    private KafkaTemplate<String,String> kafkaTemplate;
+
+    public static final String TOPIC = "select-class";
+
+    /**
+     * @methodsName: selectClass
+     * @description: 选课
+     * @param:  classId 课程号
+     * @param:  studentId 学号
+     **/
     @Override
     public boolean selectClass(Integer classId, Integer studentId) {
         try{
+            //选课代码逻辑，判断课程可选人数->是否能选课
             DefaultRedisScript<Long> redisScript = new DefaultRedisScript<>();
             redisScript.setResultType(Long.class);
             redisScript.setScriptSource(new ResourceScriptSource(new ClassPathResource("select.lua")));
-//            Long result = redisTemplate.execute(redisScript, Collections.singletonList(classId + ""), studentId + "");
             Long result = redisUtil.execute(redisScript, Collections.singletonList(classId + ""), studentId + "");
 
+            //若选课脚本返回结果为1，则说明选课成功，需要持久化选课记录
             if (result == 1) {
-                System.out.println("result:" + studentId);
                 SelectClass selectClass = new SelectClass(classId,studentId,0);
-                kafkaTemplate.send("stu-menage", JSONObject.toJSONString(selectClass));
-//                selectClassMapper.addSelectClass(classId,studentId,0);
+                //方法一：在选课模块中直接进行选课记录持久化、日志记录等耗时操作
+//                selectClassMapper.addSelectClass(selectClass.getClassId(),selectClass.getStudentId(),0);
+//                logger.info("successful select:"+ studentId+ ":" + classId);
+
+                //方法二：将选课内容作为消息传递给Kafka，由Kafka在消费消息的过程中进行耗时操作
+                kafkaTemplate.send(TOPIC, JSONObject.toJSONString(selectClass));
+
             }
             return result > 0 ? true : false;
         }catch (Exception e) {
             return false;
         }
     }
-//    String id() default "";
-//
-//    String containerFactory() default "";
-//
-//    String[] topics() default {};
-//
-//    String topicPattern() default "";
-//
-//    TopicPartition[] topicPartitions() default {};
-//
-//    String group() default "";
-    //kafka消费者
-    @KafkaListener(groupId = "id0",topics = "stu-menage")
+
+    //Kafka消费者
+    @KafkaListener(groupId = "id0",topics = TOPIC)
     public void consumer(ConsumerRecord<?, String> record) {
+        //解析读取的消息
         String value = record.value();
-        System.out.println("result:" + value);
-        //字符串转对象
         JSONObject sJson = JSONObject.parseObject(value);
         SelectClass selectClass = JSON.toJavaObject(sJson,SelectClass.class);
-//        SelectClass selectClass = JSONUtil.stringToObj(value, SelectClass.class);
+        //进行选课记录持久化、日志记录等耗时操作
         selectClassMapper.addSelectClass(selectClass.getClassId(),selectClass.getStudentId(),0);
+        logger.info("successful select:"+ selectClass.getClassId()+ ":" + selectClass.getStudentId());
     }
 
     @Override

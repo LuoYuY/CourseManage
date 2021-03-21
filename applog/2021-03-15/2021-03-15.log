@@ -1,0 +1,888 @@
+2021-03-15 18:55:38 -Starting SpringBootUserApplication on lyy-inspiron-5488 with PID 3235 (/home/lyy/IdeaProjects/com.lyy/blog/target/classes started by lyy in /home/lyy/IdeaProjects/com.lyy/blog)
+2021-03-15 18:55:38 -No active profile set, falling back to default profiles: default
+2021-03-15 18:55:38 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Mon Mar 15 18:55:38 CST 2021]; root of context hierarchy
+2021-03-15 18:55:39 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-03-15 18:55:39 -Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$fcf79a30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-15 18:55:39 -Tomcat initialized with port(s): 8090 (http)
+2021-03-15 18:55:39 -Root WebApplicationContext: initialization completed in 1379 ms
+2021-03-15 18:55:39 -Mapping servlet: 'dispatcherServlet' to [/]
+2021-03-15 18:55:39 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-03-15 18:55:39 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-03-15 18:55:39 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-03-15 18:55:39 -Mapping filter: 'requestContextFilter' to: [/*]
+2021-03-15 18:55:40 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aefe5e5: startup date [Mon Mar 15 18:55:38 CST 2021]; root of context hierarchy
+2021-03-15 18:55:40 -Mapped "{[/admin/dealCreClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreClassApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/admin/allApplyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreList(javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/admin/allApplyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.getCreClassList(javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/admin/dealCreApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.AdminController.dealCreApply(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/course/semesterList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getSemesterList(javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/course/gradeList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.getGradeList(javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/course/createApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.createApply(cn.org.test.req.CreateCourseReq,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/course/courseWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-03-15 18:55:40 -Mapped "{[/course/taskWareDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskWareDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-03-15 18:55:40 -Mapped "{[/course/taskDownload],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.CourseController.taskDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String) throws java.io.FileNotFoundException,java.io.IOException,java.io.UnsupportedEncodingException
+2021-03-15 18:55:40 -Mapped "{[/stu/selectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClass(java.lang.Integer,java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/stu/getClassesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getClassesList(java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/stu/selectClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.selectClassList()
+2021-03-15 18:55:40 -Mapped "{[/stu/disSelectClass],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.disSelectClass(java.lang.Integer,java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/stu/getStuTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getStuTaskDetail(java.lang.Integer,java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/stu/getSelectedCourses],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getSelectedCourses(java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/stu/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.getTaskList(java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/stu/uploadTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.StudentController.uploadTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/tch/applyCreList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/applyCreClassList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCreClassList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/uploadFile],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadFile(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/getCoursesList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCoursesList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/creClassApply],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.creClassApply(cn.org.test.req.CreateClassReq,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/getCourseDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getCourseDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/getClassDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getClassDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/createTask],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.createTask(java.lang.Integer,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/getTaskDetail],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskDetail(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/tch/getStuTaskStatus],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getStuTaskStatus(java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/tch/downloadExcel],methods=[GET]}" onto public void cn.org.test.controller.TeacherController.downloadExcel(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-03-15 18:55:40 -Mapped "{[/tch/uploadTaskScore],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.uploadTaskScore(java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-03-15 18:55:40 -Mapped "{[/tch/deleteCourseWare],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.deleteCourseWare(java.lang.Integer)
+2021-03-15 18:55:40 -Mapped "{[/tch/getTaskList],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.TeacherController.getTaskList(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/user/registerStudent],methods=[POST]}" onto public cn.org.test.common.ServerResponse<cn.org.test.pojo.User> cn.org.test.controller.UserController.registerStudent(cn.org.test.req.RegisterReq,javax.servlet.http.HttpServletRequest)
+2021-03-15 18:55:40 -Mapped "{[/user/loginPwd],methods=[POST]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.loginPwd(java.lang.String,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2021-03-15 18:55:40 -Mapped "{[/user/getMessage],methods=[GET]}" onto public cn.org.test.common.ServerResponse cn.org.test.controller.UserController.getMessage()
+2021-03-15 18:55:40 -Mapped "{[/user/verify],methods=[POST]}" onto public cn.org.test.common.ServerResponse<java.lang.String> cn.org.test.controller.UserController.verify(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-03-15 18:55:40 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-03-15 18:55:40 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-03-15 18:55:40 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-15 18:55:40 -Mapped URL path [/download/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-15 18:55:40 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-15 18:55:40 -Registering beans for JMX exposure on startup
+2021-03-15 18:55:40 -Starting beans in phase 2147483547
+2021-03-15 18:55:40 -Initializing ExecutorService 
+2021-03-15 18:55:41 -Tomcat started on port(s): 8090 (http)
+2021-03-15 18:55:41 -Started SpringBootUserApplication in 2.95 seconds (JVM running for 3.397)
+2021-03-15 18:56:16 -FrameworkServlet 'dispatcherServlet': initialization started
+2021-03-15 18:56:16 -FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2021-03-15 18:56:16 -No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcherServlet'
+2021-03-15 18:59:05 -==>  Preparing: SELECT * from USER where address = ? 
+2021-03-15 18:59:05 -==>  Preparing: SELECT * from USER where address = ? 
+2021-03-15 18:59:05 -==> Parameters: 15868808504@163.com(String)
+2021-03-15 18:59:05 -==> Parameters: 15868808504@163.com(String)
+2021-03-15 18:59:05 -<==      Total: 1
+2021-03-15 18:59:05 -<==      Total: 1
+2021-03-15 18:59:05 -==>  Preparing: SELECT * from USER where address = ? 
+2021-03-15 18:59:05 -==>  Preparing: SELECT * from USER where address = ? 
+2021-03-15 18:59:05 -==> Parameters: 15868808504@163.com(String)
+2021-03-15 18:59:05 -==> Parameters: 15868808504@163.com(String)
+2021-03-15 18:59:05 -<==      Total: 1
+2021-03-15 18:59:05 -<==      Total: 1
+2021-03-15 18:59:06 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-03-15 18:59:06 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-03-15 18:59:06 -==> Parameters: 
+2021-03-15 18:59:06 -==> Parameters: 11(Integer)
+2021-03-15 18:59:06 -<==      Total: 5
+2021-03-15 18:59:06 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:06 -==> Parameters: 3(Integer)
+2021-03-15 18:59:06 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]] with root cause
+org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:664)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:617)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:590)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:392)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:351)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:326)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:299)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy83.getSelectedCoursesByStuId(Unknown Source)
+	at cn.org.test.service.impl.StudentServiceImpl.getSelectedCourses(StudentServiceImpl.java:80)
+	at cn.org.test.controller.StudentController.getSelectedCourses(StudentController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-15 18:59:06 -<==      Total: 1
+2021-03-15 18:59:06 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:06 -==> Parameters: 5(Integer)
+2021-03-15 18:59:06 -<==      Total: 1
+2021-03-15 18:59:06 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:06 -==> Parameters: 2(Integer)
+2021-03-15 18:59:07 -<==      Total: 1
+2021-03-15 18:59:07 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:07 -==> Parameters: 3(Integer)
+2021-03-15 18:59:07 -<==      Total: 1
+2021-03-15 18:59:07 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:07 -==> Parameters: 2(Integer)
+2021-03-15 18:59:07 -<==      Total: 1
+2021-03-15 18:59:07 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:07 -==> Parameters: 2(Integer)
+2021-03-15 18:59:07 -<==      Total: 1
+2021-03-15 18:59:07 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:07 -==> Parameters: 3(Integer)
+2021-03-15 18:59:07 -<==      Total: 1
+2021-03-15 18:59:07 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:07 -==> Parameters: 2(Integer)
+2021-03-15 18:59:07 -<==      Total: 1
+2021-03-15 18:59:07 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:07 -==> Parameters: 2(Integer)
+2021-03-15 18:59:07 -<==      Total: 1
+2021-03-15 18:59:07 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:07 -==> Parameters: 3(Integer)
+2021-03-15 18:59:07 -<==      Total: 1
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-03-15 18:59:21 -==> Parameters: 
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-03-15 18:59:21 -==> Parameters: 11(Integer)
+2021-03-15 18:59:21 -<==      Total: 5
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:21 -==> Parameters: 3(Integer)
+2021-03-15 18:59:21 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]] with root cause
+org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:664)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:617)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:590)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:392)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:351)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:326)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:299)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy83.getSelectedCoursesByStuId(Unknown Source)
+	at cn.org.test.service.impl.StudentServiceImpl.getSelectedCourses(StudentServiceImpl.java:80)
+	at cn.org.test.controller.StudentController.getSelectedCourses(StudentController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-15 18:59:21 -<==      Total: 1
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:21 -==> Parameters: 5(Integer)
+2021-03-15 18:59:21 -<==      Total: 1
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:21 -==> Parameters: 2(Integer)
+2021-03-15 18:59:21 -<==      Total: 1
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:21 -==> Parameters: 3(Integer)
+2021-03-15 18:59:21 -<==      Total: 1
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:21 -==> Parameters: 2(Integer)
+2021-03-15 18:59:21 -<==      Total: 1
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:21 -==> Parameters: 2(Integer)
+2021-03-15 18:59:21 -<==      Total: 1
+2021-03-15 18:59:21 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:21 -==> Parameters: 3(Integer)
+2021-03-15 18:59:22 -<==      Total: 1
+2021-03-15 18:59:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:22 -==> Parameters: 2(Integer)
+2021-03-15 18:59:22 -<==      Total: 1
+2021-03-15 18:59:22 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:22 -==> Parameters: 2(Integer)
+2021-03-15 18:59:22 -<==      Total: 1
+2021-03-15 18:59:22 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:22 -==> Parameters: 3(Integer)
+2021-03-15 18:59:22 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-03-15 18:59:23 -==> Parameters: 
+2021-03-15 18:59:23 -==> Parameters: 11(Integer)
+2021-03-15 18:59:23 -<==      Total: 5
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:23 -==> Parameters: 3(Integer)
+2021-03-15 18:59:23 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]] with root cause
+org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:664)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:617)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:590)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:392)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:351)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:326)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:299)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy83.getSelectedCoursesByStuId(Unknown Source)
+	at cn.org.test.service.impl.StudentServiceImpl.getSelectedCourses(StudentServiceImpl.java:80)
+	at cn.org.test.controller.StudentController.getSelectedCourses(StudentController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:23 -==> Parameters: 5(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:23 -==> Parameters: 2(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:23 -==> Parameters: 3(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:23 -==> Parameters: 2(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:23 -==> Parameters: 2(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:23 -==> Parameters: 3(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:23 -==> Parameters: 2(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:23 -==> Parameters: 2(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:23 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:23 -==> Parameters: 3(Integer)
+2021-03-15 18:59:23 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-03-15 18:59:25 -==> Parameters: 
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-03-15 18:59:25 -==> Parameters: 11(Integer)
+2021-03-15 18:59:25 -<==      Total: 5
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:25 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]] with root cause
+org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:664)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:617)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:590)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:392)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:351)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:326)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:299)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy83.getSelectedCoursesByStuId(Unknown Source)
+	at cn.org.test.service.impl.StudentServiceImpl.getSelectedCourses(StudentServiceImpl.java:80)
+	at cn.org.test.controller.StudentController.getSelectedCourses(StudentController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-15 18:59:25 -==> Parameters: 3(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:25 -==> Parameters: 5(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:25 -==> Parameters: 2(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:25 -==> Parameters: 3(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:25 -==> Parameters: 2(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:25 -==> Parameters: 2(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:25 -==> Parameters: 3(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:25 -==> Parameters: 2(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:25 -==> Parameters: 2(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:25 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:25 -==> Parameters: 3(Integer)
+2021-03-15 18:59:25 -<==      Total: 1
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-03-15 18:59:32 -==> Parameters: 
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-03-15 18:59:32 -==> Parameters: 11(Integer)
+2021-03-15 18:59:32 -<==      Total: 5
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:32 -==> Parameters: 3(Integer)
+2021-03-15 18:59:32 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]] with root cause
+org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:664)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:617)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:590)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:392)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:351)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:326)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:299)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy83.getSelectedCoursesByStuId(Unknown Source)
+	at cn.org.test.service.impl.StudentServiceImpl.getSelectedCourses(StudentServiceImpl.java:80)
+	at cn.org.test.controller.StudentController.getSelectedCourses(StudentController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-15 18:59:32 -<==      Total: 1
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:32 -==> Parameters: 5(Integer)
+2021-03-15 18:59:32 -<==      Total: 1
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:32 -==> Parameters: 2(Integer)
+2021-03-15 18:59:32 -<==      Total: 1
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:32 -==> Parameters: 3(Integer)
+2021-03-15 18:59:32 -<==      Total: 1
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:32 -==> Parameters: 2(Integer)
+2021-03-15 18:59:32 -<==      Total: 1
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:32 -==> Parameters: 2(Integer)
+2021-03-15 18:59:32 -<==      Total: 1
+2021-03-15 18:59:32 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:32 -==> Parameters: 3(Integer)
+2021-03-15 18:59:33 -<==      Total: 1
+2021-03-15 18:59:33 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:33 -==> Parameters: 2(Integer)
+2021-03-15 18:59:33 -<==      Total: 1
+2021-03-15 18:59:33 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:33 -==> Parameters: 2(Integer)
+2021-03-15 18:59:33 -<==      Total: 1
+2021-03-15 18:59:33 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:33 -==> Parameters: 3(Integer)
+2021-03-15 18:59:33 -<==      Total: 1
+2021-03-15 18:59:35 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-03-15 18:59:35 -==> Parameters: 11(Integer)
+2021-03-15 18:59:35 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]] with root cause
+org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:664)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:617)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:590)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:392)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:351)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:326)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:299)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy83.getSelectedCoursesByStuId(Unknown Source)
+	at cn.org.test.service.impl.StudentServiceImpl.getClassesList(StudentServiceImpl.java:152)
+	at cn.org.test.controller.StudentController.getClassesList(StudentController.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from selectClass WHERE studentId = ? 
+2021-03-15 18:59:37 -==> Parameters: 11(Integer)
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from class WHERE status in (0,1) 
+2021-03-15 18:59:37 -==> Parameters: 
+2021-03-15 18:59:37 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]] with root cause
+org.apache.ibatis.executor.ExecutorException: No constructor found in cn.org.test.pojo.SelectClass matching [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:664)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:617)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:590)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:392)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:351)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:326)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:299)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:192)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy83.getSelectedCoursesByStuId(Unknown Source)
+	at cn.org.test.service.impl.StudentServiceImpl.getSelectedCourses(StudentServiceImpl.java:80)
+	at cn.org.test.controller.StudentController.getSelectedCourses(StudentController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-15 18:59:37 -<==      Total: 5
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:37 -==> Parameters: 3(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:37 -==> Parameters: 5(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:37 -==> Parameters: 2(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:37 -==> Parameters: 3(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:37 -==> Parameters: 2(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:37 -==> Parameters: 2(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:37 -==> Parameters: 3(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:37 -==> Parameters: 2(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from semester where id = ? 
+2021-03-15 18:59:37 -==> Parameters: 2(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
+2021-03-15 18:59:37 -==>  Preparing: SELECT * from grade WHERE id = ? 
+2021-03-15 18:59:37 -==> Parameters: 3(Integer)
+2021-03-15 18:59:37 -<==      Total: 1
